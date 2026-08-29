@@ -12,6 +12,7 @@ data/processed/
 data/database/
 *.duckdb
 *.duckdb.wal
+reports/*.json
 
 dist/
 build/
