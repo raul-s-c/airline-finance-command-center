@@ -89,3 +89,19 @@ web/        Static dashboard assets
 Current status: phase 0 initialization.
 
 The next development step is to implement a source discovery script that downloads or identifies official BTS extracts for the candidate tables and produces a coverage report for the four candidate airlines.
+
+## Discovery CLI
+
+Generate the first source discovery report:
+
+```bash
+afcc-discover --output reports/discovery_report.json
+```
+
+To profile downloaded sample CSV files, place them in a folder using the BTS source code as the file name, for example `P-1.2.csv` or `T-100.csv`, then run:
+
+```bash
+afcc-discover --input-dir data/samples --output reports/discovery_report.json
+```
+
+The command profiles period coverage by airline and ranks the candidate airlines using the scoring weights in `config/config.yaml`.
