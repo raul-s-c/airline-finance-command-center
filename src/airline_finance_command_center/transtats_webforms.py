@@ -24,6 +24,13 @@ class TranStatsTable:
     description: str
 
 
+@dataclass(frozen=True)
+class TranStatsFormMetadata:
+    table_code: str
+    years: tuple[str, ...]
+    field_names: tuple[str, ...]
+
+
 TABLES: dict[str, TranStatsTable] = {
     "P-1.2": TranStatsTable("P-1.2", 295, "quarterly", "Profit and loss statement"),
     "P-5.2": TranStatsTable("P-5.2", 297, "quarterly", "Aircraft operating expenses"),
@@ -87,6 +94,27 @@ def parse_form(html: str) -> tuple[dict[str, str], tuple[str, ...], tuple[str, .
     return hidden, checkboxes, years
 
 
+def _open_form(table_code: str, timeout: int = 600):
+    if table_code not in TABLES:
+        raise KeyError(f"Unknown TranStats table: {table_code}")
+    table = TABLES[table_code]
+    url = table_url(table)
+    opener = build_opener(HTTPCookieProcessor(http.cookiejar.CookieJar()))
+    response = opener.open(Request(url, headers={"User-Agent": USER_AGENT}), timeout=timeout)
+    html = response.read().decode("utf-8", "replace")
+    hidden, fields, years = parse_form(html)
+    return opener, url, hidden, fields, years
+
+
+def get_form_metadata(table_code: str, timeout: int = 600) -> TranStatsFormMetadata:
+    _, _, _, fields, years = _open_form(table_code, timeout=timeout)
+    return TranStatsFormMetadata(table_code=table_code, years=years, field_names=fields)
+
+
+def available_years(table_code: str, timeout: int = 600) -> tuple[str, ...]:
+    return get_form_metadata(table_code, timeout=timeout).years
+
+
 def resolve_year(requested: str | int | None, years: tuple[str, ...]) -> str:
     latest = max(years)
     if requested is None or str(requested).lower() == "latest":
@@ -107,17 +135,7 @@ def download_table(
     period: str | int | None = None,
     timeout: int = 600,
 ) -> tuple[str, bytes]:
-    if table_code not in TABLES:
-        raise KeyError(f"Unknown TranStats table: {table_code}")
-
-    table = TABLES[table_code]
-    url = table_url(table)
-    opener = build_opener(HTTPCookieProcessor(http.cookiejar.CookieJar()))
-    headers = {"User-Agent": USER_AGENT}
-
-    response = opener.open(Request(url, headers=headers), timeout=timeout)
-    html = response.read().decode("utf-8", "replace")
-    hidden, fields, years = parse_form(html)
+    opener, url, hidden, fields, years = _open_form(table_code, timeout=timeout)
     selected_year = resolve_year(year, years)
 
     form = dict(hidden)
