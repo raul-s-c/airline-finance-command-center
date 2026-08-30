@@ -11,6 +11,10 @@ from airline_finance_command_center.airline_selection import (
     rank_airlines,
 )
 from airline_finance_command_center.config import ProjectConfig, load_config
+from airline_finance_command_center.coverage_report import (
+    build_coverage_report,
+    write_markdown,
+)
 from airline_finance_command_center.profiling import DatasetProfile, profile_directory
 
 SOURCE_CODES = ("P-1.2", "P-5.2", "P-12(a)", "T-100", "B-43")
@@ -38,6 +42,11 @@ def build_parser() -> argparse.ArgumentParser:
         "--output",
         default="reports/discovery_report.json",
         help="Path where the discovery JSON report will be written.",
+    )
+    parser.add_argument(
+        "--coverage-output",
+        default="reports/coverage_report.md",
+        help="Path where the human-readable airline coverage report will be written.",
     )
     return parser
 
@@ -140,9 +149,14 @@ def main(argv: list[str] | None = None) -> int:
     else:
         profiles = None
 
-    report = build_discovery_report(config, profiles)
-    output = write_report(report, args.output)
+    discovery_report = build_discovery_report(config, profiles)
+    output = write_report(discovery_report, args.output)
+
+    coverage_report = build_coverage_report(config, profiles or {})
+    coverage_output = write_markdown(coverage_report, args.coverage_output)
+
     print(f"Discovery report written to {output}")
+    print(f"Coverage report written to {coverage_output}")
     return 0
 
 
