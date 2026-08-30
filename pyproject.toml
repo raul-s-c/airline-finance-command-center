@@ -13,6 +13,7 @@ dependencies = [
 afcc-discover = "airline_finance_command_center.cli:main"
 afcc-download = "airline_finance_command_center.downloads:main"
 afcc-transtats = "airline_finance_command_center.transtats_webforms:main"
+afcc-build-bts = "airline_finance_command_center.bts_delta_pipeline:main"
 
 [project.optional-dependencies]
 dev = [
