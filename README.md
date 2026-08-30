@@ -16,17 +16,11 @@ The system will:
 - Generate deterministic, traceable variance commentary.
 - Publish a static dashboard through GitHub Pages.
 
-## Phase 0
+## Current Status
 
-Phase 0 is about proving the data foundation before building the visual layer.
+The project foundation is implemented end to end: scoring, profiling, official BTS download logic, coverage reporting, selection gates, real field mapping, financial KPIs, deterministic commentary, and the CFO web dashboard.
 
-The first milestone will answer:
-
-- Which BTS tables are reliable enough for the project?
-- Which airline gives the best analytical coverage?
-- Which fields can be mapped to finance and operational drivers?
-- What history window fits GitHub's free repository and Pages limits?
-- What controls are needed before publishing figures?
+The public dashboard is deployed through GitHub Pages from the `web/` directory. Current web values are explicitly marked as demo data until the official BTS files are processed and the airline selection gate passes.
 
 ## Initial Data Scope
 
@@ -49,7 +43,7 @@ Candidate airlines:
 | United Airlines | UA | Strong international mix |
 | Southwest Airlines | WN | Cleaner single-fleet operating model |
 
-Delta is the preferred candidate only if the data confirms enough continuity and reconciliation quality. The selection will be evidence-based.
+Delta is the preferred candidate only if the data confirms enough continuity and reconciliation quality. The selection remains evidence-based.
 
 ## Rolling Retention
 
@@ -70,7 +64,8 @@ BTS/DOT official data
 -> profiling and mapping
 -> validation controls
 -> compact analytical outputs
--> static HTML/CSS/JavaScript dashboard
+-> deterministic commentary
+-> static HTML/CSS/JavaScript CFO dashboard
 -> GitHub Pages
 ```
 
@@ -79,29 +74,23 @@ BTS/DOT official data
 ```text
 config/     Project configuration and retention policy
 docs/       Data source, mapping and decision records
-src/        Python package for ingestion, mapping and validation
+src/        Python package for ingestion, mapping, validation and finance logic
 tests/      Automated checks
-web/        Static dashboard assets
+web/        Static CFO dashboard assets
 ```
-
-## Development Status
-
-Current status: phase 0 initialization.
-
-The next development step is to implement a source discovery script that downloads or identifies official BTS extracts for the candidate tables and produces a coverage report for the four candidate airlines.
 
 ## Discovery CLI
 
-Generate the first source discovery report:
+Generate the source discovery report:
 
 ```bash
 afcc-discover --output reports/discovery_report.json
 ```
 
-To profile downloaded sample CSV files, place them in a folder using the BTS source code as the file name, for example `P-1.2.csv` or `T-100.csv`, then run:
+To profile local BTS CSV files, place them in a folder using the BTS source code as the file name, for example `P-1.2.csv` or `T-100.csv`, then run:
 
 ```bash
 afcc-discover --input-dir data/samples --output reports/discovery_report.json
 ```
 
-The command profiles period coverage by airline and ranks the candidate airlines using the scoring weights in `config/config.yaml`.
+The command profiles period coverage by airline, generates the coverage report, applies the weighted scoring model and evaluates the airline selection gates.
