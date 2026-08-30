@@ -1,0 +1,41 @@
+name: Inspect BTS archives
+
+on:
+  workflow_dispatch:
+  push:
+    paths:
+      - '.github/workflows/inspect-bts.yml'
+
+permissions:
+  contents: read
+
+jobs:
+  inspect:
+    runs-on: ubuntu-latest
+    steps:
+      - uses: actions/checkout@v4
+      - name: Download BTS archives
+        run: |
+          mkdir -p /tmp/bts
+          curl -L --fail --retry 3 -o /tmp/bts/db10.zip 'https://www.bts.gov/sites/bts.dot.gov/files/docs/airline-data/DB10/DB10.202404.202603.REL01.15JUN2026.zip'
+          curl -L --fail --retry 3 -o /tmp/bts/db20.zip 'https://www.bts.gov/sites/bts.dot.gov/files/docs/airline-data/DB20/DB20.202505.202604.REL01.07JUL2026.zip'
+      - name: Inspect archive contents
+        run: |
+          echo '=== DB10 ==='
+          unzip -l /tmp/bts/db10.zip | head -120
+          echo '=== DB20 ==='
+          unzip -l /tmp/bts/db20.zip | head -120
+      - name: Extract and show text headers
+        run: |
+          mkdir -p /tmp/bts/db10 /tmp/bts/db20
+          unzip -q /tmp/bts/db10.zip -d /tmp/bts/db10
+          unzip -q /tmp/bts/db20.zip -d /tmp/bts/db20
+          echo '=== DB10 files ==='
+          find /tmp/bts/db10 -maxdepth 2 -type f | sort | head -100
+          echo '=== DB20 files ==='
+          find /tmp/bts/db20 -maxdepth 2 -type f | sort | head -100
+          echo '=== Candidate headers ==='
+          find /tmp/bts/db10 /tmp/bts/db20 -type f \( -iname '*.csv' -o -iname '*.txt' \) -print0 | while IFS= read -r -d '' f; do
+            echo "--- $f"
+            head -2 "$f" | cut -c1-500
+          done
