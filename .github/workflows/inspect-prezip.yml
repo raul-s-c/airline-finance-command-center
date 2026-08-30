@@ -1,0 +1,27 @@
+name: Inspect TranStats PREZIP
+
+on:
+  workflow_dispatch:
+  push:
+    paths:
+      - '.github/workflows/inspect-prezip.yml'
+
+permissions:
+  contents: read
+
+jobs:
+  inspect:
+    runs-on: ubuntu-latest
+    steps:
+      - uses: actions/checkout@v4
+      - name: Discover PREZIP files
+        run: |
+          set -euxo pipefail
+          curl -L --fail -o /tmp/prezip.html 'https://transtats.bts.gov/PREZIP/'
+          grep -Eo 'href="[^"]+\.zip"' /tmp/prezip.html | sed 's/^href="//;s/"$//' | grep -Ei 'F41SCHEDULE|T100|B43|P12|P52|P1' | tail -200 || true
+      - name: Test known public PREZIP file
+        run: |
+          set -euxo pipefail
+          curl -L --fail -o /tmp/test.zip 'https://transtats.bts.gov/PREZIP/896843307_T_T100_SEGMENT_US_CARRIER_ONLY.zip'
+          file /tmp/test.zip
+          unzip -l /tmp/test.zip | head -40
