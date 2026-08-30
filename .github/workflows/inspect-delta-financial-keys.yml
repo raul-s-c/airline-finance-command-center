@@ -1,0 +1,45 @@
+name: Inspect Delta financial keys
+
+on:
+  workflow_dispatch:
+  push:
+    paths:
+      - '.github/workflows/inspect-delta-financial-keys.yml'
+
+permissions:
+  contents: read
+
+jobs:
+  inspect:
+    runs-on: ubuntu-latest
+    steps:
+      - uses: actions/checkout@v4
+      - name: Inspect Delta P-1.2 and P-5.2 keys
+        env:
+          PYTHONPATH: src
+        run: |
+          set -euxo pipefail
+          mkdir -p /tmp/p12 /tmp/p52
+          python -m airline_finance_command_center.transtats_webforms --table P-1.2 --year latest --output-dir /tmp/p12
+          python -m airline_finance_command_center.transtats_webforms --table P-5.2 --year latest --output-dir /tmp/p52
+          python - <<'PY'
+          import csv, io, zipfile, pathlib
+          def rows(path):
+              zpath=next(pathlib.Path(path).glob('*.zip'))
+              with zipfile.ZipFile(zpath) as z:
+                  m=max([i for i in z.infolist() if i.filename.lower().endswith('.csv') and not i.filename.lower().startswith('documentation')], key=lambda i:i.file_size)
+                  text=z.read(m.filename).decode('utf-8-sig', errors='replace')
+              yield from csv.DictReader(io.StringIO(text))
+          print('=== P-1.2 DELTA ===')
+          keys=['YEAR','QUARTER','AIRLINE_ID','UNIQUE_CARRIER','CARRIER','CARRIER_NAME','UNIQUE_CARRIER_ENTITY','REGION','OP_REVENUES','OP_EXPENSES','OP_PROFIT_LOSS','NET_INCOME','TRANS_REV_PAX']
+          for r in rows('/tmp/p12'):
+              if r.get('UNIQUE_CARRIER')=='DL': print({k:r.get(k) for k in keys})
+          print('=== P-5.2 DELTA ===')
+          keys=['YEAR','QUARTER','AIRLINE_ID','UNIQUE_CARRIER','CARRIER','UNIQUE_CARRIER_ENTITY','REGION','AIRCRAFT_CONFIG','AIRCRAFT_GROUP','AIRCRAFT_TYPE','TOT_AIR_OP_EXPENSES','TOT_FLY_OPS','FUEL_FLY_OPS','TOT_DIR_MAINT','TOTAL_AIR_HOURS','AIR_FUELS_ISSUED']
+          count=0
+          for r in rows('/tmp/p52'):
+              if r.get('UNIQUE_CARRIER')=='DL':
+                  print({k:r.get(k) for k in keys})
+                  count+=1
+                  if count>=40: break
+          PY
