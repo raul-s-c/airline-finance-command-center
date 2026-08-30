@@ -14,28 +14,35 @@ jobs:
     runs-on: ubuntu-latest
     steps:
       - uses: actions/checkout@v4
-      - name: Download BTS archives
+      - name: Download BTS archives with browser session
         run: |
+          set -euxo pipefail
           mkdir -p /tmp/bts
-          curl -L --fail --retry 3 -o /tmp/bts/db10.zip 'https://www.bts.gov/sites/bts.dot.gov/files/docs/airline-data/DB10/DB10.202404.202603.REL01.15JUN2026.zip'
-          curl -L --fail --retry 3 -o /tmp/bts/db20.zip 'https://www.bts.gov/sites/bts.dot.gov/files/docs/airline-data/DB20/DB20.202505.202604.REL01.07JUL2026.zip'
+          UA='Mozilla/5.0 (Windows NT 10.0; Win64; x64) AppleWebKit/537.36 Chrome/151 Safari/537.36'
+          curl -L --fail -A "$UA" -c /tmp/bts/cookies.txt -o /tmp/bts/db10.html 'https://www.bts.gov/browse-statistical-products-and-data/db10'
+          curl -L --fail -A "$UA" -b /tmp/bts/cookies.txt -e 'https://www.bts.gov/browse-statistical-products-and-data/db10' -o /tmp/bts/db10.zip 'https://www.bts.gov/sites/bts.dot.gov/files/docs/airline-data/DB10/DB10.202404.202603.REL01.15JUN2026.zip'
+          curl -L --fail -A "$UA" -b /tmp/bts/cookies.txt -e 'https://www.bts.gov/' -o /tmp/bts/financials.xlsx 'https://www.bts.gov/sites/bts.dot.gov/files/2026-06/Airline%20Financials%20Tables%201Q%202026.xlsx'
+          file /tmp/bts/db10.zip /tmp/bts/financials.xlsx
       - name: Inspect archive contents
         run: |
           echo '=== DB10 ==='
           unzip -l /tmp/bts/db10.zip | head -120
-          echo '=== DB20 ==='
-          unzip -l /tmp/bts/db20.zip | head -120
+          echo '=== Financial workbook ==='
+          python - <<'PY'
+          import pandas as pd
+          p='/tmp/bts/financials.xlsx'
+          x=pd.ExcelFile(p)
+          print(x.sheet_names)
+          for s in x.sheet_names:
+              print('---',s)
+              print(pd.read_excel(p,sheet_name=s,header=None,nrows=12).to_string(index=False,header=False))
+          PY
       - name: Extract and show text headers
         run: |
-          mkdir -p /tmp/bts/db10 /tmp/bts/db20
+          mkdir -p /tmp/bts/db10
           unzip -q /tmp/bts/db10.zip -d /tmp/bts/db10
-          unzip -q /tmp/bts/db20.zip -d /tmp/bts/db20
-          echo '=== DB10 files ==='
-          find /tmp/bts/db10 -maxdepth 2 -type f | sort | head -100
-          echo '=== DB20 files ==='
-          find /tmp/bts/db20 -maxdepth 2 -type f | sort | head -100
-          echo '=== Candidate headers ==='
-          find /tmp/bts/db10 /tmp/bts/db20 -type f \( -iname '*.csv' -o -iname '*.txt' \) -print0 | while IFS= read -r -d '' f; do
+          find /tmp/bts/db10 -maxdepth 3 -type f | sort | head -120
+          find /tmp/bts/db10 -type f \( -iname '*.csv' -o -iname '*.txt' \) -print0 | while IFS= read -r -d '' f; do
             echo "--- $f"
-            head -2 "$f" | cut -c1-500
+            head -2 "$f" | cut -c1-700
           done
