@@ -5,13 +5,15 @@ from pathlib import Path
 from typing import Any
 
 from airline_finance_command_center.airline_selection import (
-    AirlineCoverageScore,
-    RankedAirline,
     estimate_coverage_scores,
     rank_airlines,
 )
 from airline_finance_command_center.config import ProjectConfig
 from airline_finance_command_center.profiling import DatasetProfile
+from airline_finance_command_center.selection_decision import (
+    decide_airline,
+    decision_to_dict,
+)
 
 
 SOURCE_LABELS = {
@@ -61,6 +63,8 @@ def build_coverage_report(
             },
         }
 
+    decision = decide_airline(config, profiles_by_source, ranking)
+
     return {
         "status": "scored" if profiles_by_source else "profiles_required",
         "expected_periods_by_source": expected,
@@ -71,6 +75,7 @@ def build_coverage_report(
         },
         "ranking": [asdict(item) for item in ranking],
         "winner": asdict(ranking[0]) if ranking else None,
+        "selection_decision": decision_to_dict(decision),
     }
 
 
@@ -128,10 +133,30 @@ def render_markdown(report: dict[str, Any]) -> str:
             f"Highest coverage score: {winner['name']} ({winner['iata_code']}) "
             f"with {winner['score'] * 100:.1f}%.",
             "",
-            "This result is provisional until source mapping and reconciliation checks are complete.",
-            "",
         ])
 
+    decision = report.get("selection_decision", {})
+    lines.extend([
+        "## Selection decision",
+        "",
+        f"Status: {decision.get('status', 'unknown')}",
+        "",
+    ])
+
+    if decision.get("selected_iata_code"):
+        lines.append(
+            f"Selected airline: {decision['selected_name']} "
+            f"({decision['selected_iata_code']})."
+        )
+        lines.append("")
+    else:
+        lines.append("No final airline has been selected yet.")
+        lines.append("")
+
+    for reason in decision.get("reasons", []):
+        lines.append(f"- {reason}")
+
+    lines.append("")
     return "\n".join(lines)
 
 
