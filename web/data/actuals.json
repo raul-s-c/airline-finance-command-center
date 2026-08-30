@@ -10,7 +10,7 @@
     "name": "Delta Air Lines Investor Relations - June Quarter 2026 Financial Results",
     "published": "2026-07-10",
     "url": "https://ir.delta.com/news/news-details/2026/Delta-Air-Lines-Announces-June-Quarter-2026-Financial-Results/default.aspx",
-    "note": "Official Delta GAAP financial results and statistical summary. BTS remains the target ingestion source; automated BTS file retrieval is currently blocked by HTTP 403 from BTS infrastructure."
+    "note": "Official Delta GAAP financial results and statistical summary provide the latest management period. The dashboard complements these figures with an automated official U.S. DOT BTS TranStats layer for Form 41, fuel, network and fleet granularity."
   },
   "financials_usd_millions": {
     "operating_revenue": {"current": 19757, "prior": 16648},
