@@ -9,6 +9,7 @@ on:
       - '.github/workflows/refresh-bts.yml'
       - 'src/airline_finance_command_center/bts_delta_pipeline.py'
       - 'src/airline_finance_command_center/bts_delta_pipeline_v2.py'
+      - 'src/airline_finance_command_center/bts_delta_pipeline_v3.py'
       - 'src/airline_finance_command_center/transtats_csv.py'
       - 'src/airline_finance_command_center/transtats_webforms.py'
 
@@ -45,7 +46,7 @@ jobs:
 
       - name: Build official Delta BTS layer
         run: |
-          python -m airline_finance_command_center.bts_delta_pipeline_v2 \
+          python -m airline_finance_command_center.bts_delta_pipeline_v3 \
             --output web/data/bts_summary.json \
             --work-dir /tmp/afcc-bts \
             --timeout 900
@@ -58,7 +59,7 @@ jobs:
           path = Path('web/data/bts_summary.json')
           data = json.loads(path.read_text(encoding='utf-8'))
           assert data['metadata']['status'] == 'official_bts_transtats'
-          assert data['metadata']['pipeline_version'] == 2
+          assert data['metadata']['pipeline_version'] == 3
           assert data['metadata']['iata_code'] == 'DL'
           assert len(data['p12_financials']) == 8, 'Expected 8 Delta P-1.2 quarters'
           assert len(data['p12a_fuel']) == 24, 'Expected 24 Delta P-12(a) months'
@@ -66,10 +67,13 @@ jobs:
           assert data['t100_network']['route_history'], 'No retained-window route history'
           assert data['t100_network']['aircraft_type_history'], 'No retained-window aircraft history'
           assert data['b43_fleet']['active_aircraft_count'] > 0, 'No active Delta B-43 aircraft'
+          route_counts = data['t100_network'].get('route_scope_counts', {})
+          assert route_counts.get('domestic', 0) > 0, 'No domestic routes retained'
+          assert route_counts.get('international', 0) > 0, 'No international routes retained'
           print('P-1.2 quarters:', len(data['p12_financials']))
           print('P-12(a) months:', len(data['p12a_fuel']))
           print('T-100 months:', len(data['t100_network']['history']))
-          print('Top routes:', len(data['t100_network']['top_directional_routes']))
+          print('Routes by scope:', route_counts)
           print('B-43 active aircraft:', data['b43_fleet']['active_aircraft_count'])
           PY
 
