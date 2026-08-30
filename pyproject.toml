@@ -1,6 +1,6 @@
 [project]
 name = "airline-finance-command-center"
-version = "0.1.0"
+version = "0.2.0"
 description = "Automated airline finance and performance management system using official BTS data."
 readme = "README.md"
 requires-python = ">=3.11"
@@ -12,6 +12,7 @@ dependencies = [
 [project.scripts]
 afcc-discover = "airline_finance_command_center.cli:main"
 afcc-download = "airline_finance_command_center.downloads:main"
+afcc-transtats = "airline_finance_command_center.transtats_webforms:main"
 
 [project.optional-dependencies]
 dev = [
