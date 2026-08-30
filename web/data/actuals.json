@@ -1,0 +1,36 @@
+{
+  "airline": {
+    "name": "Delta Air Lines",
+    "iata_code": "DL"
+  },
+  "period": "2026-Q2",
+  "comparison_period": "2025-Q2",
+  "status": "official_actuals",
+  "source": {
+    "name": "Delta Air Lines Investor Relations - June Quarter 2026 Financial Results",
+    "published": "2026-07-10",
+    "url": "https://ir.delta.com/news/news-details/2026/Delta-Air-Lines-Announces-June-Quarter-2026-Financial-Results/default.aspx",
+    "note": "Official Delta GAAP financial results and statistical summary. BTS remains the target ingestion source; automated BTS file retrieval is currently blocked by HTTP 403 from BTS infrastructure."
+  },
+  "financials_usd_millions": {
+    "operating_revenue": {"current": 19757, "prior": 16648},
+    "operating_expense": {"current": 17893, "prior": 14546},
+    "operating_income": {"current": 1864, "prior": 2102},
+    "pretax_income": {"current": 2009, "prior": 2574},
+    "net_income": {"current": 1604, "prior": 2130},
+    "fuel_expense": {"current": 4109, "prior": 2458},
+    "operating_cash_flow": {"current": 1596, "prior": 1856},
+    "capital_expenditures": {"current": 1458, "prior": 1209}
+  },
+  "statistics": {
+    "rpm_millions": {"current": 66767, "prior": 66417},
+    "asm_millions": {"current": 78694, "prior": 77645},
+    "load_factor_pct": {"current": 84.8, "prior": 85.5},
+    "passenger_yield_cents": {"current": 23.38, "prior": 20.88},
+    "passenger_prasm_cents": {"current": 19.83, "prior": 17.86},
+    "trasm_cents": {"current": 25.11, "prior": 21.44},
+    "casm_cents": {"current": 22.74, "prior": 18.73},
+    "fuel_gallons_millions": {"current": 1122, "prior": 1112},
+    "fuel_price_per_gallon": {"current": 3.66, "prior": 2.21}
+  }
+}
