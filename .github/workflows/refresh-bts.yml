@@ -70,6 +70,14 @@ jobs:
           print('B-43 active aircraft:', data['b43_fleet']['active_aircraft_count'])
           PY
 
+      - name: Rebase generated output onto latest main
+        run: |
+          cp web/data/bts_summary.json /tmp/bts_summary.json
+          git fetch origin main
+          git reset --hard origin/main
+          mkdir -p web/data
+          cp /tmp/bts_summary.json web/data/bts_summary.json
+
       - name: Commit compact BTS output when changed
         run: |
           git config user.name 'github-actions[bot]'
