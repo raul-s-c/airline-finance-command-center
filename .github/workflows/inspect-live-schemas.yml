@@ -1,0 +1,55 @@
+name: Inspect live TranStats schemas
+
+on:
+  workflow_dispatch:
+  push:
+    paths:
+      - '.github/workflows/inspect-live-schemas.yml'
+
+permissions:
+  contents: read
+
+jobs:
+  inspect:
+    runs-on: ubuntu-latest
+    steps:
+      - uses: actions/checkout@v4
+      - name: Download all core tables
+        env:
+          PYTHONPATH: src
+        run: |
+          set -euxo pipefail
+          mkdir -p /tmp/tables
+          for table in 'P-1.2' 'P-5.2' 'P-12(a)' 'B-43' 'T-100' 'T-100-I'; do
+            safe=$(echo "$table" | tr '/()' '___' | tr -d ' ')
+            mkdir -p "/tmp/tables/$safe"
+            python -m airline_finance_command_center.transtats_webforms --table "$table" --year latest --output-dir "/tmp/tables/$safe"
+          done
+      - name: Inspect headers and Delta samples
+        run: |
+          set -euxo pipefail
+          python - <<'PY'
+          import csv, io, pathlib, zipfile
+          root = pathlib.Path('/tmp/tables')
+          for zpath in sorted(root.rglob('*.zip')):
+              print('\n===', zpath.parent.name, zpath.name, '===')
+              with zipfile.ZipFile(zpath) as z:
+                  members = [i for i in z.infolist() if i.filename.lower().endswith('.csv') and not i.filename.lower().startswith('documentation')]
+                  member = max(members, key=lambda i: i.file_size)
+                  raw = z.read(member.filename)
+              text = raw.decode('utf-8-sig', errors='replace')
+              reader = csv.reader(io.StringIO(text))
+              header = next(reader)
+              print('HEADER:', header)
+              aliases = ['UNIQUE_CARRIER','UniqueCarrier','REPORTING_CARRIER','ReportingCarrier','CARRIER','Carrier','AIRLINE_ID','AirlineID']
+              idxs = [(i, h) for i,h in enumerate(header) if h in aliases]
+              print('CARRIER COLS:', idxs)
+              found = 0
+              for row in reader:
+                  if any(i < len(row) and row[i].strip().upper() == 'DL' for i,_ in idxs):
+                      print('DELTA:', row[:min(len(row), 30)])
+                      found += 1
+                      if found >= 3:
+                          break
+              print('DELTA SAMPLE COUNT:', found)
+          PY
