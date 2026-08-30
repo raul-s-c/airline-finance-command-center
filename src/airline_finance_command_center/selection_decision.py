@@ -82,7 +82,7 @@ def decide_airline(
 
     score_margin: float | None = None
     if len(ranking) > 1:
-        score_margin = winner.score - ranking[1].score
+        score_margin = round(winner.score - ranking[1].score, 12)
         if score_margin < gates.minimum_score_margin:
             reasons.append(
                 f"Score margin {score_margin:.3f} is below minimum "
