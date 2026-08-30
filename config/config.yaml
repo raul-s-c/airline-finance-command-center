@@ -35,6 +35,15 @@ airline_selection:
     network_and_fleet_analytical_value: 0.10
     cross_source_reconciliation: 0.10
     carrier_code_stability: 0.05
+  decision_gates:
+    minimum_weighted_score: 0.75
+    minimum_core_source_coverage: 0.75
+    minimum_score_margin: 0.02
+    required_core_sources:
+      - P-1.2
+      - P-5.2
+      - P-12(a)
+      - T-100
 
 sources:
   bts_base_url: https://www.transtats.bts.gov
