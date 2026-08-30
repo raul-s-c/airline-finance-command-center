@@ -1,96 +1,146 @@
 # Airline Finance Command Center
 
-Automated airline finance and performance management system using official BTS data.
+Automated airline finance and performance management system using official airline and U.S. DOT BTS data.
 
 ## Goal
 
-This project is not just a dashboard. It is a finance control system for an airline, designed to show how a Head of Finance or FP&A team could convert official transport data into a repeatable close review.
+This project is not just a dashboard. It is a finance control system for an airline, designed to show how a Head of Finance or FP&A team could convert official financial and operational data into a repeatable performance review.
 
-The system will:
+## Live dashboard
 
-- Download official BTS and DOT data.
-- Profile and map source fields before building analytics.
-- Select the airline objectively based on data coverage and reconciliation quality.
-- Keep a configurable rolling history window so the free GitHub setup stays small.
-- Transform source tables into compact analytical outputs.
-- Generate deterministic, traceable variance commentary.
-- Publish a static dashboard through GitHub Pages.
+https://raul-s-c.github.io/airline-finance-command-center/
 
-## Current Status
+## Current status
 
-The project foundation is implemented end to end: scoring, profiling, official BTS download logic, coverage reporting, selection gates, real field mapping, financial KPIs, deterministic commentary, and the CFO web dashboard.
+Delta Air Lines is the selected carrier.
 
-The public dashboard is deployed through GitHub Pages from the `web/` directory. Current web values are explicitly marked as demo data until the official BTS files are processed and the airline selection gate passes.
+The live management view uses Delta's official Investor Relations results for the freshest quarterly actuals and complements them with an automated U.S. DOT BTS TranStats layer for granular financial, fuel, network and fleet analytics.
 
-## Initial Data Scope
+The official BTS ingestion route is fully automated through the TranStats `DL_SelectFields.aspx` form. The project discovers the live schema and reporting years, downloads official ZIP extracts, filters Delta, retains compact analytical history and publishes only validated outputs.
 
-Candidate BTS sources:
+Current production coverage:
 
-| Source | Frequency | Intended use |
-|---|---:|---|
-| P-1.2 | Quarterly | Airline P&L and financial statements |
-| P-5.2 | Quarterly | Aircraft operating expenses |
-| P-12(a) | Monthly | Fuel, aircraft activity and operating statistics |
-| T-100 | Monthly | Segment traffic, routes, capacity and passengers |
-| B-43 | Periodic | Fleet and aircraft inventory reference |
+- P-1.2: 8 quarterly Form 41 financial periods.
+- P-5.2: 8 quarterly aircraft-economics periods with aircraft-type detail.
+- P-12(a): 24 monthly fuel cost and consumption periods.
+- T-100 Domestic Segment: route and aircraft-level monthly operations.
+- T-100 International Segment: international route and aircraft-level monthly operations.
+- B-43: latest active aircraft inventory at tail-number level.
+- Delta IR: current 2Q26 management actuals and statistical summary.
 
-Candidate airlines:
+The BTS layer refreshes monthly through GitHub Actions and can also be triggered manually.
 
-| Airline | Code to validate | Reason to test |
-|---|---|---|
-| Delta Air Lines | DL | Strong finance story, broad fleet and network |
-| American Airlines | AA | Large network and complex operations |
-| United Airlines | UA | Strong international mix |
-| Southwest Airlines | WN | Cleaner single-fleet operating model |
-
-Delta is the preferred candidate only if the data confirms enough continuity and reconciliation quality. The selection remains evidence-based.
-
-## Rolling Retention
-
-The project will not store unlimited history in the public repository. Retention is configured in `config/config.yaml`.
-
-Default starting point:
-
-- 8 quarterly periods for finance and aircraft operating expense tables.
-- 24 monthly periods for operational tables.
-- Reprocess recent periods to capture BTS revisions.
-- Publish only compact aggregated outputs to the static web app.
-
-## Architecture
+## Data architecture
 
 ```text
-BTS/DOT official data
--> Python ingestion
--> profiling and mapping
--> validation controls
--> compact analytical outputs
--> deterministic commentary
--> static HTML/CSS/JavaScript CFO dashboard
--> GitHub Pages
+Delta Investor Relations
+        |
+        | freshest quarterly management actuals
+        v
+Current CFO view
+
+U.S. DOT BTS TranStats
+        |
+        | P-1.2 / P-5.2 / P-12(a) / T-100 / B-43
+        v
+Live WebForms downloader
+        |
+        v
+Streaming Delta filter
+        |
+        v
+Validation and rolling retention
+        |
+        v
+web/data/bts_summary.json
+        |
+        +--------------------+
+                             v
+                    CFO web dashboard
+                             |
+                             v
+                       GitHub Pages
 ```
 
-## Repository Layout
+## Selected airline
 
-```text
-config/     Project configuration and retention policy
-docs/       Data source, mapping and decision records
-src/        Python package for ingestion, mapping, validation and finance logic
-tests/      Automated checks
-web/        Static CFO dashboard assets
-```
+Delta Air Lines (`DL`, BTS Airline ID `19790`) was selected after the candidate review of Delta, American, United and Southwest. Recent source coverage was effectively tied across the large carriers, so the pre-defined provisional priority was used as the documented tie-break after data-quality gates were satisfied.
 
-## Discovery CLI
+## Rolling retention
 
-Generate the source discovery report:
+The public repository does not store raw TranStats ZIP files.
+
+Published analytical retention is:
+
+- 8 quarterly financial periods.
+- 8 quarterly aircraft-economics periods.
+- 24 monthly fuel periods.
+- 24 monthly network periods.
+- latest B-43 fleet inventory.
+
+The pipeline downloads enough source years to rebuild these outputs and capture BTS revisions.
+
+## Main commands
+
+Download one official TranStats table:
 
 ```bash
-afcc-discover --output reports/discovery_report.json
+afcc-download --table T-100 --year latest
 ```
 
-To profile local BTS CSV files, place them in a folder using the BTS source code as the file name, for example `P-1.2.csv` or `T-100.csv`, then run:
+Download all current production tables:
+
+```bash
+afcc-download --table all --year latest
+```
+
+Use the lower-level TranStats downloader directly:
+
+```bash
+afcc-transtats --table P-1.2 --year 2026
+```
+
+Build the complete compact Delta BTS layer:
+
+```bash
+afcc-build-bts --output web/data/bts_summary.json
+```
+
+Generate a discovery and coverage report from local extracts:
 
 ```bash
 afcc-discover --input-dir data/samples --output reports/discovery_report.json
 ```
 
-The command profiles period coverage by airline, generates the coverage report, applies the weighted scoring model and evaluates the airline selection gates.
+## Finance and operational outputs
+
+The model includes:
+
+- quarterly P&L and margins;
+- current/prior variance analysis;
+- monthly fuel cost, gallons and unit price;
+- domestic and international T-100 passengers, seats, departures, RPM and ASM;
+- load factor and capacity/traffic drivers;
+- top directional routes;
+- airport activity;
+- T-100 aircraft-type mix;
+- P-5.2 aircraft operating expense and air-hour detail;
+- B-43 active fleet and model mix;
+- deterministic evidence-backed management commentary;
+- reconciliation and data-quality controls.
+
+## Repository layout
+
+```text
+config/     Project configuration and retention policy
+docs/       Data sources, mapping and decision records
+src/        Ingestion, transformation, validation and finance logic
+tests/      Automated tests
+web/        Static CFO dashboard and compact published data
+```
+
+## Automation
+
+`.github/workflows/refresh-bts.yml` performs the production refresh. It runs the test suite, downloads official TranStats data, builds and validates the Delta layer, safely rebases the generated output onto the latest `main`, commits only compact changed data and deploys GitHub Pages.
+
+Raw BTS data remains excluded from Git.
