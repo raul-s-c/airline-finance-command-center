@@ -27,10 +27,19 @@ class AirlineCandidate:
 
 
 @dataclass(frozen=True)
+class AirlineDecisionGates:
+    minimum_weighted_score: float
+    minimum_core_source_coverage: float
+    minimum_score_margin: float
+    required_core_sources: tuple[str, ...]
+
+
+@dataclass(frozen=True)
 class ProjectConfig:
     retention: RetentionPolicy
     airline_candidates: tuple[AirlineCandidate, ...]
     scoring_weights: dict[str, float]
+    decision_gates: AirlineDecisionGates
 
 
 def load_config(path: str | Path = "config/config.yaml") -> ProjectConfig:
@@ -44,9 +53,17 @@ def load_config(path: str | Path = "config/config.yaml") -> ProjectConfig:
         for candidate in raw["airline_selection"]["candidates"]
     )
     scoring_weights = dict(raw["airline_selection"]["scoring_weights"])
+    raw_gates = dict(raw["airline_selection"]["decision_gates"])
+    decision_gates = AirlineDecisionGates(
+        minimum_weighted_score=float(raw_gates["minimum_weighted_score"]),
+        minimum_core_source_coverage=float(raw_gates["minimum_core_source_coverage"]),
+        minimum_score_margin=float(raw_gates["minimum_score_margin"]),
+        required_core_sources=tuple(raw_gates["required_core_sources"]),
+    )
 
     return ProjectConfig(
         retention=retention,
         airline_candidates=candidates,
         scoring_weights=scoring_weights,
+        decision_gates=decision_gates,
     )
