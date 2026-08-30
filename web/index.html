@@ -1,0 +1,68 @@
+<!doctype html>
+<html lang="en">
+  <head>
+    <meta charset="utf-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+    <title>Airline Finance Command Center</title>
+    <link rel="stylesheet" href="styles.css">
+  </head>
+  <body>
+    <div class="app-shell">
+      <aside class="sidebar">
+        <div class="brand">
+          <div class="brand-mark">AF</div>
+          <div>
+            <strong>Airline Finance</strong>
+            <span>Command Center</span>
+          </div>
+        </div>
+
+        <nav class="nav" aria-label="Dashboard sections">
+          <button class="nav-item active" data-view="overview">Executive Overview</button>
+          <button class="nav-item" data-view="pnl">P&amp;L Performance</button>
+          <button class="nav-item" data-view="operations">Operational Drivers</button>
+          <button class="nav-item" data-view="fuel">Fuel &amp; Fleet</button>
+          <button class="nav-item" data-view="variance">Variance Analysis</button>
+          <button class="nav-item" data-view="controls">Data Controls</button>
+        </nav>
+
+        <div class="sidebar-note">
+          <span>Data status</span>
+          <strong>Demo dataset</strong>
+          <small>Ready for validated BTS outputs</small>
+        </div>
+      </aside>
+
+      <main class="content">
+        <header class="topbar">
+          <div>
+            <p class="eyebrow">CFO Performance Review</p>
+            <h1 id="view-title">Executive Overview</h1>
+          </div>
+          <div class="filters">
+            <label>
+              Airline
+              <select id="airline-select">
+                <option value="DL">Delta Air Lines</option>
+                <option value="AA">American Airlines</option>
+                <option value="UA">United Airlines</option>
+                <option value="WN">Southwest Airlines</option>
+              </select>
+            </label>
+            <label>
+              Period
+              <select id="period-select">
+                <option value="2026-Q1">2026 Q1</option>
+                <option value="2025-Q4">2025 Q4</option>
+              </select>
+            </label>
+          </div>
+        </header>
+
+        <section id="dashboard-view" class="dashboard-view" aria-live="polite"></section>
+      </main>
+    </div>
+
+    <script src="app.js"></script>
+  </body>
+</html>

@@ -1,0 +1,79 @@
+project:
+  name: airline-finance-command-center
+  default_timezone: UTC
+  output_currency: USD
+
+retention:
+  raw_quarterly_periods: 12
+  raw_monthly_periods: 36
+  analytical_quarterly_periods: 8
+  analytical_monthly_periods: 24
+  public_quarterly_periods: 8
+  public_monthly_periods: 24
+  trailing_refresh_quarters: 2
+  trailing_refresh_months: 3
+
+airline_selection:
+  candidates:
+    - name: Delta Air Lines
+      iata_code: DL
+      provisional_priority: 1
+    - name: American Airlines
+      iata_code: AA
+      provisional_priority: 2
+    - name: United Airlines
+      iata_code: UA
+      provisional_priority: 3
+    - name: Southwest Airlines
+      iata_code: WN
+      provisional_priority: 4
+  scoring_weights:
+    p12_financial_continuity: 0.20
+    p52_aircraft_expense_detail: 0.25
+    p12a_operating_stats_coverage: 0.10
+    t100_operational_coverage: 0.20
+    network_and_fleet_analytical_value: 0.10
+    cross_source_reconciliation: 0.10
+    carrier_code_stability: 0.05
+  decision_gates:
+    minimum_weighted_score: 0.75
+    minimum_core_source_coverage: 0.75
+    minimum_score_margin: 0.02
+    required_core_sources:
+      - P-1.2
+      - P-5.2
+      - P-12(a)
+      - T-100
+
+sources:
+  bts_base_url: https://www.transtats.bts.gov
+  preferred_download_order:
+    - official_zip
+    - parameterized_download_endpoint
+    - reproducible_form_post
+  tables:
+    - code: P-1.2
+      cadence: quarterly
+      role: airline_financial_statements
+    - code: P-5.2
+      cadence: quarterly
+      role: aircraft_operating_expense
+    - code: P-12(a)
+      cadence: monthly
+      role: fuel_activity_and_operating_statistics
+    - code: T-100
+      cadence: monthly
+      role: segment_traffic_capacity_and_routes
+    - code: B-43
+      cadence: periodic
+      role: fleet_inventory_reference
+
+publishing:
+  github_pages:
+    enabled: true
+    publish_only_compact_outputs: true
+  public_outputs:
+    include_raw_source_files: false
+    include_duckdb_database: false
+    include_aggregated_json: true
+    include_reconciliation_summary: true
