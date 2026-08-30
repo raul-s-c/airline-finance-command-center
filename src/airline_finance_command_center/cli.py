@@ -11,7 +11,7 @@ from airline_finance_command_center.airline_selection import (
     rank_airlines,
 )
 from airline_finance_command_center.config import ProjectConfig, load_config
-from airline_finance_command_center.profiling import DatasetProfile
+from airline_finance_command_center.profiling import DatasetProfile, profile_directory
 
 SOURCE_CODES = ("P-1.2", "P-5.2", "P-12(a)", "T-100", "B-43")
 
@@ -29,6 +29,10 @@ def build_parser() -> argparse.ArgumentParser:
     parser.add_argument(
         "--profiles",
         help="Optional JSON file containing precomputed DatasetProfile data by BTS source.",
+    )
+    parser.add_argument(
+        "--input-dir",
+        help="Optional directory containing local BTS CSV extracts named by source code.",
     )
     parser.add_argument(
         "--output",
@@ -76,6 +80,18 @@ def build_discovery_report(
         "sources": list(SOURCE_CODES),
         "expected_periods_by_source": expected_periods(config),
         "profiles_loaded": sorted(profiles_by_source),
+        "profile_summary": {
+            source_code: {
+                "row_count": profile.row_count,
+                "column_count": len(profile.columns),
+                "airlines_found": sorted(profile.periods_by_airline),
+                "period_counts": {
+                    code: profile.period_count(code)
+                    for code in sorted(profile.periods_by_airline)
+                },
+            }
+            for source_code, profile in sorted(profiles_by_source.items())
+        },
         "scores": [],
         "ranking": [],
     }
@@ -112,8 +128,18 @@ def write_report(report: dict[str, Any], output_path: str | Path) -> Path:
 
 def main(argv: list[str] | None = None) -> int:
     args = build_parser().parse_args(argv)
+    if args.profiles and args.input_dir:
+        raise SystemExit("Use either --profiles or --input-dir, not both")
+
     config = load_config(args.config)
-    profiles = load_profiles(args.profiles) if args.profiles else None
+    if args.profiles:
+        profiles = load_profiles(args.profiles)
+    elif args.input_dir:
+        candidate_codes = {candidate.iata_code for candidate in config.airline_candidates}
+        profiles = profile_directory(args.input_dir, SOURCE_CODES, candidate_codes)
+    else:
+        profiles = None
+
     report = build_discovery_report(config, profiles)
     output = write_report(report, args.output)
     print(f"Discovery report written to {output}")
