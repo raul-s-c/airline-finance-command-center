@@ -5,6 +5,8 @@ from dataclasses import dataclass
 from pathlib import Path
 from urllib.request import Request, urlopen
 
+from airline_finance_command_center.transtats_webforms import TABLES, download_to_path
+
 
 @dataclass(frozen=True)
 class BTSDownload:
@@ -14,6 +16,9 @@ class BTSDownload:
     description: str
 
 
+# Historical bulk products are kept as source metadata only. bts.gov currently
+# returns HTTP 403 to unattended server downloads, so production automation uses
+# the live TranStats WebForms downloader below instead.
 LATEST_DOWNLOADS: tuple[BTSDownload, ...] = (
     BTSDownload(
         product="DB10",
@@ -23,8 +28,8 @@ LATEST_DOWNLOADS: tuple[BTSDownload, ...] = (
         ),
         filename="DB10.202404.202603.REL01.15JUN2026.zip",
         description=(
-            "Form 41 financial collection. Used as the raw source for P-1.2, "
-            "P-5.2, P-12(a) and related financial schedules."
+            "Form 41 financial collection. Historical bulk-file reference for "
+            "P-1.2, P-5.2 and P-12(a)."
         ),
     ),
     BTSDownload(
@@ -34,9 +39,7 @@ LATEST_DOWNLOADS: tuple[BTSDownload, ...] = (
             "DB20.202505.202604.REL01.07JUL2026.zip"
         ),
         filename="DB20.202505.202604.REL01.07JUL2026.zip",
-        description=(
-            "Monthly U.S. air carrier traffic and capacity product derived from T-100."
-        ),
+        description="Historical bulk-file reference derived from T-100.",
     ),
 )
 
@@ -48,6 +51,8 @@ TRANSTATS_TABLES: dict[str, str] = {
     "B-43": "https://www.transtats.bts.gov/DL_SelectFields.aspx?QO_fu146_anzr=Nv4+Pn44vr4+Sv0n0pvny&gnoyr_VQ=GEH",
     "T-100": "https://www.transtats.bts.gov/DL_SelectFields.aspx?QO_fu146_anzr=Nv4&gnoyr_VQ=FIM",
 }
+
+PRODUCTION_TABLES = ("P-1.2", "P-5.2", "P-12(a)", "B-43", "T-100", "T-100-I")
 
 
 def get_download(product: str) -> BTSDownload:
@@ -65,6 +70,12 @@ def download_file(
     timeout: int = 120,
     overwrite: bool = False,
 ) -> Path:
+    """Download a legacy BTS bulk product.
+
+    This remains available for manual/local diagnostics. Production workflows
+    intentionally use TranStats because bts.gov bulk-file hosting rejects
+    unattended GitHub Actions traffic with HTTP 403.
+    """
     output_path = Path(output_dir) / item.filename
     output_path.parent.mkdir(parents=True, exist_ok=True)
 
@@ -75,7 +86,7 @@ def download_file(
         item.url,
         headers={
             "User-Agent": (
-                "Mozilla/5.0 airline-finance-command-center/0.1 "
+                "Mozilla/5.0 airline-finance-command-center/0.2 "
                 "(+https://github.com/raul-s-c/airline-finance-command-center)"
             )
         },
@@ -108,28 +119,63 @@ def download_latest_bts_products(
     )
 
 
+def download_transtats_tables(
+    table_codes: tuple[str, ...] = PRODUCTION_TABLES,
+    output_dir: str | Path = "data/raw/transtats",
+    *,
+    year: str | int = "latest",
+    timeout: int = 900,
+    overwrite: bool = False,
+) -> tuple[Path, ...]:
+    paths: list[Path] = []
+    root = Path(output_dir)
+    for table_code in table_codes:
+        if table_code not in TABLES:
+            raise KeyError(f"Unknown TranStats table: {table_code}")
+        table_dir = root / table_code.replace("/", "_").replace("(", "_").replace(")", "_")
+        paths.append(
+            download_to_path(
+                table_code,
+                table_dir,
+                year=year,
+                timeout=timeout,
+                overwrite=overwrite,
+            )
+        )
+    return tuple(paths)
+
+
 def build_parser() -> argparse.ArgumentParser:
     parser = argparse.ArgumentParser(
         prog="afcc-download",
-        description="Download official BTS ZIP products used by the project.",
+        description=(
+            "Download official airline datasets. TranStats is the production "
+            "source; DB10/DB20 are retained only as legacy bulk references."
+        ),
     )
     parser.add_argument(
-        "--product",
-        choices=[item.product for item in LATEST_DOWNLOADS] + ["all"],
+        "--table",
+        choices=list(PRODUCTION_TABLES) + ["all"],
         default="all",
-        help="BTS product to download.",
+        help="TranStats table to download.",
     )
-    parser.add_argument("--output-dir", default="data/raw")
+    parser.add_argument("--year", default="latest")
+    parser.add_argument("--output-dir", default="data/raw/transtats")
     parser.add_argument("--overwrite", action="store_true")
-    parser.add_argument("--timeout", type=int, default=120)
+    parser.add_argument("--timeout", type=int, default=900)
+    parser.add_argument(
+        "--legacy-product",
+        choices=[item.product for item in LATEST_DOWNLOADS],
+        help="Explicitly request an old DB10/DB20 bulk ZIP instead of TranStats.",
+    )
     return parser
 
 
 def main(argv: list[str] | None = None) -> int:
     args = build_parser().parse_args(argv)
-    products = LATEST_DOWNLOADS if args.product == "all" else (get_download(args.product),)
 
-    for item in products:
+    if args.legacy_product:
+        item = get_download(args.legacy_product)
         path = download_file(
             item,
             args.output_dir,
@@ -137,6 +183,18 @@ def main(argv: list[str] | None = None) -> int:
             overwrite=args.overwrite,
         )
         print(f"{item.product}: {path}")
+        return 0
+
+    tables = PRODUCTION_TABLES if args.table == "all" else (args.table,)
+    paths = download_transtats_tables(
+        tables,
+        args.output_dir,
+        year=args.year,
+        timeout=args.timeout,
+        overwrite=args.overwrite,
+    )
+    for table, path in zip(tables, paths, strict=True):
+        print(f"{table}: {path}")
     return 0
 
 
