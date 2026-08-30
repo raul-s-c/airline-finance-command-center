@@ -1,64 +1,113 @@
 <!doctype html>
 <html lang="en">
-  <head>
-    <meta charset="utf-8">
-    <meta name="viewport" content="width=device-width, initial-scale=1">
-    <title>Airline Finance Command Center</title>
-    <link rel="stylesheet" href="styles.css">
-  </head>
-  <body>
-    <div class="app-shell">
-      <aside class="sidebar">
-        <div class="brand">
-          <div class="brand-mark">AF</div>
-          <div>
-            <strong>Airline Finance</strong>
-            <span>Command Center</span>
-          </div>
+<head>
+  <meta charset="utf-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1">
+  <meta name="description" content="Interactive airline finance command center built from Delta Air Lines public results and U.S. DOT BTS TranStats data.">
+  <meta name="theme-color" content="#f5f5f7">
+  <title>Airline Finance Command Center</title>
+  <link rel="preconnect" href="https://cdn.jsdelivr.net">
+  <link rel="stylesheet" href="styles.css">
+  <script defer src="https://cdn.jsdelivr.net/npm/chart.js@4.4.7/dist/chart.umd.min.js"></script>
+  <script defer src="app.js"></script>
+</head>
+<body>
+  <div class="app-shell">
+    <aside class="sidebar" id="sidebar">
+      <a class="brand" href="#view=overview" aria-label="Airline Finance Command Center home">
+        <span class="brand-mark">AF</span>
+        <span class="brand-copy"><strong>Airline Finance</strong><span>Command Center</span></span>
+      </a>
+
+      <nav class="nav" aria-label="Dashboard pages">
+        <button class="nav-item active" data-view="overview">Overview</button>
+        <button class="nav-item" data-view="financials">Financials</button>
+        <button class="nav-item" data-view="network">Network</button>
+        <button class="nav-item" data-view="fuel">Fuel</button>
+        <button class="nav-item" data-view="fleet">Fleet</button>
+        <button class="nav-item" data-view="variance">Variance Lab</button>
+        <button class="nav-item" data-view="journey">Data Journey</button>
+      </nav>
+
+      <div class="sidebar-footer">
+        <div class="source-dot-row"><span class="source-dot live"></span><span>Official public data</span></div>
+        <small>Delta IR and U.S. DOT BTS TranStats</small>
+        <a href="https://github.com/raul-s-c/airline-finance-command-center" target="_blank" rel="noopener">View project on GitHub</a>
+      </div>
+    </aside>
+
+    <main class="workspace">
+      <header class="topbar">
+        <button class="mobile-nav-button" id="mobile-nav-button" aria-label="Open navigation">Menu</button>
+        <div class="title-block">
+          <div class="title-context" id="title-context">Delta Air Lines</div>
+          <h1 id="view-title">Executive Overview</h1>
+          <p id="view-subtitle">A decision-oriented view of financial performance, operating drivers and current risks.</p>
         </div>
-
-        <nav class="nav" aria-label="Dashboard sections">
-          <button class="nav-item active" data-view="overview">Executive Overview</button>
-          <button class="nav-item" data-view="pnl">P&amp;L Performance</button>
-          <button class="nav-item" data-view="operations">Operational Drivers</button>
-          <button class="nav-item" data-view="fuel">Fuel &amp; Fleet</button>
-          <button class="nav-item" data-view="variance">Variance Analysis</button>
-          <button class="nav-item" data-view="controls">Data Controls</button>
-        </nav>
-
-        <div class="sidebar-note">
-          <span>Data status</span>
-          <strong>Official sources</strong>
-          <small>Delta IR + U.S. DOT BTS TranStats</small>
+        <div class="topbar-actions">
+          <button class="quiet-button" id="copy-insight-button">Copy insight</button>
+          <button class="quiet-button" id="reset-filters-button">Reset filters</button>
         </div>
-      </aside>
+      </header>
 
-      <main class="content">
-        <header class="topbar">
-          <div>
-            <p class="eyebrow">CFO Performance Review</p>
-            <h1 id="view-title">Executive Overview</h1>
-          </div>
-          <div class="filters">
-            <label>
-              Airline
-              <select id="airline-select" disabled>
-                <option value="DL">Delta Air Lines</option>
-              </select>
-            </label>
-            <label>
-              Management period
-              <select id="period-select" disabled>
-                <option value="2026-Q2">2026 Q2 vs 2025 Q2</option>
-              </select>
-            </label>
-          </div>
-        </header>
+      <section class="filter-rail" aria-label="Global filters">
+        <div class="filter-control">
+          <label for="range-select">History</label>
+          <select id="range-select">
+            <option value="6">6 months</option>
+            <option value="12" selected>12 months</option>
+            <option value="24">24 months</option>
+          </select>
+        </div>
+        <div class="filter-control">
+          <label for="scope-select">Network</label>
+          <select id="scope-select">
+            <option value="all" selected>All network</option>
+            <option value="domestic">Domestic</option>
+            <option value="international">International</option>
+          </select>
+        </div>
+        <div class="filter-control">
+          <label for="compare-select">Compare</label>
+          <select id="compare-select">
+            <option value="yoy" selected>Year over year</option>
+            <option value="prior">Prior period</option>
+          </select>
+        </div>
+        <div class="filter-control filter-control-wide">
+          <label for="focus-select">Focus metric</label>
+          <select id="focus-select">
+            <option value="operating_margin" selected>Operating margin</option>
+            <option value="revenue">Revenue</option>
+            <option value="passengers">Passengers</option>
+            <option value="load_factor">Load factor</option>
+            <option value="fuel_price">Fuel price</option>
+          </select>
+        </div>
+        <div class="freshness" id="freshness-badge">Loading data</div>
+      </section>
 
-        <section id="dashboard-view" class="dashboard-view" aria-live="polite"></section>
-      </main>
-    </div>
+      <section class="shortcut-strip" id="shortcut-strip" aria-label="Insight shortcuts">
+        <button data-shortcut="margin">Why did margin move?</button>
+        <button data-shortcut="network">Where is traffic concentrated?</button>
+        <button data-shortcut="fuel">What is driving fuel cost?</button>
+        <button data-shortcut="fleet">What does the fleet look like?</button>
+      </section>
 
-    <script src="app.js"></script>
-  </body>
+      <section id="dashboard-view" class="dashboard-view" aria-live="polite">
+        <div class="loading-state">
+          <div class="loading-ring"></div>
+          <p>Building the analytical view</p>
+        </div>
+      </section>
+
+      <footer class="site-footer">
+        <span>Public portfolio project. No personal or customer data.</span>
+        <span id="footer-refresh"></span>
+      </footer>
+    </main>
+  </div>
+
+  <div class="toast" id="toast" role="status" aria-live="polite"></div>
+</body>
 </html>
