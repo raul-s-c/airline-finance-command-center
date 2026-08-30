@@ -1,82 +1,119 @@
-# Official BTS Downloads
+# Official BTS / TranStats Downloads
 
-## Decision
+## Production decision
 
-The project uses direct ZIP products published by the U.S. Bureau of Transportation Statistics whenever a stable official file is available. TranStats table pages remain the authoritative table-level reference for schema and release validation.
+The project uses the official TranStats download form as the production source for granular airline data.
 
-This avoids making the production ingestion workflow depend on browser automation or scraping the TranStats download form.
+Direct DB10 and DB20 bulk ZIP URLs hosted on `bts.gov` are useful references, but the hosting layer currently returns HTTP 403 to unattended GitHub Actions traffic. The project therefore does not depend on those URLs for production refreshes.
 
-## Current Download Products
+TranStats is also an official U.S. DOT Bureau of Transportation Statistics service and exposes the same underlying reporting schedules through `DL_SelectFields.aspx`.
 
-### DB10 - Form 41 Financial
+## Automated method
 
-Official BTS page:
+`src/airline_finance_command_center/transtats_webforms.py` reproduces the normal TranStats download flow without scraping displayed results:
 
-https://www.bts.gov/browse-statistical-products-and-data/db10
+1. GET the official table download page.
+2. Preserve the session cookies.
+3. Read ASP.NET hidden fields such as `__VIEWSTATE` and `__EVENTVALIDATION`.
+4. Discover the currently available reporting years and source columns.
+5. POST the requested year/period and selected fields back to the official form.
+6. Validate that the returned payload is a ZIP before storing it.
 
-Current package registered in the project:
+This method was live-tested from GitHub Actions on 30 August 2026 for all core project tables.
 
-DB10.202404.202603.REL01.15JUN2026.zip
+## Production tables
 
-The DB10 collection is the raw financial source used to derive the project schedules. Relevant schedule identifiers include:
+| Project source | TranStats table | Granularity | Live status |
+|---|---|---|---|
+| P-1.2 | Schedule P-1.2 | Carrier, region/entity, quarter | Validated |
+| P-5.2 | Schedule P-5.2 | Carrier, region/entity, aircraft type, quarter | Validated |
+| P-12(a) | Schedule P-12(a) | Carrier, month | Validated |
+| B-43 | Schedule B-43 | Tail number / aircraft | Validated |
+| T-100 | Domestic Segment, U.S. carriers | Route, aircraft type, month | Validated |
+| T-100-I | International Segment, all carriers | Route, aircraft type, month | Validated |
 
-- P012: Schedule P-1.2 profit and loss statement
-- P052: Schedule P-5.2 detailed aircraft operating expense
-- P12A: Schedule P-12(a) fuel cost and consumption
+Delta's stable BTS identifier is Airline ID `19790`; `DL` remains the display/carrier code.
 
-B-43 is maintained as a separate TranStats table reference because its record structure differs from the standard DB10 financial record layout.
+## Download commands
 
-### DB20 - T-100 Monthly Traffic and Capacity
-
-Official BTS page:
-
-https://www.bts.gov/browse-statistical-products-and-data/db20
-
-Current package registered in the project:
-
-DB20.202505.202604.REL01.07JUL2026.zip
-
-DB20 provides monthly U.S. air carrier traffic and capacity information derived from T-100 reporting. It is suitable for initial carrier coverage and operational continuity checks.
-
-For detailed origin-destination and aircraft-level route analysis, the project will continue to reference the TranStats T-100 segment table and may later ingest a more granular BTS product if required by the financial model.
-
-## TranStats Table References
-
-The downloader module keeps the authoritative TranStats pages for:
-
-- P-1.2
-- P-5.2
-- P-12(a)
-- B-43
-- T-100 Domestic Segment
-
-These URLs are metadata and validation references. They are not scraped in the production download workflow.
-
-## Command
-
-Download all registered current products:
+Download one current table:
 
 ```bash
-afcc-download
+afcc-download --table P-1.2 --year latest
+afcc-download --table P-5.2 --year latest
+afcc-download --table 'P-12(a)' --year latest
+afcc-download --table B-43 --year latest
+afcc-download --table T-100 --year latest
+afcc-download --table T-100-I --year latest
 ```
 
-Download only one product:
+Download all production tables:
 
 ```bash
-afcc-download --product DB10
-afcc-download --product DB20
+afcc-download --table all --year latest
 ```
 
-Select a destination:
+The lower-level command is also exposed directly:
 
 ```bash
-afcc-download --output-dir data/raw
+afcc-transtats --table T-100 --year 2026
 ```
 
-Existing files are reused unless `--overwrite` is supplied.
+Build the complete compact Delta analytical layer with rolling retention:
 
-## Validation
+```bash
+afcc-build-bts --output web/data/bts_summary.json
+```
 
-Every downloaded payload must start with the ZIP signature before it is persisted. HTML error pages or other unexpected responses fail explicitly rather than being silently saved as source data.
+## Rolling data retained by the published layer
 
-Raw downloads remain excluded from Git because `data/raw/` is ignored.
+The web application does not publish the raw TranStats ZIP files.
+
+The pipeline downloads enough recent years to derive:
+
+- 8 quarterly P-1.2 financial periods.
+- 8 quarterly P-5.2 aircraft-economics periods.
+- 24 monthly P-12(a) fuel periods.
+- 24 monthly domestic and international T-100 operational periods.
+- Latest B-43 aircraft inventory.
+
+Only compact Delta outputs are stored in `web/data/bts_summary.json`.
+
+## Source-specific aggregation rules
+
+### P-1.2
+
+Delta reports separate regional/entity records (for example D, L, A and P). These records are additive for the carrier-level quarterly view and are summed for Airline ID 19790.
+
+### P-5.2
+
+Records are split by region/entity and aircraft type. Aircraft type `999` aggregate/blank records are excluded from aircraft-type economics to avoid double counting; detailed types are aggregated across regions.
+
+### P-12(a)
+
+Monthly fuel gallons and costs are summed for Delta. Domestic and international fields are retained separately alongside the total.
+
+### T-100
+
+Domestic and international segment tables are both ingested. The compact layer derives passengers, seats, departures, air time, RPM, ASM, load factor, route rankings, airport activity and aircraft-type mix.
+
+### B-43
+
+Only operating aircraft are included in active-fleet metrics. Tail number, manufacturer, model, manufacture year, seats and payload capacity remain traceable.
+
+## Automation
+
+`.github/workflows/refresh-bts.yml` runs monthly and can also be triggered manually. It:
+
+1. Runs the project test suite.
+2. Downloads the official TranStats source files.
+3. Builds the compact Delta BTS JSON.
+4. Validates that financial, fuel, network and fleet outputs are non-empty.
+5. Commits the compact output only when it changes.
+6. Deploys the updated site to GitHub Pages.
+
+Raw source ZIPs remain outside Git.
+
+## Legacy DB10 / DB20 references
+
+The old DB10 and DB20 URLs remain in the code only for source metadata and manual diagnostics. They are no longer the production ingestion method because unattended downloads currently receive HTTP 403.
