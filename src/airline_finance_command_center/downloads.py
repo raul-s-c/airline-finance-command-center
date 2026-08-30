@@ -1,5 +1,6 @@
 from __future__ import annotations
 
+import argparse
 from dataclasses import dataclass
 from pathlib import Path
 from urllib.request import Request, urlopen
@@ -105,3 +106,39 @@ def download_latest_bts_products(
         )
         for item in LATEST_DOWNLOADS
     )
+
+
+def build_parser() -> argparse.ArgumentParser:
+    parser = argparse.ArgumentParser(
+        prog="afcc-download",
+        description="Download official BTS ZIP products used by the project.",
+    )
+    parser.add_argument(
+        "--product",
+        choices=[item.product for item in LATEST_DOWNLOADS] + ["all"],
+        default="all",
+        help="BTS product to download.",
+    )
+    parser.add_argument("--output-dir", default="data/raw")
+    parser.add_argument("--overwrite", action="store_true")
+    parser.add_argument("--timeout", type=int, default=120)
+    return parser
+
+
+def main(argv: list[str] | None = None) -> int:
+    args = build_parser().parse_args(argv)
+    products = LATEST_DOWNLOADS if args.product == "all" else (get_download(args.product),)
+
+    for item in products:
+        path = download_file(
+            item,
+            args.output_dir,
+            timeout=args.timeout,
+            overwrite=args.overwrite,
+        )
+        print(f"{item.product}: {path}")
+    return 0
+
+
+if __name__ == "__main__":
+    raise SystemExit(main())
