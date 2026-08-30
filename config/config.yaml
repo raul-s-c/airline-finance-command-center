@@ -14,6 +14,12 @@ retention:
   trailing_refresh_months: 3
 
 airline_selection:
+  selected_airline:
+    name: Delta Air Lines
+    iata_code: DL
+    status: selected_after_manual_review
+    decision_date: 2026-08-30
+    rationale: complete_core_source_coverage_and_predefined_tiebreak_priority
   candidates:
     - name: Delta Air Lines
       iata_code: DL
