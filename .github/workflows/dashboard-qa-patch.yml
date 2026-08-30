@@ -22,7 +22,6 @@ jobs:
 
           path = Path('web/app.js')
           s = path.read_text(encoding='utf-8')
-
           replacements = []
 
           replacements.append((
@@ -153,7 +152,6 @@ function hasComparator(index, cadence) {
 '''<div class="filter-control"><label>Period</label><select id="variance-period-select">${data.slice().reverse().map((d)=>`<option value="${d.period}" ${d.period===state.variancePeriod?"selected":""}>${d.period}</option>`).join("")}</select></div>''',
 '''<div class="filter-control"><label>Period</label><select id="variance-period-select">${data.map((d,index)=>({d,index})).filter(({index})=>hasComparator(index,def.cadence)).reverse().map(({d})=>`<option value="${d.period}" ${d.period===state.variancePeriod?"selected":""}>${d.period}</option>`).join("")}</select></div>'''))
 
-          # Add a visible selected-month control to the Network Explorer.
           replacements.append((
 '''  dashboard.innerHTML = `
     <section class="kpi-grid">''',
