@@ -8,8 +8,9 @@
   <title>Airline Finance Command Center</title>
   <link rel="preconnect" href="https://cdn.jsdelivr.net">
   <link rel="stylesheet" href="styles.css">
+  <link rel="stylesheet" href="dashboard-v4.css">
   <script defer src="https://cdn.jsdelivr.net/npm/chart.js@4.4.7/dist/chart.umd.min.js"></script>
-  <script defer src="app.js"></script>
+  <script defer src="app-v4.js"></script>
 </head>
 <body>
   <div class="app-shell">
@@ -18,7 +19,6 @@
         <span class="brand-mark">AF</span>
         <span class="brand-copy"><strong>Airline Finance</strong><span>Command Center</span></span>
       </a>
-
       <nav class="nav" aria-label="Dashboard pages">
         <button class="nav-item active" data-view="overview">Overview</button>
         <button class="nav-item" data-view="financials">Financials</button>
@@ -26,9 +26,9 @@
         <button class="nav-item" data-view="fuel">Fuel</button>
         <button class="nav-item" data-view="fleet">Fleet</button>
         <button class="nav-item" data-view="variance">Variance Lab</button>
+        <button class="nav-item" data-view="glossary">Metric Guide</button>
         <button class="nav-item" data-view="journey">Data Journey</button>
       </nav>
-
       <div class="sidebar-footer">
         <div class="source-dot-row"><span class="source-dot live"></span><span>Official public data</span></div>
         <small>Delta IR and U.S. DOT BTS TranStats</small>
@@ -42,7 +42,7 @@
         <div class="title-block">
           <div class="title-context" id="title-context">Delta Air Lines</div>
           <h1 id="view-title">Executive Overview</h1>
-          <p id="view-subtitle">A decision-oriented view of financial performance, operating drivers and current risks.</p>
+          <p id="view-subtitle">Is performance in control, under pressure, or genuinely deteriorating?</p>
         </div>
         <div class="topbar-actions">
           <button class="quiet-button" id="copy-insight-button">Copy insight</button>
@@ -72,6 +72,7 @@
           <select id="compare-select">
             <option value="yoy" selected>Year over year</option>
             <option value="prior">Prior period</option>
+            <option value="ytd">YTD vs prior YTD</option>
           </select>
         </div>
         <div class="filter-control filter-control-wide">
@@ -95,19 +96,12 @@
       </section>
 
       <section id="dashboard-view" class="dashboard-view" aria-live="polite">
-        <div class="loading-state">
-          <div class="loading-ring"></div>
-          <p>Building the analytical view</p>
-        </div>
+        <div class="loading-state"><div class="loading-ring"></div><p>Building the analytical view</p></div>
       </section>
 
-      <footer class="site-footer">
-        <span>Public portfolio project. No personal or customer data.</span>
-        <span id="footer-refresh"></span>
-      </footer>
+      <footer class="site-footer"><span>Public portfolio project. No personal or customer data.</span><span id="footer-refresh"></span></footer>
     </main>
   </div>
-
   <div class="toast" id="toast" role="status" aria-live="polite"></div>
 </body>
 </html>
