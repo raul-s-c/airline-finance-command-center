@@ -1,0 +1,30 @@
+name: Test TranStats downloads
+
+on:
+  workflow_dispatch:
+  push:
+    paths:
+      - 'src/airline_finance_command_center/transtats_webforms.py'
+      - '.github/workflows/test-transtats-download.yml'
+
+permissions:
+  contents: read
+
+jobs:
+  test-download:
+    runs-on: ubuntu-latest
+    steps:
+      - uses: actions/checkout@v4
+      - name: Test T-100 latest year
+        env:
+          PYTHONPATH: src
+        run: |
+          python -m airline_finance_command_center.transtats_webforms --table T-100 --year latest --output-dir /tmp/transtats
+          unzip -l /tmp/transtats/*.zip | head -40
+      - name: Test P-1.2 latest year
+        env:
+          PYTHONPATH: src
+        run: |
+          rm -rf /tmp/transtats-financial
+          python -m airline_finance_command_center.transtats_webforms --table P-1.2 --year latest --output-dir /tmp/transtats-financial
+          unzip -l /tmp/transtats-financial/*.zip | head -40
