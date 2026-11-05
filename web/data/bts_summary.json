@@ -10094,7 +10094,7 @@
     "airline": "Delta Air Lines",
     "airline_id": 19790,
     "download_method": "DL_SelectFields.aspx WebForms replay",
-    "generated_at_utc": "2026-10-05T15:00:23.204680+00:00",
+    "generated_at_utc": "2026-11-05T14:50:56.064870+00:00",
     "iata_code": "DL",
     "pipeline_version": 3,
     "retention": {
@@ -10703,17 +10703,6 @@
     "aircraft_type_history": {
       "339": [
         {
-          "air_time_minutes": 696868.0,
-          "asm": 1696115140.0,
-          "available_seats": 351079.0,
-          "departures_performed": 1250.0,
-          "load_factor": 0.8769337163041891,
-          "passengers": 308344.0,
-          "period": "2024-07",
-          "rpm": 1487380553.0,
-          "seat_load_factor": 0.8782752599842201
-        },
-        {
           "air_time_minutes": 712526.0,
           "asm": 1731451201.0,
           "available_seats": 361909.0,
@@ -10965,20 +10954,20 @@
           "period": "2026-06",
           "rpm": 2121519696.0,
           "seat_load_factor": 0.8669595546314307
+        },
+        {
+          "air_time_minutes": 1039491.0,
+          "asm": 2522465341.0,
+          "available_seats": 581775.0,
+          "departures_performed": 2071.0,
+          "load_factor": 0.8716269160425305,
+          "passengers": 507837.0,
+          "period": "2026-07",
+          "rpm": 2198648686.0,
+          "seat_load_factor": 0.8729096300116024
         }
       ],
       "359": [
-        {
-          "air_time_minutes": 764272.0,
-          "asm": 2096657884.0,
-          "available_seats": 416612.0,
-          "departures_performed": 1321.0,
-          "load_factor": 0.8628552019886903,
-          "passengers": 361217.0,
-          "period": "2024-07",
-          "rpm": 1809112162.0,
-          "seat_load_factor": 0.8670345549336073
-        },
         {
           "air_time_minutes": 806738.0,
           "asm": 2194780260.0,
@@ -11231,20 +11220,20 @@
           "period": "2026-06",
           "rpm": 2182851868.0,
           "seat_load_factor": 0.882095905197811
+        },
+        {
+          "air_time_minutes": 1054820.0,
+          "asm": 2608114945.0,
+          "available_seats": 452022.0,
+          "departures_performed": 1604.0,
+          "load_factor": 0.8670126270067441,
+          "passengers": 391929.0,
+          "period": "2026-07",
+          "rpm": 2261268590.0,
+          "seat_load_factor": 0.8670573556154346
         }
       ],
       "608": [
-        {
-          "air_time_minutes": 828959.0,
-          "asm": 594785471.0,
-          "available_seats": 1334409.0,
-          "departures_performed": 12133.0,
-          "load_factor": 0.8561227145375244,
-          "passengers": 1136363.0,
-          "period": "2024-07",
-          "rpm": 509209352.0,
-          "seat_load_factor": 0.8515852336127829
-        },
         {
           "air_time_minutes": 852808.0,
           "asm": 617744644.0,
@@ -11497,20 +11486,20 @@
           "period": "2026-06",
           "rpm": 461795558.0,
           "seat_load_factor": 0.8705573657045644
+        },
+        {
+          "air_time_minutes": 776327.0,
+          "asm": 536741280.0,
+          "available_seats": 1393543.0,
+          "departures_performed": 12671.0,
+          "load_factor": 0.8631956088788252,
+          "passengers": 1200738.0,
+          "period": "2026-07",
+          "rpm": 463312716.0,
+          "seat_load_factor": 0.8616440253368572
         }
       ],
       "614": [
-        {
-          "air_time_minutes": 1095744.0,
-          "asm": 1308426823.0,
-          "available_seats": 1245894.0,
-          "departures_performed": 7789.0,
-          "load_factor": 0.8945845426160298,
-          "passengers": 1089998.0,
-          "period": "2024-07",
-          "rpm": 1170498411.0,
-          "seat_load_factor": 0.874872180137315
-        },
         {
           "air_time_minutes": 1088834.0,
           "asm": 1300418137.0,
@@ -11763,20 +11752,20 @@
           "period": "2026-06",
           "rpm": 1167078753.0,
           "seat_load_factor": 0.8645060869604774
+        },
+        {
+          "air_time_minutes": 1143410.0,
+          "asm": 1358891229.0,
+          "available_seats": 1358043.0,
+          "departures_performed": 8490.0,
+          "load_factor": 0.8762626040910299,
+          "passengers": 1174626.0,
+          "period": "2026-07",
+          "rpm": 1190745567.0,
+          "seat_load_factor": 0.8649402117605997
         }
       ],
       "622": [
-        {
-          "air_time_minutes": 1269388.0,
-          "asm": 1792343111.0,
-          "available_seats": 1907830.0,
-          "departures_performed": 9914.0,
-          "load_factor": 0.890026747228087,
-          "passengers": 1677368.0,
-          "period": "2024-07",
-          "rpm": 1595233309.0,
-          "seat_load_factor": 0.8792020253376873
-        },
         {
           "air_time_minutes": 1255256.0,
           "asm": 1784568431.0,
@@ -12029,20 +12018,20 @@
           "period": "2026-06",
           "rpm": 1433757307.0,
           "seat_load_factor": 0.870684519089571
+        },
+        {
+          "air_time_minutes": 1129160.0,
+          "asm": 1666308442.0,
+          "available_seats": 1173372.0,
+          "departures_performed": 6259.0,
+          "load_factor": 0.8863436917041077,
+          "passengers": 1029080.0,
+          "period": "2026-07",
+          "rpm": 1476921976.0,
+          "seat_load_factor": 0.8770279161254914
         }
       ],
       "623": [
-        {
-          "air_time_minutes": 240995.0,
-          "asm": 451040015.0,
-          "available_seats": 299237.0,
-          "departures_performed": 1279.0,
-          "load_factor": 0.8976338939683656,
-          "passengers": 264569.0,
-          "period": "2024-07",
-          "rpm": 404868805.0,
-          "seat_load_factor": 0.884145342989002
-        },
         {
           "air_time_minutes": 252729.0,
           "asm": 476465932.0,
@@ -12295,20 +12284,20 @@
           "period": "2026-06",
           "rpm": 420709323.0,
           "seat_load_factor": 0.8915464123433365
+        },
+        {
+          "air_time_minutes": 263602.0,
+          "asm": 490305373.0,
+          "available_seats": 308608.0,
+          "departures_performed": 1319.0,
+          "load_factor": 0.9050704569782473,
+          "passengers": 277209.0,
+          "period": "2026-07",
+          "rpm": 443760908.0,
+          "seat_load_factor": 0.8982560400248859
         }
       ],
       "624": [
-        {
-          "air_time_minutes": 507306.0,
-          "asm": 1027913449.0,
-          "available_seats": 249054.0,
-          "departures_performed": 1062.0,
-          "load_factor": 0.8921897927225194,
-          "passengers": 221799.0,
-          "period": "2024-07",
-          "rpm": 917093887.0,
-          "seat_load_factor": 0.8905659013707871
-        },
         {
           "air_time_minutes": 489671.0,
           "asm": 993427442.0,
@@ -12561,20 +12550,20 @@
           "period": "2026-06",
           "rpm": 856922074.0,
           "seat_load_factor": 0.8806151996075887
+        },
+        {
+          "air_time_minutes": 490391.0,
+          "asm": 990628336.0,
+          "available_seats": 261054.0,
+          "departures_performed": 1109.0,
+          "load_factor": 0.8812658665964104,
+          "passengers": 230511.0,
+          "period": "2026-07",
+          "rpm": 873006939.0,
+          "seat_load_factor": 0.8830012181387759
         }
       ],
       "626": [
-        {
-          "air_time_minutes": 1055458.0,
-          "asm": 1918158338.0,
-          "available_seats": 563524.0,
-          "departures_performed": 2630.0,
-          "load_factor": 0.8953640442377286,
-          "passengers": 504061.0,
-          "period": "2024-07",
-          "rpm": 1717450007.0,
-          "seat_load_factor": 0.894480093128243
-        },
         {
           "air_time_minutes": 1016028.0,
           "asm": 1851730259.0,
@@ -12827,20 +12816,20 @@
           "period": "2026-06",
           "rpm": 1360125949.0,
           "seat_load_factor": 0.8822383332334717
+        },
+        {
+          "air_time_minutes": 841583.0,
+          "asm": 1524220649.0,
+          "available_seats": 479296.0,
+          "departures_performed": 2234.0,
+          "load_factor": 0.8784367275685687,
+          "passengers": 421940.0,
+          "period": "2026-07",
+          "rpm": 1338931399.0,
+          "seat_load_factor": 0.8803328214714915
         }
       ],
       "687": [
-        {
-          "air_time_minutes": 768892.0,
-          "asm": 1870032038.0,
-          "available_seats": 455750.0,
-          "departures_performed": 1624.0,
-          "load_factor": 0.9080117455185546,
-          "passengers": 412729.0,
-          "period": "2024-07",
-          "rpm": 1698011055.0,
-          "seat_load_factor": 0.9056039495337356
-        },
         {
           "air_time_minutes": 769513.0,
           "asm": 1883416968.0,
@@ -13093,20 +13082,20 @@
           "period": "2026-06",
           "rpm": 1581531568.0,
           "seat_load_factor": 0.8807717305784558
+        },
+        {
+          "air_time_minutes": 768887.0,
+          "asm": 1858116484.0,
+          "available_seats": 455686.0,
+          "departures_performed": 1617.0,
+          "load_factor": 0.8714562364325917,
+          "passengers": 396153.0,
+          "period": "2026-07",
+          "rpm": 1619267198.0,
+          "seat_load_factor": 0.8693552138972889
         }
       ],
       "694": [
-        {
-          "air_time_minutes": 791084.0,
-          "asm": 907925210.0,
-          "available_seats": 1115764.0,
-          "departures_performed": 7108.0,
-          "load_factor": 0.8502092920186675,
-          "passengers": 936331.0,
-          "period": "2024-07",
-          "rpm": 771926450.0,
-          "seat_load_factor": 0.8391837341946863
-        },
         {
           "air_time_minutes": 815701.0,
           "asm": 938158838.0,
@@ -13359,20 +13348,20 @@
           "period": "2026-06",
           "rpm": 546381081.0,
           "seat_load_factor": 0.8505779875270608
+        },
+        {
+          "air_time_minutes": 567231.0,
+          "asm": 648543632.0,
+          "available_seats": 836800.0,
+          "departures_performed": 5331.0,
+          "load_factor": 0.8728604431043122,
+          "passengers": 723942.0,
+          "period": "2026-07",
+          "rpm": 566088082.0,
+          "seat_load_factor": 0.8651314531548757
         }
       ],
       "696": [
-        {
-          "air_time_minutes": 289489.0,
-          "asm": 553305967.0,
-          "available_seats": 139839.0,
-          "departures_performed": 630.0,
-          "load_factor": 0.9009080684647668,
-          "passengers": 125582.0,
-          "period": "2024-07",
-          "rpm": 498477810.0,
-          "seat_load_factor": 0.8980470398100673
-        },
         {
           "air_time_minutes": 282291.0,
           "asm": 541508097.0,
@@ -13625,20 +13614,20 @@
           "period": "2026-06",
           "rpm": 417517575.0,
           "seat_load_factor": 0.8126087749249971
+        },
+        {
+          "air_time_minutes": 252678.0,
+          "asm": 481918938.0,
+          "available_seats": 114063.0,
+          "departures_performed": 514.0,
+          "load_factor": 0.8324115745789595,
+          "passengers": 94598.0,
+          "period": "2026-07",
+          "rpm": 401154902.0,
+          "seat_load_factor": 0.8293486932660021
         }
       ],
       "698": [
-        {
-          "air_time_minutes": 643895.0,
-          "asm": 618768906.0,
-          "available_seats": 750525.0,
-          "departures_performed": 5689.0,
-          "load_factor": 0.8669860650690162,
-          "passengers": 641199.0,
-          "period": "2024-07",
-          "rpm": 536464019.0,
-          "seat_load_factor": 0.8543339662236434
-        },
         {
           "air_time_minutes": 685518.0,
           "asm": 661601075.0,
@@ -13891,20 +13880,20 @@
           "period": "2026-06",
           "rpm": 623728658.0,
           "seat_load_factor": 0.858432199302771
+        },
+        {
+          "air_time_minutes": 786767.0,
+          "asm": 754338493.0,
+          "available_seats": 926020.0,
+          "departures_performed": 7017.0,
+          "load_factor": 0.86565563345844,
+          "passengers": 794804.0,
+          "period": "2026-07",
+          "rpm": 652997366.0,
+          "seat_load_factor": 0.8583011166065527
         }
       ],
       "699": [
-        {
-          "air_time_minutes": 2144621.0,
-          "asm": 3052937805.0,
-          "available_seats": 2877579.0,
-          "departures_performed": 15192.0,
-          "load_factor": 0.8888473822020754,
-          "passengers": 2530730.0,
-          "period": "2024-07",
-          "rpm": 2713595776.0,
-          "seat_load_factor": 0.8794649947056189
-        },
         {
           "air_time_minutes": 2271392.0,
           "asm": 3250306539.0,
@@ -14157,20 +14146,20 @@
           "period": "2026-06",
           "rpm": 2253782281.0,
           "seat_load_factor": 0.8902643804501141
+        },
+        {
+          "air_time_minutes": 1867549.0,
+          "asm": 2563542550.0,
+          "available_seats": 3024461.0,
+          "departures_performed": 15945.0,
+          "load_factor": 0.8984966116517161,
+          "passengers": 2696189.0,
+          "period": "2026-07",
+          "rpm": 2303334295.0,
+          "seat_load_factor": 0.8914609909005274
         }
       ],
       "721": [
-        {
-          "air_time_minutes": 1339415.0,
-          "asm": 2078615021.0,
-          "available_seats": 1036278.0,
-          "departures_performed": 5343.0,
-          "load_factor": 0.9049612703631088,
-          "passengers": 935326.0,
-          "period": "2024-07",
-          "rpm": 1881066090.0,
-          "seat_load_factor": 0.9025821256458209
-        },
         {
           "air_time_minutes": 1392703.0,
           "asm": 2166291239.0,
@@ -14423,20 +14412,20 @@
           "period": "2026-06",
           "rpm": 2651132572.0,
           "seat_load_factor": 0.8912782415664365
+        },
+        {
+          "air_time_minutes": 2030799.0,
+          "asm": 3108880636.0,
+          "available_seats": 1773750.0,
+          "departures_performed": 9210.0,
+          "load_factor": 0.9044854496626612,
+          "passengers": 1593920.0,
+          "period": "2026-07",
+          "rpm": 2811937300.0,
+          "seat_load_factor": 0.89861592670895
         }
       ],
       "723": [
-        {
-          "air_time_minutes": 449401.0,
-          "asm": 356513050.0,
-          "available_seats": 372171.0,
-          "departures_performed": 3415.0,
-          "load_factor": 0.8883285029818684,
-          "passengers": 325747.0,
-          "period": "2024-07",
-          "rpm": 316700704.0,
-          "seat_load_factor": 0.8752616404824664
-        },
         {
           "air_time_minutes": 466944.0,
           "asm": 370802932.0,
@@ -14689,20 +14678,20 @@
           "period": "2026-06",
           "rpm": 370145313.0,
           "seat_load_factor": 0.8783526710892914
+        },
+        {
+          "air_time_minutes": 569309.0,
+          "asm": 439836843.0,
+          "available_seats": 587783.0,
+          "departures_performed": 5393.0,
+          "load_factor": 0.8786563089258987,
+          "passengers": 515366.0,
+          "period": "2026-07",
+          "rpm": 386465417.0,
+          "seat_load_factor": 0.8767963687279149
         }
       ],
       "724": [
-        {
-          "air_time_minutes": 396988.0,
-          "asm": 383869718.0,
-          "available_seats": 383327.0,
-          "departures_performed": 2950.0,
-          "load_factor": 0.8513571940571775,
-          "passengers": 322524.0,
-          "period": "2024-07",
-          "rpm": 326810246.0,
-          "seat_load_factor": 0.8413808575967777
-        },
         {
           "air_time_minutes": 411889.0,
           "asm": 398691402.0,
@@ -14955,20 +14944,20 @@
           "period": "2026-06",
           "rpm": 513068015.0,
           "seat_load_factor": 0.8563303585501872
+        },
+        {
+          "air_time_minutes": 623346.0,
+          "asm": 600379314.0,
+          "available_seats": 534098.0,
+          "departures_performed": 4109.0,
+          "load_factor": 0.8737134154492205,
+          "passengers": 462528.0,
+          "period": "2026-07",
+          "rpm": 524559461.0,
+          "seat_load_factor": 0.8659983748300873
         }
       ],
       "888": [
-        {
-          "air_time_minutes": 2497296.0,
-          "asm": 3360593495.0,
-          "available_seats": 3639693.0,
-          "departures_performed": 20398.0,
-          "load_factor": 0.8857449481553555,
-          "passengers": 3159104.0,
-          "period": "2024-07",
-          "rpm": 2976628711.0,
-          "seat_load_factor": 0.8679589185131823
-        },
         {
           "air_time_minutes": 2539817.0,
           "asm": 3428520282.0,
@@ -15221,232 +15210,210 @@
           "period": "2026-06",
           "rpm": 2831013483.0,
           "seat_load_factor": 0.8684717136922645
+        },
+        {
+          "air_time_minutes": 2485601.0,
+          "asm": 3307134058.0,
+          "available_seats": 3743429.0,
+          "departures_performed": 20890.0,
+          "load_factor": 0.8875749587167173,
+          "passengers": 3246710.0,
+          "period": "2026-07",
+          "rpm": 2935329375.0,
+          "seat_load_factor": 0.8673090901416856
         }
       ]
     },
     "aircraft_type_mix": [
       {
-        "air_time_minutes": 57018527.0,
+        "air_time_minutes": 57006832.0,
         "aircraft_type": "888",
-        "asm": 76066656896.0,
-        "available_seats": 81391851.0,
-        "departures_performed": 455768.0,
-        "load_factor": 0.8425376189547007,
-        "passengers": 67796004.0,
-        "rpm": 64089019983.0,
-        "seat_load_factor": 0.8329581299238421
+        "asm": 76013197459.0,
+        "available_seats": 81495587.0,
+        "departures_performed": 456260.0,
+        "load_factor": 0.8425868505471837,
+        "passengers": 67883610.0,
+        "rpm": 64047720647.0,
+        "seat_load_factor": 0.8329728332406514
       },
       {
-        "air_time_minutes": 49301036.0,
+        "air_time_minutes": 49023964.0,
         "aircraft_type": "699",
-        "asm": 69256712533.0,
-        "available_seats": 68048168.0,
-        "departures_performed": 359209.0,
-        "load_factor": 0.8499613630512894,
-        "passengers": 57497708.0,
-        "rpm": 58865529785.0,
-        "seat_load_factor": 0.8449560023423408
+        "asm": 68767317278.0,
+        "available_seats": 68195050.0,
+        "departures_performed": 359962.0,
+        "load_factor": 0.8500443323634056,
+        "passengers": 57663167.0,
+        "rpm": 58455268304.0,
+        "seat_load_factor": 0.8455623538658598
       },
       {
-        "air_time_minutes": 26103794.0,
+        "air_time_minutes": 25963566.0,
         "aircraft_type": "622",
-        "asm": 36591354189.0,
-        "available_seats": 37286127.0,
-        "departures_performed": 198928.0,
-        "load_factor": 0.85571962836546,
-        "passengers": 31536121.0,
-        "rpm": 31311940008.0,
-        "seat_load_factor": 0.8457869866720135
+        "asm": 36465319520.0,
+        "available_seats": 36551669.0,
+        "departures_performed": 195273.0,
+        "load_factor": 0.8554327532463097,
+        "passengers": 30887833.0,
+        "rpm": 31193628675.0,
+        "seat_load_factor": 0.8450457624794097
       },
       {
-        "air_time_minutes": 18438572.0,
-        "aircraft_type": "608",
-        "asm": 13034815505.0,
-        "available_seats": 30719463.0,
-        "departures_performed": 279310.0,
-        "load_factor": 0.8372131014676759,
-        "passengers": 25805770.0,
-        "rpm": 10912918316.0,
-        "seat_load_factor": 0.8400462599232285
-      },
-      {
-        "air_time_minutes": 36673977.0,
+        "air_time_minutes": 37365361.0,
         "aircraft_type": "721",
-        "asm": 56166688300.0,
-        "available_seats": 29833214.0,
-        "departures_performed": 153883.0,
-        "load_factor": 0.8532169432535335,
-        "passengers": 25335236.0,
-        "rpm": 47922370104.0,
-        "seat_load_factor": 0.8492291846262358
+        "asm": 57196953915.0,
+        "available_seats": 30570686.0,
+        "departures_performed": 157750.0,
+        "load_factor": 0.854123130168793,
+        "passengers": 25993830.0,
+        "rpm": 48853241314.0,
+        "seat_load_factor": 0.8502861205011886
       },
       {
-        "air_time_minutes": 25845136.0,
+        "air_time_minutes": 18385940.0,
+        "aircraft_type": "608",
+        "asm": 12976771314.0,
+        "available_seats": 30778597.0,
+        "departures_performed": 279848.0,
+        "load_factor": 0.8374210670011658,
+        "passengers": 25870145.0,
+        "rpm": 10867021680.0,
+        "seat_load_factor": 0.8405238549372475
+      },
+      {
+        "air_time_minutes": 25892802.0,
         "aircraft_type": "614",
-        "asm": 30627212210.0,
-        "available_seats": 30728316.0,
-        "departures_performed": 192106.0,
-        "load_factor": 0.818590311749435,
-        "passengers": 25014138.0,
-        "rpm": 25071139191.0,
-        "seat_load_factor": 0.8140419409901929
+        "asm": 30677676616.0,
+        "available_seats": 30840465.0,
+        "departures_performed": 192807.0,
+        "load_factor": 0.8179037370096515,
+        "passengers": 25098766.0,
+        "rpm": 25091386347.0,
+        "seat_load_factor": 0.8138257967251791
       },
       {
-        "air_time_minutes": 16547094.0,
+        "air_time_minutes": 16323241.0,
         "aircraft_type": "694",
-        "asm": 18833497752.0,
-        "available_seats": 23229238.0,
-        "departures_performed": 148008.0,
-        "load_factor": 0.8097197531659015,
-        "passengers": 18718910.0,
-        "rpm": 15249855151.0,
-        "seat_load_factor": 0.805834009707938
+        "asm": 18574116174.0,
+        "available_seats": 22950274.0,
+        "departures_performed": 146231.0,
+        "load_factor": 0.8099452292679518,
+        "passengers": 18506521.0,
+        "rpm": 15044016783.0,
+        "seat_load_factor": 0.8063747299923304
       },
       {
-        "air_time_minutes": 16752878.0,
+        "air_time_minutes": 16895750.0,
         "aircraft_type": "698",
-        "asm": 16002444194.0,
-        "available_seats": 19235704.0,
-        "departures_performed": 145796.0,
-        "load_factor": 0.8100415596425107,
-        "passengers": 15473408.0,
-        "rpm": 12962644853.0,
-        "seat_load_factor": 0.8044107977540099
+        "asm": 16138013781.0,
+        "available_seats": 19411199.0,
+        "departures_performed": 147124.0,
+        "load_factor": 0.8104577414228445,
+        "passengers": 15627013.0,
+        "rpm": 13079178200.0,
+        "seat_load_factor": 0.8050514035737824
       },
       {
-        "air_time_minutes": 18750471.0,
+        "air_time_minutes": 18536596.0,
         "aircraft_type": "626",
-        "asm": 33456250335.0,
-        "available_seats": 11455036.0,
-        "departures_performed": 53464.0,
-        "load_factor": 0.8683554532292449,
-        "passengers": 9907548.0,
-        "rpm": 29051917423.0,
-        "seat_load_factor": 0.8649076266543378
+        "asm": 33062312646.0,
+        "available_seats": 11370808.0,
+        "departures_performed": 53068.0,
+        "load_factor": 0.8672532717843322,
+        "passengers": 9825427.0,
+        "rpm": 28673398815.0,
+        "seat_load_factor": 0.8640922439284877
       },
       {
-        "air_time_minutes": 20179745.0,
+        "air_time_minutes": 20522368.0,
         "aircraft_type": "339",
-        "asm": 48669611945.0,
-        "available_seats": 11023559.0,
-        "departures_performed": 39276.0,
-        "load_factor": 0.8391523768291677,
-        "passengers": 9259428.0,
-        "rpm": 40841220543.0,
-        "seat_load_factor": 0.8399672011552711
+        "asm": 49495962146.0,
+        "available_seats": 11254255.0,
+        "departures_performed": 40097.0,
+        "load_factor": 0.8395126970848884,
+        "passengers": 9458921.0,
+        "rpm": 41552488676.0,
+        "seat_load_factor": 0.8404750914209781
       },
       {
-        "air_time_minutes": 12449568.0,
+        "air_time_minutes": 12569476.0,
         "aircraft_type": "723",
-        "asm": 9703537542.0,
-        "available_seats": 10615225.0,
-        "departures_performed": 97408.0,
-        "load_factor": 0.8294936935278773,
-        "passengers": 8761248.0,
-        "rpm": 8049023196.0,
-        "seat_load_factor": 0.8253473666361287
+        "asm": 9786861335.0,
+        "available_seats": 10830837.0,
+        "departures_performed": 99386.0,
+        "load_factor": 0.8295599202949165,
+        "passengers": 8950867.0,
+        "rpm": 8118787909.0,
+        "seat_load_factor": 0.8264243105126594
       },
       {
-        "air_time_minutes": 16740492.0,
+        "air_time_minutes": 16740487.0,
         "aircraft_type": "687",
-        "asm": 40403398918.0,
-        "available_seats": 10021454.0,
-        "departures_performed": 35620.0,
-        "load_factor": 0.864170571685367,
-        "passengers": 8622795.0,
-        "rpm": 34915428341.0,
-        "seat_load_factor": 0.8604335259135052
+        "asm": 40391483364.0,
+        "available_seats": 10021390.0,
+        "departures_performed": 35613.0,
+        "load_factor": 0.8624759870802154,
+        "passengers": 8606219.0,
+        "rpm": 34836684484.0,
+        "seat_load_factor": 0.8587849589727573
       },
       {
-        "air_time_minutes": 11796722.0,
+        "air_time_minutes": 12023080.0,
         "aircraft_type": "724",
-        "asm": 11283088366.0,
-        "available_seats": 10402492.0,
-        "departures_performed": 80036.0,
-        "load_factor": 0.8208970411780607,
-        "passengers": 8463814.0,
-        "rpm": 9262253855.0,
-        "seat_load_factor": 0.8136333101722164
+        "asm": 11499597962.0,
+        "available_seats": 10553263.0,
+        "departures_performed": 81195.0,
+        "load_factor": 0.8226377218803852,
+        "passengers": 8603818.0,
+        "rpm": 9460003070.0,
+        "seat_load_factor": 0.815275616650509
       },
       {
-        "air_time_minutes": 20645491.0,
+        "air_time_minutes": 20936039.0,
         "aircraft_type": "359",
-        "asm": 53428525265.0,
-        "available_seats": 9543105.0,
-        "departures_performed": 32122.0,
-        "load_factor": 0.8368354921128479,
-        "passengers": 7991460.0,
-        "rpm": 44710886233.0,
-        "seat_load_factor": 0.8374066931046027
+        "asm": 53939982326.0,
+        "available_seats": 9578515.0,
+        "departures_performed": 32405.0,
+        "load_factor": 0.8372832306107493,
+        "passengers": 8022172.0,
+        "rpm": 45163042661.0,
+        "seat_load_factor": 0.8375172978274816
       },
       {
-        "air_time_minutes": 5582003.0,
+        "air_time_minutes": 5604610.0,
         "aircraft_type": "623",
-        "asm": 10122855354.0,
-        "available_seats": 7734790.0,
-        "departures_performed": 33061.0,
-        "load_factor": 0.8558137807013853,
-        "passengers": 6562776.0,
-        "rpm": 8663279112.0,
-        "seat_load_factor": 0.8484750070784081
+        "asm": 10162120712.0,
+        "available_seats": 7744161.0,
+        "departures_performed": 33101.0,
+        "load_factor": 0.8563341709495725,
+        "passengers": 6575416.0,
+        "rpm": 8702171215.0,
+        "seat_load_factor": 0.8490804878669233
       },
       {
-        "air_time_minutes": 10484597.0,
+        "air_time_minutes": 10467682.0,
         "aircraft_type": "624",
-        "asm": 20957411747.0,
-        "available_seats": 5781260.0,
-        "departures_performed": 24614.0,
-        "load_factor": 0.859587037868775,
-        "passengers": 4952304.0,
-        "rpm": 18014719485.0,
-        "seat_load_factor": 0.856613264236516
+        "asm": 20920126634.0,
+        "available_seats": 5793260.0,
+        "departures_performed": 24661.0,
+        "load_factor": 0.8590116518603479,
+        "passengers": 4961016.0,
+        "rpm": 17970632537.0,
+        "seat_load_factor": 0.8563427155004264
       },
       {
-        "air_time_minutes": 5679336.0,
+        "air_time_minutes": 5642525.0,
         "aircraft_type": "696",
-        "asm": 10756166007.0,
-        "available_seats": 2697648.0,
-        "departures_performed": 12177.0,
-        "load_factor": 0.820956086234938,
-        "passengers": 2220382.0,
-        "rpm": 8830339948.0,
-        "seat_load_factor": 0.8230806984454606
+        "asm": 10684778978.0,
+        "available_seats": 2671872.0,
+        "departures_performed": 12061.0,
+        "load_factor": 0.8173324930708735,
+        "passengers": 2189398.0,
+        "rpm": 8733017040.0,
+        "seat_load_factor": 0.8194247329213376
       }
     ],
     "history": [
-      {
-        "air_time_minutes": 15780071.0,
-        "asm": 24068001441.0,
-        "available_seats": 17138565.0,
-        "departures_performed": 99727.0,
-        "load_factor": 0.8862608471787485,
-        "passengers": 14952991.0,
-        "period": "2024-07",
-        "rpm": 21330527347.0,
-        "scope": {
-          "domestic": {
-            "air_time_minutes": 11072462.0,
-            "asm": 14299843056.0,
-            "available_seats": 14314077.0,
-            "departures_performed": 86924.0,
-            "load_factor": 0.8850219853070254,
-            "passengers": 12425997.0,
-            "rpm": 12655675491.0,
-            "seat_load_factor": 0.8680962803260036
-          },
-          "international": {
-            "air_time_minutes": 4707609.0,
-            "asm": 9768158385.0,
-            "available_seats": 2824488.0,
-            "departures_performed": 12803.0,
-            "load_factor": 0.8880744470033488,
-            "passengers": 2526994.0,
-            "rpm": 8674851856.0,
-            "seat_load_factor": 0.8946733000812891
-          }
-        },
-        "seat_load_factor": 0.8724762545755727
-      },
       {
         "air_time_minutes": 16110358.0,
         "asm": 24589883678.0,
@@ -16205,10 +16172,42 @@
           }
         },
         "seat_load_factor": 0.8741057845176685
+      },
+      {
+        "air_time_minutes": 16690951.0,
+        "asm": 25460366543.0,
+        "available_seats": 18003803.0,
+        "departures_performed": 105783.0,
+        "load_factor": 0.8816734880500656,
+        "passengers": 15758080.0,
+        "period": "2026-07",
+        "rpm": 22447730177.0,
+        "scope": {
+          "domestic": {
+            "air_time_minutes": 11806437.0,
+            "asm": 15186404033.0,
+            "available_seats": 15098842.0,
+            "departures_performed": 92918.0,
+            "load_factor": 0.887844384404704,
+            "passengers": 13196535.0,
+            "rpm": 13483163540.0,
+            "seat_load_factor": 0.87400974193915
+          },
+          "international": {
+            "air_time_minutes": 4884514.0,
+            "asm": 10273962510.0,
+            "available_seats": 2904961.0,
+            "departures_performed": 12865.0,
+            "load_factor": 0.8725520098281924,
+            "passengers": 2561545.0,
+            "rpm": 8964566637.0,
+            "seat_load_factor": 0.8817829223869098
+          }
+        },
+        "seat_load_factor": 0.8752639650633813
       }
     ],
     "retained_periods": [
-      "2024-07",
       "2024-08",
       "2024-09",
       "2024-10",
@@ -16231,21 +16230,11 @@
       "2026-03",
       "2026-04",
       "2026-05",
-      "2026-06"
+      "2026-06",
+      "2026-07"
     ],
     "route_history": {
       "AMS-ATL|international": [
-        {
-          "air_time_minutes": 41019.0,
-          "asm": 94300227.0,
-          "available_seats": 21427.0,
-          "departures_performed": 76.0,
-          "load_factor": 0.9484295515004434,
-          "passengers": 20322.0,
-          "period": "2024-07",
-          "rpm": 89437122.0,
-          "seat_load_factor": 0.9484295515004434
-        },
         {
           "air_time_minutes": 45745.0,
           "asm": 109118394.0,
@@ -16498,20 +16487,20 @@
           "period": "2026-06",
           "rpm": 101346228.0,
           "seat_load_factor": 0.9221528111484864
+        },
+        {
+          "air_time_minutes": 49307.0,
+          "asm": 114690060.0,
+          "available_seats": 26060.0,
+          "departures_performed": 93.0,
+          "load_factor": 0.9407904834996162,
+          "passengers": 24517.0,
+          "period": "2026-07",
+          "rpm": 107899317.0,
+          "seat_load_factor": 0.9407904834996162
         }
       ],
       "AMS-DTW|international": [
-        {
-          "air_time_minutes": 41595.0,
-          "asm": 99291940.0,
-          "available_seats": 25201.0,
-          "departures_performed": 87.0,
-          "load_factor": 0.9603587159239713,
-          "passengers": 24202.0,
-          "period": "2024-07",
-          "rpm": 95355880.0,
-          "seat_load_factor": 0.9603587159239713
-        },
         {
           "air_time_minutes": 43001.0,
           "asm": 103819000.0,
@@ -16764,20 +16753,20 @@
           "period": "2026-06",
           "rpm": 84197800.0,
           "seat_load_factor": 0.8606177761668882
+        },
+        {
+          "air_time_minutes": 43750.0,
+          "asm": 102644880.0,
+          "available_seats": 26052.0,
+          "departures_performed": 92.0,
+          "load_factor": 0.9084523261169968,
+          "passengers": 23667.0,
+          "period": "2026-07",
+          "rpm": 93247980.0,
+          "seat_load_factor": 0.9084523261169968
         }
       ],
       "AMS-MSP|international": [
-        {
-          "air_time_minutes": 44663.0,
-          "asm": 103375124.0,
-          "available_seats": 24814.0,
-          "departures_performed": 88.0,
-          "load_factor": 0.9620375594422503,
-          "passengers": 23872.0,
-          "period": "2024-07",
-          "rpm": 99450752.0,
-          "seat_load_factor": 0.9620375594422503
-        },
         {
           "air_time_minutes": 46306.0,
           "asm": 108036878.0,
@@ -17030,20 +17019,20 @@
           "period": "2026-06",
           "rpm": 92901800.0,
           "seat_load_factor": 0.8867504374105296
+        },
+        {
+          "air_time_minutes": 45501.0,
+          "asm": 105853894.0,
+          "available_seats": 25409.0,
+          "departures_performed": 91.0,
+          "load_factor": 0.8942894250068874,
+          "passengers": 22723.0,
+          "period": "2026-07",
+          "rpm": 94664018.0,
+          "seat_load_factor": 0.8942894250068874
         }
       ],
       "ATL-AMS|international": [
-        {
-          "air_time_minutes": 35349.0,
-          "asm": 94132989.0,
-          "available_seats": 21389.0,
-          "departures_performed": 76.0,
-          "load_factor": 0.9010238907849829,
-          "passengers": 19272.0,
-          "period": "2024-07",
-          "rpm": 84816072.0,
-          "seat_load_factor": 0.9010238907849829
-        },
         {
           "air_time_minutes": 40023.0,
           "asm": 109347246.0,
@@ -17296,20 +17285,20 @@
           "period": "2026-06",
           "rpm": 103859199.0,
           "seat_load_factor": 0.9355772280367903
+        },
+        {
+          "air_time_minutes": 44186.0,
+          "asm": 114558030.0,
+          "available_seats": 26030.0,
+          "departures_performed": 93.0,
+          "load_factor": 0.9148290434114483,
+          "passengers": 23813.0,
+          "period": "2026-07",
+          "rpm": 104801013.0,
+          "seat_load_factor": 0.9148290434114483
         }
       ],
       "ATL-BOS|domestic": [
-        {
-          "air_time_minutes": 38106.0,
-          "asm": 54427164.0,
-          "available_seats": 57534.0,
-          "departures_performed": 307.0,
-          "load_factor": 0.8889178572670073,
-          "passengers": 51143.0,
-          "period": "2024-07",
-          "rpm": 48381278.0,
-          "seat_load_factor": 0.8889178572670073
-        },
         {
           "air_time_minutes": 41486.0,
           "asm": 58636864.0,
@@ -17562,20 +17551,20 @@
           "period": "2026-06",
           "rpm": 52097166.0,
           "seat_load_factor": 0.9146335387221604
+        },
+        {
+          "air_time_minutes": 44966.0,
+          "asm": 61577032.0,
+          "available_seats": 65092.0,
+          "departures_performed": 346.0,
+          "load_factor": 0.9214189147667916,
+          "passengers": 59977.0,
+          "period": "2026-07",
+          "rpm": 56738242.0,
+          "seat_load_factor": 0.9214189147667916
         }
       ],
       "ATL-CDG|international": [
-        {
-          "air_time_minutes": 42103.0,
-          "asm": 104869095.0,
-          "available_seats": 23861.0,
-          "departures_performed": 90.0,
-          "load_factor": 0.8760739281673023,
-          "passengers": 20904.0,
-          "period": "2024-07",
-          "rpm": 91873080.0,
-          "seat_load_factor": 0.8760739281673023
-        },
         {
           "air_time_minutes": 43318.0,
           "asm": 108393885.0,
@@ -17828,20 +17817,20 @@
           "period": "2026-06",
           "rpm": 84630120.0,
           "seat_load_factor": 0.9468922108575925
+        },
+        {
+          "air_time_minutes": 37731.0,
+          "asm": 92615835.0,
+          "available_seats": 21073.0,
+          "departures_performed": 79.0,
+          "load_factor": 0.9049020073079296,
+          "passengers": 19069.0,
+          "period": "2026-07",
+          "rpm": 83808255.0,
+          "seat_load_factor": 0.9049020073079296
         }
       ],
       "ATL-CUN|international": [
-        {
-          "air_time_minutes": 19664.0,
-          "asm": 25817440.0,
-          "available_seats": 29338.0,
-          "departures_performed": 157.0,
-          "load_factor": 0.9043902106483059,
-          "passengers": 26533.0,
-          "period": "2024-07",
-          "rpm": 23349040.0,
-          "seat_load_factor": 0.9043902106483059
-        },
         {
           "air_time_minutes": 18488.0,
           "asm": 24754400.0,
@@ -18094,20 +18083,20 @@
           "period": "2026-06",
           "rpm": 22655600.0,
           "seat_load_factor": 0.9353994840678705
+        },
+        {
+          "air_time_minutes": 20143.0,
+          "asm": 25314960.0,
+          "available_seats": 28767.0,
+          "departures_performed": 160.0,
+          "load_factor": 0.9519240796746272,
+          "passengers": 27384.0,
+          "period": "2026-07",
+          "rpm": 24097920.0,
+          "seat_load_factor": 0.9519240796746272
         }
       ],
       "ATL-DCA|domestic": [
-        {
-          "air_time_minutes": 23789.0,
-          "asm": 27398136.0,
-          "available_seats": 50088.0,
-          "departures_performed": 292.0,
-          "load_factor": 0.8449928126497365,
-          "passengers": 42324.0,
-          "period": "2024-07",
-          "rpm": 23151228.0,
-          "seat_load_factor": 0.8449928126497365
-        },
         {
           "air_time_minutes": 24578.0,
           "asm": 28575827.0,
@@ -18360,20 +18349,20 @@
           "period": "2026-06",
           "rpm": 23120596.0,
           "seat_load_factor": 0.8736126325362213
+        },
+        {
+          "air_time_minutes": 26313.0,
+          "asm": 26449091.0,
+          "available_seats": 48353.0,
+          "departures_performed": 317.0,
+          "load_factor": 0.8783736272826919,
+          "passengers": 42472.0,
+          "period": "2026-07",
+          "rpm": 23232184.0,
+          "seat_load_factor": 0.8783736272826919
         }
       ],
       "ATL-DTW|domestic": [
-        {
-          "air_time_minutes": 26070.0,
-          "asm": 37136286.0,
-          "available_seats": 62519.0,
-          "departures_performed": 307.0,
-          "load_factor": 0.8562516994833571,
-          "passengers": 53532.0,
-          "period": "2024-07",
-          "rpm": 31798008.0,
-          "seat_load_factor": 0.8562516994833571
-        },
         {
           "air_time_minutes": 27492.0,
           "asm": 38537532.0,
@@ -18626,20 +18615,20 @@
           "period": "2026-06",
           "rpm": 33565752.0,
           "seat_load_factor": 0.9183365023645849
+        },
+        {
+          "air_time_minutes": 31565.0,
+          "asm": 40892148.0,
+          "available_seats": 68842.0,
+          "departures_performed": 358.0,
+          "load_factor": 0.8949042735539351,
+          "passengers": 61607.0,
+          "period": "2026-07",
+          "rpm": 36594558.0,
+          "seat_load_factor": 0.8949042735539351
         }
       ],
       "ATL-FLL|domestic": [
-        {
-          "air_time_minutes": 27897.0,
-          "asm": 37458232.0,
-          "available_seats": 64472.0,
-          "departures_performed": 326.0,
-          "load_factor": 0.8715566447450056,
-          "passengers": 56191.0,
-          "period": "2024-07",
-          "rpm": 32646971.0,
-          "seat_load_factor": 0.8715566447450056
-        },
         {
           "air_time_minutes": 28217.0,
           "asm": 37027711.0,
@@ -18892,20 +18881,20 @@
           "period": "2026-06",
           "rpm": 36238713.0,
           "seat_load_factor": 0.9142651930462314
+        },
+        {
+          "air_time_minutes": 33800.0,
+          "asm": 42925442.0,
+          "available_seats": 73882.0,
+          "departures_performed": 383.0,
+          "load_factor": 0.900625321458542,
+          "passengers": 66540.0,
+          "period": "2026-07",
+          "rpm": 38659740.0,
+          "seat_load_factor": 0.900625321458542
         }
       ],
       "ATL-ICN|international": [
-        {
-          "air_time_minutes": 52039.0,
-          "asm": 127831263.0,
-          "available_seats": 17871.0,
-          "departures_performed": 59.0,
-          "load_factor": 0.7849588719153937,
-          "passengers": 14028.0,
-          "period": "2024-07",
-          "rpm": 100342284.0,
-          "seat_load_factor": 0.7849588719153937
-        },
         {
           "air_time_minutes": 54362.0,
           "asm": 134576542.0,
@@ -19158,20 +19147,20 @@
           "period": "2026-06",
           "rpm": 107874393.0,
           "seat_load_factor": 0.9110735214160575
+        },
+        {
+          "air_time_minutes": 54313.0,
+          "asm": 122108863.0,
+          "available_seats": 17071.0,
+          "departures_performed": 62.0,
+          "load_factor": 0.7898775701482046,
+          "passengers": 13484.0,
+          "period": "2026-07",
+          "rpm": 96451052.0,
+          "seat_load_factor": 0.7898775701482046
         }
       ],
       "ATL-JAX|domestic": [
-        {
-          "air_time_minutes": 13725.0,
-          "asm": 15995610.0,
-          "available_seats": 59243.0,
-          "departures_performed": 303.0,
-          "load_factor": 0.8516280404435967,
-          "passengers": 50453.0,
-          "period": "2024-07",
-          "rpm": 13622310.0,
-          "seat_load_factor": 0.8516280404435967
-        },
         {
           "air_time_minutes": 14080.0,
           "asm": 16645500.0,
@@ -19424,20 +19413,20 @@
           "period": "2026-06",
           "rpm": 14555859.0,
           "seat_load_factor": 0.8563222028802026
+        },
+        {
+          "air_time_minutes": 16478.0,
+          "asm": 17719568.0,
+          "available_seats": 65872.0,
+          "departures_performed": 349.0,
+          "load_factor": 0.8610942433811027,
+          "passengers": 56722.0,
+          "period": "2026-07",
+          "rpm": 15258218.0,
+          "seat_load_factor": 0.8610942433811027
         }
       ],
       "ATL-LAS|domestic": [
-        {
-          "air_time_minutes": 58780.0,
-          "asm": 93136064.0,
-          "available_seats": 53312.0,
-          "departures_performed": 266.0,
-          "load_factor": 0.8891994297719088,
-          "passengers": 47405.0,
-          "period": "2024-07",
-          "rpm": 82816535.0,
-          "seat_load_factor": 0.8891994297719088
-        },
         {
           "air_time_minutes": 59874.0,
           "asm": 103406677.0,
@@ -19690,20 +19679,20 @@
           "period": "2026-06",
           "rpm": 83592203.0,
           "seat_load_factor": 0.9030157771570921
+        },
+        {
+          "air_time_minutes": 58090.0,
+          "asm": 92849556.0,
+          "available_seats": 53148.0,
+          "departures_performed": 271.0,
+          "load_factor": 0.8995258523368707,
+          "passengers": 47808.0,
+          "period": "2026-07",
+          "rpm": 83520576.0,
+          "seat_load_factor": 0.8995258523368707
         }
       ],
       "ATL-LAX|domestic": [
-        {
-          "air_time_minutes": 84895.0,
-          "asm": 146112615.0,
-          "available_seats": 75045.0,
-          "departures_performed": 353.0,
-          "load_factor": 0.9024851755613299,
-          "passengers": 67727.0,
-          "period": "2024-07",
-          "rpm": 131864469.0,
-          "seat_load_factor": 0.9024851755613299
-        },
         {
           "air_time_minutes": 87981.0,
           "asm": 150267513.0,
@@ -19956,20 +19945,20 @@
           "period": "2026-06",
           "rpm": 123988854.0,
           "seat_load_factor": 0.9061699584495418
+        },
+        {
+          "air_time_minutes": 84445.0,
+          "asm": 141644250.0,
+          "available_seats": 72750.0,
+          "departures_performed": 359.0,
+          "load_factor": 0.9227903780068728,
+          "passengers": 67133.0,
+          "period": "2026-07",
+          "rpm": 130707951.0,
+          "seat_load_factor": 0.9227903780068728
         }
       ],
       "ATL-LGA|domestic": [
-        {
-          "air_time_minutes": 39962.0,
-          "asm": 54977538.0,
-          "available_seats": 72149.0,
-          "departures_performed": 383.0,
-          "load_factor": 0.8724861051435224,
-          "passengers": 62949.0,
-          "period": "2024-07",
-          "rpm": 47967138.0,
-          "seat_load_factor": 0.8724861051435224
-        },
         {
           "air_time_minutes": 39265.0,
           "asm": 53492400.0,
@@ -20222,20 +20211,20 @@
           "period": "2026-06",
           "rpm": 51556920.0,
           "seat_load_factor": 0.8894439332194032
+        },
+        {
+          "air_time_minutes": 42185.0,
+          "asm": 55837836.0,
+          "available_seats": 73278.0,
+          "departures_performed": 387.0,
+          "load_factor": 0.9072027074974753,
+          "passengers": 66478.0,
+          "period": "2026-07",
+          "rpm": 50656236.0,
+          "seat_load_factor": 0.9072027074974753
         }
       ],
       "ATL-LHR|international": [
-        {
-          "air_time_minutes": 41506.0,
-          "asm": 88864733.0,
-          "available_seats": 21103.0,
-          "departures_performed": 91.0,
-          "load_factor": 0.8722456522769274,
-          "passengers": 18407.0,
-          "period": "2024-07",
-          "rpm": 77511877.0,
-          "seat_load_factor": 0.8722456522769274
-        },
         {
           "air_time_minutes": 42056.0,
           "asm": 90675463.0,
@@ -20488,20 +20477,20 @@
           "period": "2026-06",
           "rpm": 85925455.0,
           "seat_load_factor": 0.9627724827781448
+        },
+        {
+          "air_time_minutes": 43557.0,
+          "asm": 92124047.0,
+          "available_seats": 21877.0,
+          "departures_performed": 93.0,
+          "load_factor": 0.9312519998171596,
+          "passengers": 20373.0,
+          "period": "2026-07",
+          "rpm": 85790703.0,
+          "seat_load_factor": 0.9312519998171596
         }
       ],
       "ATL-MBJ|international": [
-        {
-          "air_time_minutes": 12768.0,
-          "asm": 18833737.0,
-          "available_seats": 16861.0,
-          "departures_performed": 89.0,
-          "load_factor": 0.8912282782753099,
-          "passengers": 15027.0,
-          "period": "2024-07",
-          "rpm": 16785159.0,
-          "seat_load_factor": 0.8912282782753099
-        },
         {
           "air_time_minutes": 12336.0,
           "asm": 18073060.0,
@@ -20754,20 +20743,20 @@
           "period": "2026-06",
           "rpm": 17258767.0,
           "seat_load_factor": 0.9538243101426014
+        },
+        {
+          "air_time_minutes": 13347.0,
+          "asm": 18695229.0,
+          "available_seats": 16737.0,
+          "departures_performed": 93.0,
+          "load_factor": 0.9461074266594969,
+          "passengers": 15835.0,
+          "period": "2026-07",
+          "rpm": 17687695.0,
+          "seat_load_factor": 0.9461074266594969
         }
       ],
       "ATL-MCO|domestic": [
-        {
-          "air_time_minutes": 27868.0,
-          "asm": 36938528.0,
-          "available_seats": 91432.0,
-          "departures_performed": 438.0,
-          "load_factor": 0.8765311925802782,
-          "passengers": 80143.0,
-          "period": "2024-07",
-          "rpm": 32377772.0,
-          "seat_load_factor": 0.8765311925802782
-        },
         {
           "air_time_minutes": 27146.0,
           "asm": 37158708.0,
@@ -21020,20 +21009,20 @@
           "period": "2026-06",
           "rpm": 32722788.0,
           "seat_load_factor": 0.9145383104125737
+        },
+        {
+          "air_time_minutes": 30132.0,
+          "asm": 37457668.0,
+          "available_seats": 92717.0,
+          "departures_performed": 478.0,
+          "load_factor": 0.8988211439110412,
+          "passengers": 83336.0,
+          "period": "2026-07",
+          "rpm": 33667744.0,
+          "seat_load_factor": 0.8988211439110412
         }
       ],
       "ATL-MEX|international": [
-        {
-          "air_time_minutes": 27103.0,
-          "asm": 31703210.0,
-          "available_seats": 23837.0,
-          "departures_performed": 149.0,
-          "load_factor": 0.8873180349876243,
-          "passengers": 21151.0,
-          "period": "2024-07",
-          "rpm": 28130830.0,
-          "seat_load_factor": 0.8873180349876243
-        },
         {
           "air_time_minutes": 28103.0,
           "asm": 32978680.0,
@@ -21286,20 +21275,20 @@
           "period": "2026-06",
           "rpm": 30645860.0,
           "seat_load_factor": 0.8829705702023298
+        },
+        {
+          "air_time_minutes": 26683.0,
+          "asm": 35447160.0,
+          "available_seats": 26652.0,
+          "departures_performed": 152.0,
+          "load_factor": 0.8922032117664715,
+          "passengers": 23779.0,
+          "period": "2026-07",
+          "rpm": 31626070.0,
+          "seat_load_factor": 0.8922032117664715
         }
       ],
       "ATL-MIA|domestic": [
-        {
-          "air_time_minutes": 21987.0,
-          "asm": 29195100.0,
-          "available_seats": 49150.0,
-          "departures_performed": 248.0,
-          "load_factor": 0.9060630722278739,
-          "passengers": 44533.0,
-          "period": "2024-07",
-          "rpm": 26452602.0,
-          "seat_load_factor": 0.9060630722278739
-        },
         {
           "air_time_minutes": 21589.0,
           "asm": 28324296.0,
@@ -21552,20 +21541,20 @@
           "period": "2026-06",
           "rpm": 27759402.0,
           "seat_load_factor": 0.8987115384615385
+        },
+        {
+          "air_time_minutes": 25581.0,
+          "asm": 31999374.0,
+          "available_seats": 53871.0,
+          "departures_performed": 283.0,
+          "load_factor": 0.8908318018971246,
+          "passengers": 47990.0,
+          "period": "2026-07",
+          "rpm": 28506060.0,
+          "seat_load_factor": 0.8908318018971246
         }
       ],
       "ATL-MSP|domestic": [
-        {
-          "air_time_minutes": 33662.0,
-          "asm": 47817040.0,
-          "available_seats": 52720.0,
-          "departures_performed": 264.0,
-          "load_factor": 0.8568285280728376,
-          "passengers": 45172.0,
-          "period": "2024-07",
-          "rpm": 40971004.0,
-          "seat_load_factor": 0.8568285280728376
-        },
         {
           "air_time_minutes": 34798.0,
           "asm": 48031092.0,
@@ -21818,20 +21807,20 @@
           "period": "2026-06",
           "rpm": 40635414.0,
           "seat_load_factor": 0.8892991127255404
+        },
+        {
+          "air_time_minutes": 34515.0,
+          "asm": 47044276.0,
+          "available_seats": 51868.0,
+          "departures_performed": 269.0,
+          "load_factor": 0.8806585948947327,
+          "passengers": 45678.0,
+          "period": "2026-07",
+          "rpm": 41429946.0,
+          "seat_load_factor": 0.8806585948947327
         }
       ],
       "ATL-PBI|domestic": [
-        {
-          "air_time_minutes": 25647.0,
-          "asm": 31902665.0,
-          "available_seats": 58537.0,
-          "departures_performed": 308.0,
-          "load_factor": 0.8125288279208023,
-          "passengers": 47563.0,
-          "period": "2024-07",
-          "rpm": 25921835.0,
-          "seat_load_factor": 0.8125288279208023
-        },
         {
           "air_time_minutes": 25241.0,
           "asm": 31570215.0,
@@ -22084,20 +22073,20 @@
           "period": "2026-06",
           "rpm": 25650970.0,
           "seat_load_factor": 0.824836578398556
+        },
+        {
+          "air_time_minutes": 25352.0,
+          "asm": 31409440.0,
+          "available_seats": 57632.0,
+          "departures_performed": 303.0,
+          "load_factor": 0.8299208772903942,
+          "passengers": 47830.0,
+          "period": "2026-07",
+          "rpm": 26067350.0,
+          "seat_load_factor": 0.8299208772903942
         }
       ],
       "ATL-PUJ|international": [
-        {
-          "air_time_minutes": 16755.0,
-          "asm": 24726484.0,
-          "available_seats": 17219.0,
-          "departures_performed": 93.0,
-          "load_factor": 0.9359428538242639,
-          "passengers": 16116.0,
-          "period": "2024-07",
-          "rpm": 23142576.0,
-          "seat_load_factor": 0.9359428538242639
-        },
         {
           "air_time_minutes": 16219.0,
           "asm": 24081720.0,
@@ -22350,20 +22339,20 @@
           "period": "2026-06",
           "rpm": 24265528.0,
           "seat_load_factor": 0.9510355695632597
+        },
+        {
+          "air_time_minutes": 16262.0,
+          "asm": 24153520.0,
+          "available_seats": 16820.0,
+          "departures_performed": 89.0,
+          "load_factor": 0.9622473246135553,
+          "passengers": 16185.0,
+          "period": "2026-07",
+          "rpm": 23241660.0,
+          "seat_load_factor": 0.9622473246135553
         }
       ],
       "ATL-RDU|domestic": [
-        {
-          "air_time_minutes": 17959.0,
-          "asm": 19714568.0,
-          "available_seats": 55378.0,
-          "departures_performed": 302.0,
-          "load_factor": 0.8209938964931922,
-          "passengers": 45465.0,
-          "period": "2024-07",
-          "rpm": 16185540.0,
-          "seat_load_factor": 0.8209938964931922
-        },
         {
           "air_time_minutes": 17469.0,
           "asm": 19570032.0,
@@ -22616,20 +22605,20 @@
           "period": "2026-06",
           "rpm": 18300536.0,
           "seat_load_factor": 0.8633569581136005
+        },
+        {
+          "air_time_minutes": 20671.0,
+          "asm": 21694284.0,
+          "available_seats": 60939.0,
+          "departures_performed": 342.0,
+          "load_factor": 0.8699026895748208,
+          "passengers": 53011.0,
+          "period": "2026-07",
+          "rpm": 18871916.0,
+          "seat_load_factor": 0.8699026895748208
         }
       ],
       "ATL-SLC|domestic": [
-        {
-          "air_time_minutes": 49171.0,
-          "asm": 74043120.0,
-          "available_seats": 46568.0,
-          "departures_performed": 236.0,
-          "load_factor": 0.9142758976120942,
-          "passengers": 42576.0,
-          "period": "2024-07",
-          "rpm": 67695840.0,
-          "seat_load_factor": 0.9142758976120942
-        },
         {
           "air_time_minutes": 51349.0,
           "asm": 77111820.0,
@@ -22882,20 +22871,20 @@
           "period": "2026-06",
           "rpm": 68015430.0,
           "seat_load_factor": 0.9193818775790922
+        },
+        {
+          "air_time_minutes": 49930.0,
+          "asm": 75373950.0,
+          "available_seats": 47405.0,
+          "departures_performed": 246.0,
+          "load_factor": 0.9227507646872692,
+          "passengers": 43743.0,
+          "period": "2026-07",
+          "rpm": 69551370.0,
+          "seat_load_factor": 0.9227507646872692
         }
       ],
       "ATL-TPA|domestic": [
-        {
-          "air_time_minutes": 22493.0,
-          "asm": 28704606.0,
-          "available_seats": 70701.0,
-          "departures_performed": 355.0,
-          "load_factor": 0.8837781643823991,
-          "passengers": 62484.0,
-          "period": "2024-07",
-          "rpm": 25368504.0,
-          "seat_load_factor": 0.8837781643823991
-        },
         {
           "air_time_minutes": 21618.0,
           "asm": 28381430.0,
@@ -23148,20 +23137,20 @@
           "period": "2026-06",
           "rpm": 26938506.0,
           "seat_load_factor": 0.8938328483672809
+        },
+        {
+          "air_time_minutes": 24951.0,
+          "asm": 30711058.0,
+          "available_seats": 75643.0,
+          "departures_performed": 388.0,
+          "load_factor": 0.8953769681265946,
+          "passengers": 67729.0,
+          "period": "2026-07",
+          "rpm": 27497974.0,
+          "seat_load_factor": 0.8953769681265946
         }
       ],
       "ATL-YYZ|international": [
-        {
-          "air_time_minutes": 13926.0,
-          "asm": 18296901.0,
-          "available_seats": 24759.0,
-          "departures_performed": 138.0,
-          "load_factor": 0.8890504463023547,
-          "passengers": 22012.0,
-          "period": "2024-07",
-          "rpm": 16266868.0,
-          "seat_load_factor": 0.8890504463023547
-        },
         {
           "air_time_minutes": 15558.0,
           "asm": 19738690.0,
@@ -23414,20 +23403,20 @@
           "period": "2026-06",
           "rpm": 16636368.0,
           "seat_load_factor": 0.8689207966651228
+        },
+        {
+          "air_time_minutes": 15481.0,
+          "asm": 19358844.0,
+          "available_seats": 26196.0,
+          "departures_performed": 145.0,
+          "load_factor": 0.8689494579325088,
+          "passengers": 22763.0,
+          "period": "2026-07",
+          "rpm": 16821857.0,
+          "seat_load_factor": 0.8689494579325088
         }
       ],
       "BOS-ATL|domestic": [
-        {
-          "air_time_minutes": 40536.0,
-          "asm": 53831184.0,
-          "available_seats": 56904.0,
-          "departures_performed": 303.0,
-          "load_factor": 0.9072297202305638,
-          "passengers": 51625.0,
-          "period": "2024-07",
-          "rpm": 48837250.0,
-          "seat_load_factor": 0.9072297202305638
-        },
         {
           "air_time_minutes": 43180.0,
           "asm": 58362524.0,
@@ -23680,20 +23669,20 @@
           "period": "2026-06",
           "rpm": 51404694.0,
           "seat_load_factor": 0.902071781931671
+        },
+        {
+          "air_time_minutes": 44722.0,
+          "asm": 60725632.0,
+          "available_seats": 64192.0,
+          "departures_performed": 340.0,
+          "load_factor": 0.9246790877367896,
+          "passengers": 59357.0,
+          "period": "2026-07",
+          "rpm": 56151722.0,
+          "seat_load_factor": 0.9246790877367896
         }
       ],
       "CDG-ATL|international": [
-        {
-          "air_time_minutes": 49681.0,
-          "asm": 105981030.0,
-          "available_seats": 24114.0,
-          "departures_performed": 91.0,
-          "load_factor": 0.9344778966575433,
-          "passengers": 22534.0,
-          "period": "2024-07",
-          "rpm": 99036930.0,
-          "seat_load_factor": 0.9344778966575433
-        },
         {
           "air_time_minutes": 49160.0,
           "asm": 106108485.0,
@@ -23946,20 +23935,20 @@
           "period": "2026-06",
           "rpm": 73550325.0,
           "seat_load_factor": 0.8542623787646758
+        },
+        {
+          "air_time_minutes": 40286.0,
+          "asm": 88954800.0,
+          "available_seats": 20240.0,
+          "departures_performed": 76.0,
+          "load_factor": 0.8947134387351778,
+          "passengers": 18109.0,
+          "period": "2026-07",
+          "rpm": 79589055.0,
+          "seat_load_factor": 0.8947134387351778
         }
       ],
       "CDG-JFK|international": [
-        {
-          "air_time_minutes": 43601.0,
-          "asm": 88552235.0,
-          "available_seats": 24361.0,
-          "departures_performed": 94.0,
-          "load_factor": 0.9171626780509832,
-          "passengers": 22343.0,
-          "period": "2024-07",
-          "rpm": 81216805.0,
-          "seat_load_factor": 0.9171626780509832
-        },
         {
           "air_time_minutes": 45604.0,
           "asm": 95000725.0,
@@ -24212,20 +24201,20 @@
           "period": "2026-06",
           "rpm": 56825955.0,
           "seat_load_factor": 0.7978462794733081
+        },
+        {
+          "air_time_minutes": 40262.0,
+          "asm": 76782105.0,
+          "available_seats": 21123.0,
+          "departures_performed": 90.0,
+          "load_factor": 0.8529564929224068,
+          "passengers": 18017.0,
+          "period": "2026-07",
+          "rpm": 65491795.0,
+          "seat_load_factor": 0.8529564929224068
         }
       ],
       "CUN-ATL|international": [
-        {
-          "air_time_minutes": 20090.0,
-          "asm": 25818320.0,
-          "available_seats": 29339.0,
-          "departures_performed": 157.0,
-          "load_factor": 0.9291386891168751,
-          "passengers": 27260.0,
-          "period": "2024-07",
-          "rpm": 23988800.0,
-          "seat_load_factor": 0.9291386891168751
-        },
         {
           "air_time_minutes": 19013.0,
           "asm": 25081760.0,
@@ -24478,20 +24467,20 @@
           "period": "2026-06",
           "rpm": 22136400.0,
           "seat_load_factor": 0.9206866261620672
+        },
+        {
+          "air_time_minutes": 20499.0,
+          "asm": 24849440.0,
+          "available_seats": 28238.0,
+          "departures_performed": 157.0,
+          "load_factor": 0.950386004674552,
+          "passengers": 26837.0,
+          "period": "2026-07",
+          "rpm": 23616560.0,
+          "seat_load_factor": 0.950386004674552
         }
       ],
       "DTW-AMS|international": [
-        {
-          "air_time_minutes": 35980.0,
-          "asm": 99157980.0,
-          "available_seats": 25167.0,
-          "departures_performed": 87.0,
-          "load_factor": 0.9190606746930504,
-          "passengers": 23130.0,
-          "period": "2024-07",
-          "rpm": 91132200.0,
-          "seat_load_factor": 0.9190606746930504
-        },
         {
           "air_time_minutes": 37858.0,
           "asm": 103732320.0,
@@ -24744,20 +24733,20 @@
           "period": "2026-06",
           "rpm": 93961120.0,
           "seat_load_factor": 0.9480421387398131
+        },
+        {
+          "air_time_minutes": 39321.0,
+          "asm": 102680340.0,
+          "available_seats": 26061.0,
+          "departures_performed": 92.0,
+          "load_factor": 0.9354591151529105,
+          "passengers": 24379.0,
+          "period": "2026-07",
+          "rpm": 96053260.0,
+          "seat_load_factor": 0.9354591151529105
         }
       ],
       "DTW-ATL|domestic": [
-        {
-          "air_time_minutes": 26924.0,
-          "asm": 36578520.0,
-          "available_seats": 61580.0,
-          "departures_performed": 305.0,
-          "load_factor": 0.8738226696979539,
-          "passengers": 53810.0,
-          "period": "2024-07",
-          "rpm": 31963140.0,
-          "seat_load_factor": 0.8738226696979539
-        },
         {
           "air_time_minutes": 27633.0,
           "asm": 38972340.0,
@@ -25010,20 +24999,20 @@
           "period": "2026-06",
           "rpm": 33029964.0,
           "seat_load_factor": 0.9100073643728009
+        },
+        {
+          "air_time_minutes": 31400.0,
+          "asm": 40583268.0,
+          "available_seats": 68322.0,
+          "departures_performed": 356.0,
+          "load_factor": 0.9020666842305554,
+          "passengers": 61631.0,
+          "period": "2026-07",
+          "rpm": 36608814.0,
+          "seat_load_factor": 0.9020666842305554
         }
       ],
       "FCO-JFK|international": [
-        {
-          "air_time_minutes": 48361.0,
-          "asm": 95681748.0,
-          "available_seats": 22366.0,
-          "departures_performed": 90.0,
-          "load_factor": 0.9370920146651167,
-          "passengers": 20959.0,
-          "period": "2024-07",
-          "rpm": 89662602.0,
-          "seat_load_factor": 0.9370920146651167
-        },
         {
           "air_time_minutes": 48026.0,
           "asm": 98334108.0,
@@ -25276,20 +25265,20 @@
           "period": "2026-06",
           "rpm": 55806510.0,
           "seat_load_factor": 0.7714826423797977
+        },
+        {
+          "air_time_minutes": 32647.0,
+          "asm": 74702436.0,
+          "available_seats": 17462.0,
+          "departures_performed": 62.0,
+          "load_factor": 0.8344404993700607,
+          "passengers": 14571.0,
+          "period": "2026-07",
+          "rpm": 62334738.0,
+          "seat_load_factor": 0.8344404993700607
         }
       ],
       "FLL-ATL|domestic": [
-        {
-          "air_time_minutes": 27321.0,
-          "asm": 36881299.0,
-          "available_seats": 63479.0,
-          "departures_performed": 321.0,
-          "load_factor": 0.9047559035271507,
-          "passengers": 57433.0,
-          "period": "2024-07",
-          "rpm": 33368573.0,
-          "seat_load_factor": 0.9047559035271507
-        },
         {
           "air_time_minutes": 26853.0,
           "asm": 36812160.0,
@@ -25542,20 +25531,20 @@
           "period": "2026-06",
           "rpm": 37654029.0,
           "seat_load_factor": 0.9532838126057218
+        },
+        {
+          "air_time_minutes": 33021.0,
+          "asm": 42438564.0,
+          "available_seats": 73044.0,
+          "departures_performed": 380.0,
+          "load_factor": 0.9198702152127485,
+          "passengers": 67191.0,
+          "period": "2026-07",
+          "rpm": 39037971.0,
+          "seat_load_factor": 0.9198702152127485
         }
       ],
       "ICN-ATL|international": [
-        {
-          "air_time_minutes": 47980.0,
-          "asm": 130270436.0,
-          "available_seats": 18212.0,
-          "departures_performed": 60.0,
-          "load_factor": 0.9439929716670328,
-          "passengers": 17192.0,
-          "period": "2024-07",
-          "rpm": 122974376.0,
-          "seat_load_factor": 0.9439929716670328
-        },
         {
           "air_time_minutes": 50133.0,
           "asm": 135084405.0,
@@ -25808,20 +25797,20 @@
           "period": "2026-06",
           "rpm": 104526789.0,
           "seat_load_factor": 0.9112621601396858
+        },
+        {
+          "air_time_minutes": 49448.0,
+          "asm": 119970116.0,
+          "available_seats": 16772.0,
+          "departures_performed": 61.0,
+          "load_factor": 0.9337586453613165,
+          "passengers": 15661.0,
+          "period": "2026-07",
+          "rpm": 112023133.0,
+          "seat_load_factor": 0.9337586453613165
         }
       ],
       "JAX-ATL|domestic": [
-        {
-          "air_time_minutes": 14431.0,
-          "asm": 16431120.0,
-          "available_seats": 60856.0,
-          "departures_performed": 312.0,
-          "load_factor": 0.8806198238464572,
-          "passengers": 53591.0,
-          "period": "2024-07",
-          "rpm": 14469570.0,
-          "seat_load_factor": 0.8806198238464572
-        },
         {
           "air_time_minutes": 14343.0,
           "asm": 16677630.0,
@@ -26074,20 +26063,20 @@
           "period": "2026-06",
           "rpm": 15248534.0,
           "seat_load_factor": 0.9025283403388104
+        },
+        {
+          "air_time_minutes": 16046.0,
+          "asm": 17773906.0,
+          "available_seats": 66074.0,
+          "departures_performed": 352.0,
+          "load_factor": 0.8913642279868027,
+          "passengers": 58896.0,
+          "period": "2026-07",
+          "rpm": 15843024.0,
+          "seat_load_factor": 0.8913642279868027
         }
       ],
       "JFK-CDG|international": [
-        {
-          "air_time_minutes": 36951.0,
-          "asm": 89668180.0,
-          "available_seats": 24668.0,
-          "departures_performed": 95.0,
-          "load_factor": 0.7401491811253446,
-          "passengers": 18258.0,
-          "period": "2024-07",
-          "rpm": 66367830.0,
-          "seat_load_factor": 0.7401491811253446
-        },
         {
           "air_time_minutes": 37784.0,
           "asm": 94044720.0,
@@ -26340,20 +26329,20 @@
           "period": "2026-06",
           "rpm": 64942910.0,
           "seat_load_factor": 0.9447911158117398
+        },
+        {
+          "air_time_minutes": 35504.0,
+          "asm": 76029660.0,
+          "available_seats": 20916.0,
+          "departures_performed": 89.0,
+          "load_factor": 0.8842512908777969,
+          "passengers": 18495.0,
+          "period": "2026-07",
+          "rpm": 67229325.0,
+          "seat_load_factor": 0.8842512908777969
         }
       ],
       "JFK-FCO|international": [
-        {
-          "air_time_minutes": 41237.0,
-          "asm": 96687078.0,
-          "available_seats": 22601.0,
-          "departures_performed": 91.0,
-          "load_factor": 0.8750497765585593,
-          "passengers": 19777.0,
-          "period": "2024-07",
-          "rpm": 84606006.0,
-          "seat_load_factor": 0.8750497765585593
-        },
         {
           "air_time_minutes": 42581.0,
           "asm": 102928680.0,
@@ -26606,20 +26595,20 @@
           "period": "2026-06",
           "rpm": 66287610.0,
           "seat_load_factor": 0.9168639053254438
+        },
+        {
+          "air_time_minutes": 28937.0,
+          "asm": 74732382.0,
+          "available_seats": 17469.0,
+          "departures_performed": 62.0,
+          "load_factor": 0.8772683038525387,
+          "passengers": 15325.0,
+          "period": "2026-07",
+          "rpm": 65560350.0,
+          "seat_load_factor": 0.8772683038525387
         }
       ],
       "JFK-LAX|domestic": [
-        {
-          "air_time_minutes": 93828.0,
-          "asm": 155430000.0,
-          "available_seats": 62800.0,
-          "departures_performed": 301.0,
-          "load_factor": 0.9203503184713375,
-          "passengers": 57798.0,
-          "period": "2024-07",
-          "rpm": 143050050.0,
-          "seat_load_factor": 0.9203503184713375
-        },
         {
           "air_time_minutes": 93726.0,
           "asm": 154855800.0,
@@ -26872,20 +26861,20 @@
           "period": "2026-06",
           "rpm": 150376050.0,
           "seat_load_factor": 0.9096462204123187
+        },
+        {
+          "air_time_minutes": 84519.0,
+          "asm": 161134875.0,
+          "available_seats": 65105.0,
+          "departures_performed": 277.0,
+          "load_factor": 0.9196221488364948,
+          "passengers": 59872.0,
+          "period": "2026-07",
+          "rpm": 148183200.0,
+          "seat_load_factor": 0.9196221488364948
         }
       ],
       "JFK-SDQ|international": [
-        {
-          "air_time_minutes": 17954.0,
-          "asm": 27045540.0,
-          "available_seats": 17460.0,
-          "departures_performed": 90.0,
-          "load_factor": 0.9587056128293242,
-          "passengers": 16739.0,
-          "period": "2024-07",
-          "rpm": 25928711.0,
-          "seat_load_factor": 0.9587056128293242
-        },
         {
           "air_time_minutes": 18754.0,
           "asm": 28232074.0,
@@ -27138,20 +27127,20 @@
           "period": "2026-06",
           "rpm": 25671577.0,
           "seat_load_factor": 0.9388205970656546
+        },
+        {
+          "air_time_minutes": 17796.0,
+          "asm": 26692368.0,
+          "available_seats": 17232.0,
+          "departures_performed": 89.0,
+          "load_factor": 0.9755687093779016,
+          "passengers": 16811.0,
+          "period": "2026-07",
+          "rpm": 26040239.0,
+          "seat_load_factor": 0.9755687093779016
         }
       ],
       "JFK-STI|international": [
-        {
-          "air_time_minutes": 17597.0,
-          "asm": 25684175.0,
-          "available_seats": 17413.0,
-          "departures_performed": 92.0,
-          "load_factor": 0.9662895537816574,
-          "passengers": 16826.0,
-          "period": "2024-07",
-          "rpm": 24818350.0,
-          "seat_load_factor": 0.9662895537816574
-        },
         {
           "air_time_minutes": 17656.0,
           "asm": 25418675.0,
@@ -27404,20 +27393,20 @@
           "period": "2026-06",
           "rpm": 24184100.0,
           "seat_load_factor": 0.9497219647822057
+        },
+        {
+          "air_time_minutes": 17369.0,
+          "asm": 25750550.0,
+          "available_seats": 17458.0,
+          "departures_performed": 90.0,
+          "load_factor": 0.9741665711994502,
+          "passengers": 17007.0,
+          "period": "2026-07",
+          "rpm": 25085325.0,
+          "seat_load_factor": 0.9741665711994502
         }
       ],
       "LAS-ATL|domestic": [
-        {
-          "air_time_minutes": 54454.0,
-          "asm": 91256292.0,
-          "available_seats": 52236.0,
-          "departures_performed": 262.0,
-          "load_factor": 0.8455088444750747,
-          "passengers": 44166.0,
-          "period": "2024-07",
-          "rpm": 77158002.0,
-          "seat_load_factor": 0.8455088444750747
-        },
         {
           "air_time_minutes": 57980.0,
           "asm": 103501015.0,
@@ -27670,20 +27659,20 @@
           "period": "2026-06",
           "rpm": 85597759.0,
           "seat_load_factor": 0.9284834473479752
+        },
+        {
+          "air_time_minutes": 56308.0,
+          "asm": 89509292.0,
+          "available_seats": 51236.0,
+          "departures_performed": 261.0,
+          "load_factor": 0.9081700366929503,
+          "passengers": 46531.0,
+          "period": "2026-07",
+          "rpm": 81289657.0,
+          "seat_load_factor": 0.9081700366929503
         }
       ],
       "LAX-ATL|domestic": [
-        {
-          "air_time_minutes": 82016.0,
-          "asm": 146591577.0,
-          "available_seats": 75291.0,
-          "departures_performed": 351.0,
-          "load_factor": 0.8957644339960952,
-          "passengers": 67443.0,
-          "period": "2024-07",
-          "rpm": 131311521.0,
-          "seat_load_factor": 0.8957644339960952
-        },
         {
           "air_time_minutes": 86468.0,
           "asm": 149591904.0,
@@ -27936,20 +27925,20 @@
           "period": "2026-06",
           "rpm": 126424551.0,
           "seat_load_factor": 0.9362680778048534
+        },
+        {
+          "air_time_minutes": 85146.0,
+          "asm": 139265016.0,
+          "available_seats": 71528.0,
+          "departures_performed": 353.0,
+          "load_factor": 0.9296499273011968,
+          "passengers": 66496.0,
+          "period": "2026-07",
+          "rpm": 129467712.0,
+          "seat_load_factor": 0.9296499273011968
         }
       ],
       "LAX-JFK|domestic": [
-        {
-          "air_time_minutes": 87662.0,
-          "asm": 153266850.0,
-          "available_seats": 61926.0,
-          "departures_performed": 297.0,
-          "load_factor": 0.9035461680069761,
-          "passengers": 55953.0,
-          "period": "2024-07",
-          "rpm": 138483675.0,
-          "seat_load_factor": 0.9035461680069761
-        },
         {
           "air_time_minutes": 87934.0,
           "asm": 154138050.0,
@@ -28202,20 +28191,20 @@
           "period": "2026-06",
           "rpm": 153677700.0,
           "seat_load_factor": 0.9403462010267905
+        },
+        {
+          "air_time_minutes": 77094.0,
+          "asm": 151848675.0,
+          "available_seats": 61353.0,
+          "departures_performed": 261.0,
+          "load_factor": 0.9093931837073982,
+          "passengers": 55794.0,
+          "period": "2026-07",
+          "rpm": 138090150.0,
+          "seat_load_factor": 0.9093931837073982
         }
       ],
       "LGA-ATL|domestic": [
-        {
-          "air_time_minutes": 41322.0,
-          "asm": 54632352.0,
-          "available_seats": 71696.0,
-          "departures_performed": 380.0,
-          "load_factor": 0.9410566837759429,
-          "passengers": 67470.0,
-          "period": "2024-07",
-          "rpm": 51412140.0,
-          "seat_load_factor": 0.9410566837759429
-        },
         {
           "air_time_minutes": 39978.0,
           "asm": 54165246.0,
@@ -28468,20 +28457,20 @@
           "period": "2026-06",
           "rpm": 53620416.0,
           "seat_load_factor": 0.9125782982531222
+        },
+        {
+          "air_time_minutes": 42965.0,
+          "asm": 57554622.0,
+          "available_seats": 75531.0,
+          "departures_performed": 398.0,
+          "load_factor": 0.920946366392607,
+          "passengers": 69560.0,
+          "period": "2026-07",
+          "rpm": 53004720.0,
+          "seat_load_factor": 0.920946366392607
         }
       ],
       "LHR-ATL|international": [
-        {
-          "air_time_minutes": 46570.0,
-          "asm": 87294030.0,
-          "available_seats": 20730.0,
-          "departures_performed": 89.0,
-          "load_factor": 0.9653642064640617,
-          "passengers": 20012.0,
-          "period": "2024-07",
-          "rpm": 84270532.0,
-          "seat_load_factor": 0.9653642064640617
-        },
         {
           "air_time_minutes": 46940.0,
           "asm": 89833263.0,
@@ -28734,20 +28723,20 @@
           "period": "2026-06",
           "rpm": 79486836.0,
           "seat_load_factor": 0.8994996426018584
+        },
+        {
+          "air_time_minutes": 46623.0,
+          "asm": 91147095.0,
+          "available_seats": 21645.0,
+          "departures_performed": 92.0,
+          "load_factor": 0.9572649572649573,
+          "passengers": 20720.0,
+          "period": "2026-07",
+          "rpm": 87251920.0,
+          "seat_load_factor": 0.9572649572649573
         }
       ],
       "MBJ-ATL|international": [
-        {
-          "air_time_minutes": 13516.0,
-          "asm": 18800227.0,
-          "available_seats": 16831.0,
-          "departures_performed": 89.0,
-          "load_factor": 0.9360703463846474,
-          "passengers": 15755.0,
-          "period": "2024-07",
-          "rpm": 17598335.0,
-          "seat_load_factor": 0.9360703463846474
-        },
         {
           "air_time_minutes": 12497.0,
           "asm": 17887638.0,
@@ -29000,20 +28989,20 @@
           "period": "2026-06",
           "rpm": 17014144.0,
           "seat_load_factor": 0.9508114856429463
+        },
+        {
+          "air_time_minutes": 13729.0,
+          "asm": 18493052.0,
+          "available_seats": 16556.0,
+          "departures_performed": 92.0,
+          "load_factor": 0.9760207779656922,
+          "passengers": 16159.0,
+          "period": "2026-07",
+          "rpm": 18049603.0,
+          "seat_load_factor": 0.9760207779656922
         }
       ],
       "MCO-ATL|domestic": [
-        {
-          "air_time_minutes": 27565.0,
-          "asm": 36545436.0,
-          "available_seats": 90459.0,
-          "departures_performed": 433.0,
-          "load_factor": 0.8656518422710842,
-          "passengers": 78306.0,
-          "period": "2024-07",
-          "rpm": 31635624.0,
-          "seat_load_factor": 0.8656518422710842
-        },
         {
           "air_time_minutes": 27540.0,
           "asm": 37073868.0,
@@ -29266,20 +29255,20 @@
           "period": "2026-06",
           "rpm": 31572600.0,
           "seat_load_factor": 0.8890582694364179
+        },
+        {
+          "air_time_minutes": 30499.0,
+          "asm": 37326772.0,
+          "available_seats": 92393.0,
+          "departures_performed": 478.0,
+          "load_factor": 0.8698819174612795,
+          "passengers": 80371.0,
+          "period": "2026-07",
+          "rpm": 32469884.0,
+          "seat_load_factor": 0.8698819174612795
         }
       ],
       "MEX-ATL|international": [
-        {
-          "air_time_minutes": 25415.0,
-          "asm": 31116680.0,
-          "available_seats": 23396.0,
-          "departures_performed": 146.0,
-          "load_factor": 0.9309283638228757,
-          "passengers": 21780.0,
-          "period": "2024-07",
-          "rpm": 28967400.0,
-          "seat_load_factor": 0.9309283638228757
-        },
         {
           "air_time_minutes": 26230.0,
           "asm": 32603620.0,
@@ -29532,20 +29521,20 @@
           "period": "2026-06",
           "rpm": 27541640.0,
           "seat_load_factor": 0.7986424466813221
+        },
+        {
+          "air_time_minutes": 26308.0,
+          "asm": 34907180.0,
+          "available_seats": 26246.0,
+          "departures_performed": 150.0,
+          "load_factor": 0.8960603520536463,
+          "passengers": 23518.0,
+          "period": "2026-07",
+          "rpm": 31278940.0,
+          "seat_load_factor": 0.8960603520536463
         }
       ],
       "MIA-ATL|domestic": [
-        {
-          "air_time_minutes": 21739.0,
-          "asm": 29576448.0,
-          "available_seats": 49792.0,
-          "departures_performed": 252.0,
-          "load_factor": 0.916954530848329,
-          "passengers": 45657.0,
-          "period": "2024-07",
-          "rpm": 27120258.0,
-          "seat_load_factor": 0.916954530848329
-        },
         {
           "air_time_minutes": 21269.0,
           "asm": 29101248.0,
@@ -29798,20 +29787,20 @@
           "period": "2026-06",
           "rpm": 27805734.0,
           "seat_load_factor": 0.9022763632158208
+        },
+        {
+          "air_time_minutes": 25330.0,
+          "asm": 32337954.0,
+          "available_seats": 54441.0,
+          "departures_performed": 288.0,
+          "load_factor": 0.866809941037086,
+          "passengers": 47190.0,
+          "period": "2026-07",
+          "rpm": 28030860.0,
+          "seat_load_factor": 0.866809941037086
         }
       ],
       "MSP-AMS|international": [
-        {
-          "air_time_minutes": 40025.0,
-          "asm": 104487446.0,
-          "available_seats": 25081.0,
-          "departures_performed": 89.0,
-          "load_factor": 0.8844543678481719,
-          "passengers": 22183.0,
-          "period": "2024-07",
-          "rpm": 92414378.0,
-          "seat_load_factor": 0.8844543678481719
-        },
         {
           "air_time_minutes": 41337.0,
           "asm": 107974388.0,
@@ -30064,20 +30053,20 @@
           "period": "2026-06",
           "rpm": 96201272.0,
           "seat_load_factor": 0.9391573125101675
+        },
+        {
+          "air_time_minutes": 41231.0,
+          "asm": 105849728.0,
+          "available_seats": 25408.0,
+          "departures_performed": 91.0,
+          "load_factor": 0.9307698362720404,
+          "passengers": 23649.0,
+          "period": "2026-07",
+          "rpm": 98521734.0,
+          "seat_load_factor": 0.9307698362720404
         }
       ],
       "MSP-ATL|domestic": [
-        {
-          "air_time_minutes": 32165.0,
-          "asm": 47509567.0,
-          "available_seats": 52381.0,
-          "departures_performed": 263.0,
-          "load_factor": 0.8735610240354327,
-          "passengers": 45758.0,
-          "period": "2024-07",
-          "rpm": 41502506.0,
-          "seat_load_factor": 0.8735610240354327
-        },
         {
           "air_time_minutes": 30896.0,
           "asm": 48193445.0,
@@ -30330,20 +30319,20 @@
           "period": "2026-06",
           "rpm": 39492594.0,
           "seat_load_factor": 0.8530454714652352
+        },
+        {
+          "air_time_minutes": 32425.0,
+          "asm": 47341772.0,
+          "available_seats": 52196.0,
+          "departures_performed": 268.0,
+          "load_factor": 0.8551421564870871,
+          "passengers": 44635.0,
+          "period": "2026-07",
+          "rpm": 40483945.0,
+          "seat_load_factor": 0.8551421564870871
         }
       ],
       "PBI-ATL|domestic": [
-        {
-          "air_time_minutes": 25378.0,
-          "asm": 31531520.0,
-          "available_seats": 57856.0,
-          "departures_performed": 306.0,
-          "load_factor": 0.8600836559734514,
-          "passengers": 49761.0,
-          "period": "2024-07",
-          "rpm": 27119745.0,
-          "seat_load_factor": 0.8600836559734514
-        },
         {
           "air_time_minutes": 24545.0,
           "asm": 31505360.0,
@@ -30596,20 +30585,20 @@
           "period": "2026-06",
           "rpm": 27041810.0,
           "seat_load_factor": 0.874356805526186
+        },
+        {
+          "air_time_minutes": 24961.0,
+          "asm": 31460125.0,
+          "available_seats": 57725.0,
+          "departures_performed": 305.0,
+          "load_factor": 0.8747163274144651,
+          "passengers": 50493.0,
+          "period": "2026-07",
+          "rpm": 27518685.0,
+          "seat_load_factor": 0.8747163274144651
         }
       ],
       "PUJ-ATL|international": [
-        {
-          "air_time_minutes": 17683.0,
-          "asm": 24452208.0,
-          "available_seats": 17028.0,
-          "departures_performed": 92.0,
-          "load_factor": 0.940333568240545,
-          "passengers": 16012.0,
-          "period": "2024-07",
-          "rpm": 22993232.0,
-          "seat_load_factor": 0.940333568240545
-        },
         {
           "air_time_minutes": 16931.0,
           "asm": 23811752.0,
@@ -30862,20 +30851,20 @@
           "period": "2026-06",
           "rpm": 24187984.0,
           "seat_load_factor": 0.9487439450264729
+        },
+        {
+          "air_time_minutes": 16360.0,
+          "asm": 23033440.0,
+          "available_seats": 16040.0,
+          "departures_performed": 85.0,
+          "load_factor": 0.9478179551122194,
+          "passengers": 15203.0,
+          "period": "2026-07",
+          "rpm": 21831508.0,
+          "seat_load_factor": 0.9478179551122194
         }
       ],
       "RDU-ATL|domestic": [
-        {
-          "air_time_minutes": 16964.0,
-          "asm": 19451128.0,
-          "available_seats": 54638.0,
-          "departures_performed": 299.0,
-          "load_factor": 0.8548080090779311,
-          "passengers": 46705.0,
-          "period": "2024-07",
-          "rpm": 16626980.0,
-          "seat_load_factor": 0.8548080090779311
-        },
         {
           "air_time_minutes": 16743.0,
           "asm": 19465724.0,
@@ -31128,20 +31117,20 @@
           "period": "2026-06",
           "rpm": 19154580.0,
           "seat_load_factor": 0.910267471958585
+        },
+        {
+          "air_time_minutes": 18991.0,
+          "asm": 21586416.0,
+          "available_seats": 60636.0,
+          "departures_performed": 340.0,
+          "load_factor": 0.8976845438353453,
+          "passengers": 54432.0,
+          "period": "2026-07",
+          "rpm": 19377792.0,
+          "seat_load_factor": 0.8976845438353453
         }
       ],
       "SDQ-JFK|international": [
-        {
-          "air_time_minutes": 18523.0,
-          "asm": 27043991.0,
-          "available_seats": 17459.0,
-          "departures_performed": 90.0,
-          "load_factor": 0.9408900853428032,
-          "passengers": 16427.0,
-          "period": "2024-07",
-          "rpm": 25445423.0,
-          "seat_load_factor": 0.9408900853428032
-        },
         {
           "air_time_minutes": 18610.0,
           "asm": 27347595.0,
@@ -31394,20 +31383,20 @@
           "period": "2026-06",
           "rpm": 23702798.0,
           "seat_load_factor": 0.8764032073310424
+        },
+        {
+          "air_time_minutes": 18161.0,
+          "asm": 26391862.0,
+          "available_seats": 17038.0,
+          "departures_performed": 88.0,
+          "load_factor": 0.8977579528113628,
+          "passengers": 15296.0,
+          "period": "2026-07",
+          "rpm": 23693504.0,
+          "seat_load_factor": 0.8977579528113628
         }
       ],
       "STI-JFK|international": [
-        {
-          "air_time_minutes": 17958.0,
-          "asm": 25675325.0,
-          "available_seats": 17407.0,
-          "departures_performed": 92.0,
-          "load_factor": 0.9100936404894583,
-          "passengers": 15842.0,
-          "period": "2024-07",
-          "rpm": 23366950.0,
-          "seat_load_factor": 0.9100936404894583
-        },
         {
           "air_time_minutes": 17899.0,
           "asm": 25679750.0,
@@ -31660,20 +31649,20 @@
           "period": "2026-06",
           "rpm": 21555650.0,
           "seat_load_factor": 0.8464033360361404
+        },
+        {
+          "air_time_minutes": 17408.0,
+          "asm": 25176775.0,
+          "available_seats": 17069.0,
+          "departures_performed": 88.0,
+          "load_factor": 0.8550002929287012,
+          "passengers": 14594.0,
+          "period": "2026-07",
+          "rpm": 21526150.0,
+          "seat_load_factor": 0.8550002929287012
         }
       ],
       "TPA-ATL|domestic": [
-        {
-          "air_time_minutes": 23210.0,
-          "asm": 28388332.0,
-          "available_seats": 69922.0,
-          "departures_performed": 351.0,
-          "load_factor": 0.883427247504362,
-          "passengers": 61771.0,
-          "period": "2024-07",
-          "rpm": 25079026.0,
-          "seat_load_factor": 0.883427247504362
-        },
         {
           "air_time_minutes": 22563.0,
           "asm": 28015624.0,
@@ -31926,20 +31915,20 @@
           "period": "2026-06",
           "rpm": 26897500.0,
           "seat_load_factor": 0.9071365976558221
+        },
+        {
+          "air_time_minutes": 25642.0,
+          "asm": 30588852.0,
+          "available_seats": 75342.0,
+          "departures_performed": 388.0,
+          "load_factor": 0.8761248705901091,
+          "passengers": 66009.0,
+          "period": "2026-07",
+          "rpm": 26799654.0,
+          "seat_load_factor": 0.8761248705901091
         }
       ],
       "YYZ-ATL|international": [
-        {
-          "air_time_minutes": 13995.0,
-          "asm": 18015342.0,
-          "available_seats": 24378.0,
-          "departures_performed": 136.0,
-          "load_factor": 0.9428172942817294,
-          "passengers": 22984.0,
-          "period": "2024-07",
-          "rpm": 16985176.0,
-          "seat_load_factor": 0.9428172942817294
-        },
         {
           "air_time_minutes": 14917.0,
           "asm": 19832543.0,
@@ -32192,6 +32181,17 @@
           "period": "2026-06",
           "rpm": 15264045.0,
           "seat_load_factor": 0.7993421052631579
+        },
+        {
+          "air_time_minutes": 14554.0,
+          "asm": 19093543.0,
+          "available_seats": 25837.0,
+          "departures_performed": 143.0,
+          "load_factor": 0.9130316987266324,
+          "passengers": 23590.0,
+          "period": "2026-07",
+          "rpm": 17433010.0,
+          "seat_load_factor": 0.9130316987266324
         }
       ]
     },
@@ -32202,1055 +32202,1055 @@
     "top_airports": [
       {
         "airport": "ATL",
-        "departures_or_arrivals": 1055825.0,
-        "passengers_segment_ends": 153920851.0
+        "departures_or_arrivals": 1060302.0,
+        "passengers_segment_ends": 154437405.0
       },
       {
         "airport": "MSP",
-        "departures_or_arrivals": 292337.0,
-        "passengers_segment_ends": 40783047.0
+        "departures_or_arrivals": 291917.0,
+        "passengers_segment_ends": 40759686.0
       },
       {
         "airport": "DTW",
-        "departures_or_arrivals": 258524.0,
-        "passengers_segment_ends": 35945574.0
+        "departures_or_arrivals": 259037.0,
+        "passengers_segment_ends": 36044603.0
       },
       {
         "airport": "SLC",
-        "departures_or_arrivals": 231156.0,
-        "passengers_segment_ends": 31139461.0
+        "departures_or_arrivals": 231660.0,
+        "passengers_segment_ends": 31211889.0
       },
       {
         "airport": "JFK",
-        "departures_or_arrivals": 182907.0,
-        "passengers_segment_ends": 30633597.0
+        "departures_or_arrivals": 182344.0,
+        "passengers_segment_ends": 30552201.0
       },
       {
         "airport": "LAX",
-        "departures_or_arrivals": 160330.0,
-        "passengers_segment_ends": 24691041.0
+        "departures_or_arrivals": 161063.0,
+        "passengers_segment_ends": 24774812.0
       },
       {
         "airport": "SEA",
-        "departures_or_arrivals": 141386.0,
-        "passengers_segment_ends": 20372953.0
+        "departures_or_arrivals": 141688.0,
+        "passengers_segment_ends": 20426221.0
       },
       {
         "airport": "BOS",
-        "departures_or_arrivals": 117250.0,
-        "passengers_segment_ends": 17328288.0
+        "departures_or_arrivals": 117764.0,
+        "passengers_segment_ends": 17437811.0
       },
       {
         "airport": "LGA",
-        "departures_or_arrivals": 113154.0,
-        "passengers_segment_ends": 15359363.0
+        "departures_or_arrivals": 113295.0,
+        "passengers_segment_ends": 15407588.0
       },
       {
         "airport": "MCO",
-        "departures_or_arrivals": 85195.0,
-        "passengers_segment_ends": 14198387.0
+        "departures_or_arrivals": 85342.0,
+        "passengers_segment_ends": 14226152.0
       },
       {
         "airport": "LAS",
-        "departures_or_arrivals": 64649.0,
-        "passengers_segment_ends": 9758598.0
+        "departures_or_arrivals": 64544.0,
+        "passengers_segment_ends": 9742025.0
       },
       {
         "airport": "TPA",
-        "departures_or_arrivals": 54758.0,
-        "passengers_segment_ends": 8610397.0
+        "departures_or_arrivals": 55102.0,
+        "passengers_segment_ends": 8670572.0
       },
       {
         "airport": "FLL",
-        "departures_or_arrivals": 50282.0,
-        "passengers_segment_ends": 7975825.0
+        "departures_or_arrivals": 50492.0,
+        "passengers_segment_ends": 8005293.0
       },
       {
         "airport": "SFO",
-        "departures_or_arrivals": 54083.0,
-        "passengers_segment_ends": 7942234.0
+        "departures_or_arrivals": 54380.0,
+        "passengers_segment_ends": 7978602.0
       },
       {
         "airport": "MIA",
-        "departures_or_arrivals": 48361.0,
-        "passengers_segment_ends": 7181455.0
+        "departures_or_arrivals": 48303.0,
+        "passengers_segment_ends": 7176439.0
       },
       {
         "airport": "PHX",
-        "departures_or_arrivals": 42795.0,
-        "passengers_segment_ends": 6653282.0
-      },
-      {
-        "airport": "DEN",
-        "departures_or_arrivals": 46582.0,
-        "passengers_segment_ends": 6315527.0
+        "departures_or_arrivals": 42865.0,
+        "passengers_segment_ends": 6656641.0
       },
       {
         "airport": "AUS",
-        "departures_or_arrivals": 48923.0,
-        "passengers_segment_ends": 6239593.0
+        "departures_or_arrivals": 49355.0,
+        "passengers_segment_ends": 6303405.0
+      },
+      {
+        "airport": "DEN",
+        "departures_or_arrivals": 46573.0,
+        "passengers_segment_ends": 6301347.0
       },
       {
         "airport": "RDU",
-        "departures_or_arrivals": 46828.0,
-        "passengers_segment_ends": 6048861.0
+        "departures_or_arrivals": 46863.0,
+        "passengers_segment_ends": 6063658.0
       },
       {
         "airport": "SAN",
-        "departures_or_arrivals": 38221.0,
-        "passengers_segment_ends": 5841361.0
+        "departures_or_arrivals": 38266.0,
+        "passengers_segment_ends": 5843932.0
       },
       {
         "airport": "DFW",
-        "departures_or_arrivals": 47277.0,
-        "passengers_segment_ends": 5447751.0
+        "departures_or_arrivals": 47223.0,
+        "passengers_segment_ends": 5456687.0
       },
       {
         "airport": "AMS",
-        "departures_or_arrivals": 21935.0,
-        "passengers_segment_ends": 5439379.0
+        "departures_or_arrivals": 21927.0,
+        "passengers_segment_ends": 5430539.0
       },
       {
         "airport": "ORD",
-        "departures_or_arrivals": 43318.0,
-        "passengers_segment_ends": 5024137.0
+        "departures_or_arrivals": 43504.0,
+        "passengers_segment_ends": 5067779.0
       },
       {
         "airport": "BNA",
-        "departures_or_arrivals": 35938.0,
-        "passengers_segment_ends": 4657146.0
+        "departures_or_arrivals": 36349.0,
+        "passengers_segment_ends": 4691975.0
       },
       {
         "airport": "DCA",
-        "departures_or_arrivals": 36612.0,
-        "passengers_segment_ends": 4649122.0
+        "departures_or_arrivals": 36735.0,
+        "passengers_segment_ends": 4645243.0
       },
       {
         "airport": "RSW",
-        "departures_or_arrivals": 29330.0,
-        "passengers_segment_ends": 4582403.0
+        "departures_or_arrivals": 29365.0,
+        "passengers_segment_ends": 4586521.0
       },
       {
         "airport": "CVG",
-        "departures_or_arrivals": 30629.0,
-        "passengers_segment_ends": 4316926.0
+        "departures_or_arrivals": 30845.0,
+        "passengers_segment_ends": 4342195.0
       },
       {
         "airport": "PBI",
-        "departures_or_arrivals": 28231.0,
-        "passengers_segment_ends": 4225551.0
+        "departures_or_arrivals": 28179.0,
+        "passengers_segment_ends": 4221627.0
       },
       {
         "airport": "MSY",
-        "departures_or_arrivals": 30230.0,
-        "passengers_segment_ends": 4173746.0
+        "departures_or_arrivals": 30335.0,
+        "passengers_segment_ends": 4184720.0
       },
       {
         "airport": "PDX",
-        "departures_or_arrivals": 29303.0,
-        "passengers_segment_ends": 4123654.0
+        "departures_or_arrivals": 29265.0,
+        "passengers_segment_ends": 4113082.0
       }
     ],
     "top_directional_routes": [
       {
-        "air_time_minutes": 663400.0,
-        "asm": 889551440.0,
-        "available_seats": 2201860.0,
-        "departures_performed": 10812.0,
+        "air_time_minutes": 665664.0,
+        "asm": 890070580.0,
+        "available_seats": 2203145.0,
+        "departures_performed": 10852.0,
         "destination": "MCO",
         "destination_city": "Orlando, FL",
-        "load_factor": 0.8849926880001453,
+        "load_factor": 0.8859258015246386,
         "origin": "ATL",
         "origin_city": "Atlanta, GA",
-        "passengers": 1948630.0,
-        "rpm": 787246520.0,
+        "passengers": 1951823.0,
+        "rpm": 788536492.0,
         "scope": "domestic",
-        "seat_load_factor": 0.8849926880001453
+        "seat_load_factor": 0.8859258015246386
       },
       {
-        "air_time_minutes": 690003.0,
-        "asm": 888413372.0,
-        "available_seats": 2199043.0,
-        "departures_performed": 10799.0,
+        "air_time_minutes": 692937.0,
+        "asm": 889194708.0,
+        "available_seats": 2200977.0,
+        "departures_performed": 10844.0,
         "destination": "ATL",
         "destination_city": "Atlanta, GA",
-        "load_factor": 0.8791869917959767,
+        "load_factor": 0.8793526692918645,
         "origin": "MCO",
         "origin_city": "Orlando, FL",
-        "passengers": 1933370.0,
-        "rpm": 781081480.0,
+        "passengers": 1935435.0,
+        "rpm": 781915740.0,
         "scope": "domestic",
-        "seat_load_factor": 0.8791869917959767
+        "seat_load_factor": 0.8793526692918645
       },
       {
-        "air_time_minutes": 562413.0,
-        "asm": 694245384.0,
-        "available_seats": 1709964.0,
-        "departures_performed": 8661.0,
+        "air_time_minutes": 564845.0,
+        "asm": 696445904.0,
+        "available_seats": 1715384.0,
+        "departures_performed": 8698.0,
         "destination": "ATL",
         "destination_city": "Atlanta, GA",
-        "load_factor": 0.8822483982118922,
+        "load_factor": 0.8819313926211274,
         "origin": "TPA",
         "origin_city": "Tampa, FL",
-        "passengers": 1508613.0,
-        "rpm": 612496878.0,
+        "passengers": 1512851.0,
+        "rpm": 614217506.0,
         "scope": "domestic",
-        "seat_load_factor": 0.8822483982118922
+        "seat_load_factor": 0.8819313926211274
       },
       {
-        "air_time_minutes": 542823.0,
-        "asm": 698706106.0,
-        "available_seats": 1720951.0,
-        "departures_performed": 8704.0,
+        "air_time_minutes": 545281.0,
+        "asm": 700712558.0,
+        "available_seats": 1725893.0,
+        "departures_performed": 8737.0,
         "destination": "TPA",
         "destination_city": "Tampa, FL",
-        "load_factor": 0.875178317104903,
+        "load_factor": 0.8757112984408651,
         "origin": "ATL",
         "origin_city": "Atlanta, GA",
-        "passengers": 1506139.0,
-        "rpm": 611492434.0,
+        "passengers": 1511384.0,
+        "rpm": 613621904.0,
         "scope": "domestic",
-        "seat_load_factor": 0.875178317104903
+        "seat_load_factor": 0.8757112984408651
       },
       {
-        "air_time_minutes": 1060627.0,
-        "asm": 1356150450.0,
-        "available_seats": 1779725.0,
-        "departures_performed": 9430.0,
+        "air_time_minutes": 1062270.0,
+        "asm": 1359072720.0,
+        "available_seats": 1783560.0,
+        "departures_performed": 9448.0,
         "destination": "ATL",
         "destination_city": "Atlanta, GA",
-        "load_factor": 0.8428358313784433,
+        "load_factor": 0.8421953845118751,
         "origin": "LGA",
         "origin_city": "New York, NY",
-        "passengers": 1500016.0,
-        "rpm": 1143012192.0,
+        "passengers": 1502106.0,
+        "rpm": 1144604772.0,
         "scope": "domestic",
-        "seat_load_factor": 0.8428358313784433
+        "seat_load_factor": 0.8421953845118751
       },
       {
-        "air_time_minutes": 970916.0,
-        "asm": 1352802222.0,
-        "available_seats": 1775331.0,
-        "departures_performed": 9415.0,
+        "air_time_minutes": 973139.0,
+        "asm": 1353662520.0,
+        "available_seats": 1776460.0,
+        "departures_performed": 9419.0,
         "destination": "LGA",
         "destination_city": "New York, NY",
-        "load_factor": 0.8412887512244196,
+        "load_factor": 0.8427406189838218,
         "origin": "ATL",
         "origin_city": "Atlanta, GA",
-        "passengers": 1493566.0,
-        "rpm": 1138097292.0,
+        "passengers": 1497095.0,
+        "rpm": 1140786390.0,
         "scope": "domestic",
-        "seat_load_factor": 0.8412887512244196
+        "seat_load_factor": 0.8427406189838218
       },
       {
-        "air_time_minutes": 1997582.0,
-        "asm": 3157296087.0,
-        "available_seats": 1621621.0,
-        "departures_performed": 7831.0,
-        "destination": "LAX",
-        "destination_city": "Los Angeles, CA",
-        "load_factor": 0.877765519810116,
-        "origin": "ATL",
-        "origin_city": "Atlanta, GA",
-        "passengers": 1423403.0,
-        "rpm": 2771365641.0,
-        "scope": "domestic",
-        "seat_load_factor": 0.877765519810116
-      },
-      {
-        "air_time_minutes": 1742494.0,
-        "asm": 3139214298.0,
-        "available_seats": 1612334.0,
-        "departures_performed": 7781.0,
+        "air_time_minutes": 718956.0,
+        "asm": 956597327.0,
+        "available_seats": 1646467.0,
+        "departures_performed": 8384.0,
         "destination": "ATL",
         "destination_city": "Atlanta, GA",
-        "load_factor": 0.8810463588809763,
-        "origin": "LAX",
-        "origin_city": "Los Angeles, CA",
-        "passengers": 1420541.0,
-        "rpm": 2765793327.0,
-        "scope": "domestic",
-        "seat_load_factor": 0.8810463588809763
-      },
-      {
-        "air_time_minutes": 713256.0,
-        "asm": 951040062.0,
-        "available_seats": 1636902.0,
-        "departures_performed": 8325.0,
-        "destination": "ATL",
-        "destination_city": "Atlanta, GA",
-        "load_factor": 0.866074450394709,
+        "load_factor": 0.8669696993623316,
         "origin": "FLL",
         "origin_city": "Fort Lauderdale, FL",
-        "passengers": 1417679.0,
-        "rpm": 823671499.0,
+        "passengers": 1427437.0,
+        "rpm": 829340897.0,
         "scope": "domestic",
-        "seat_load_factor": 0.866074450394709
+        "seat_load_factor": 0.8669696993623316
       },
       {
-        "air_time_minutes": 709154.0,
-        "asm": 953995028.0,
-        "available_seats": 1641988.0,
-        "departures_performed": 8348.0,
-        "destination": "FLL",
-        "destination_city": "Fort Lauderdale, FL",
-        "load_factor": 0.8519721215989399,
-        "origin": "ATL",
-        "origin_city": "Atlanta, GA",
-        "passengers": 1398928.0,
-        "rpm": 812777168.0,
-        "scope": "domestic",
-        "seat_load_factor": 0.8519721215989399
-      },
-      {
-        "air_time_minutes": 1914354.0,
-        "asm": 3716870850.0,
-        "available_seats": 1501766.0,
-        "departures_performed": 6704.0,
-        "destination": "JFK",
-        "destination_city": "New York, NY",
-        "load_factor": 0.896772866079003,
-        "origin": "LAX",
-        "origin_city": "Los Angeles, CA",
-        "passengers": 1346743.0,
-        "rpm": 3333188925.0,
-        "scope": "domestic",
-        "seat_load_factor": 0.896772866079003
-      },
-      {
-        "air_time_minutes": 2197123.0,
-        "asm": 3738291975.0,
-        "available_seats": 1510421.0,
-        "departures_performed": 6746.0,
+        "air_time_minutes": 1997132.0,
+        "asm": 3152827722.0,
+        "available_seats": 1619326.0,
+        "departures_performed": 7837.0,
         "destination": "LAX",
         "destination_city": "Los Angeles, CA",
-        "load_factor": 0.8799155996904174,
+        "load_factor": 0.8786427192548011,
+        "origin": "ATL",
+        "origin_city": "Atlanta, GA",
+        "passengers": 1422809.0,
+        "rpm": 2770209123.0,
+        "scope": "domestic",
+        "seat_load_factor": 0.8786427192548011
+      },
+      {
+        "air_time_minutes": 1745624.0,
+        "asm": 3131887737.0,
+        "available_seats": 1608571.0,
+        "departures_performed": 7783.0,
+        "destination": "ATL",
+        "destination_city": "Atlanta, GA",
+        "load_factor": 0.8825187075982347,
+        "origin": "LAX",
+        "origin_city": "Los Angeles, CA",
+        "passengers": 1419594.0,
+        "rpm": 2763949518.0,
+        "scope": "domestic",
+        "seat_load_factor": 0.8825187075982347
+      },
+      {
+        "air_time_minutes": 715057.0,
+        "asm": 959462238.0,
+        "available_seats": 1651398.0,
+        "departures_performed": 8405.0,
+        "destination": "FLL",
+        "destination_city": "Fort Lauderdale, FL",
+        "load_factor": 0.8533842235487751,
+        "origin": "ATL",
+        "origin_city": "Atlanta, GA",
+        "passengers": 1409277.0,
+        "rpm": 818789937.0,
+        "scope": "domestic",
+        "seat_load_factor": 0.8533842235487751
+      },
+      {
+        "air_time_minutes": 1903786.0,
+        "asm": 3715452675.0,
+        "available_seats": 1501193.0,
+        "departures_performed": 6668.0,
+        "destination": "JFK",
+        "destination_city": "New York, NY",
+        "load_factor": 0.8970092453135606,
+        "origin": "LAX",
+        "origin_city": "Los Angeles, CA",
+        "passengers": 1346584.0,
+        "rpm": 3332795400.0,
+        "scope": "domestic",
+        "seat_load_factor": 0.8970092453135606
+      },
+      {
+        "air_time_minutes": 2187814.0,
+        "asm": 3743996850.0,
+        "available_seats": 1512726.0,
+        "departures_performed": 6722.0,
+        "destination": "LAX",
+        "destination_city": "Los Angeles, CA",
+        "load_factor": 0.879945872550614,
         "origin": "JFK",
         "origin_city": "New York, NY",
-        "passengers": 1329043.0,
-        "rpm": 3289381425.0,
+        "passengers": 1331117.0,
+        "rpm": 3294514575.0,
         "scope": "domestic",
-        "seat_load_factor": 0.8799155996904174
+        "seat_load_factor": 0.879945872550614
       },
       {
-        "air_time_minutes": 350691.0,
-        "asm": 392245881.0,
-        "available_seats": 1455451.0,
-        "departures_performed": 7560.0,
+        "air_time_minutes": 352306.0,
+        "asm": 393588667.0,
+        "available_seats": 1460669.0,
+        "departures_performed": 7600.0,
         "destination": "ATL",
         "destination_city": "Atlanta, GA",
-        "load_factor": 0.8680711754880098,
+        "load_factor": 0.8685991891123227,
         "origin": "JAX",
         "origin_city": "Jacksonville, FL",
-        "passengers": 1263413.0,
-        "rpm": 340497343.0,
+        "passengers": 1268718.0,
+        "rpm": 341870797.0,
         "scope": "domestic",
-        "seat_load_factor": 0.8680560183750604
+        "seat_load_factor": 0.8685869283184623
       },
       {
-        "air_time_minutes": 331574.0,
-        "asm": 391233264.0,
-        "available_seats": 1451703.0,
-        "departures_performed": 7533.0,
+        "air_time_minutes": 334327.0,
+        "asm": 392957222.0,
+        "available_seats": 1458332.0,
+        "departures_performed": 7579.0,
         "destination": "JAX",
         "destination_city": "Jacksonville, FL",
-        "load_factor": 0.8595370510213058,
+        "load_factor": 0.8599292113277409,
         "origin": "ATL",
         "origin_city": "Atlanta, GA",
-        "passengers": 1247780.0,
-        "rpm": 336279486.0,
+        "passengers": 1254049.0,
+        "rpm": 337915394.0,
         "scope": "domestic",
-        "seat_load_factor": 0.8595284297132403
+        "seat_load_factor": 0.8599201004983776
       },
       {
-        "air_time_minutes": 636928.0,
-        "asm": 846280710.0,
-        "available_seats": 1424715.0,
-        "departures_performed": 7357.0,
+        "air_time_minutes": 642423.0,
+        "asm": 850036572.0,
+        "available_seats": 1431038.0,
+        "departures_performed": 7408.0,
         "destination": "DTW",
         "destination_city": "Detroit, MI",
-        "load_factor": 0.8411598109095503,
+        "load_factor": 0.8430859278369967,
         "origin": "ATL",
         "origin_city": "Atlanta, GA",
-        "passengers": 1198413.0,
-        "rpm": 711857322.0,
+        "passengers": 1206488.0,
+        "rpm": 716653872.0,
         "scope": "domestic",
-        "seat_load_factor": 0.8411598109095503
+        "seat_load_factor": 0.8430859278369967
       },
       {
-        "air_time_minutes": 654029.0,
-        "asm": 846130428.0,
-        "available_seats": 1424462.0,
-        "departures_performed": 7377.0,
+        "air_time_minutes": 658505.0,
+        "asm": 850135176.0,
+        "available_seats": 1431204.0,
+        "departures_performed": 7428.0,
         "destination": "ATL",
         "destination_city": "Atlanta, GA",
-        "load_factor": 0.8409111650574042,
+        "load_factor": 0.8424144985620499,
         "origin": "DTW",
         "origin_city": "Detroit, MI",
-        "passengers": 1197846.0,
-        "rpm": 711520524.0,
+        "passengers": 1205667.0,
+        "rpm": 716166198.0,
         "scope": "domestic",
-        "seat_load_factor": 0.8409111650574042
+        "seat_load_factor": 0.8424144985620499
       },
       {
-        "air_time_minutes": 887628.0,
-        "asm": 1278841586.0,
-        "available_seats": 1351841.0,
-        "departures_performed": 7220.0,
+        "air_time_minutes": 894488.0,
+        "asm": 1285991454.0,
+        "available_seats": 1359399.0,
+        "departures_performed": 7259.0,
         "destination": "BOS",
         "destination_city": "Boston, MA",
-        "load_factor": 0.884705375854113,
+        "load_factor": 0.8862850421399456,
         "origin": "ATL",
         "origin_city": "Atlanta, GA",
-        "passengers": 1195981.0,
-        "rpm": 1131398026.0,
+        "passengers": 1204815.0,
+        "rpm": 1139754990.0,
         "scope": "domestic",
-        "seat_load_factor": 0.884705375854113
+        "seat_load_factor": 0.8862850421399456
       },
       {
-        "air_time_minutes": 602163.0,
-        "asm": 755195055.0,
-        "available_seats": 1385679.0,
-        "departures_performed": 7320.0,
+        "air_time_minutes": 993979.0,
+        "asm": 1283543206.0,
+        "available_seats": 1356811.0,
+        "departures_performed": 7239.0,
         "destination": "ATL",
         "destination_city": "Atlanta, GA",
-        "load_factor": 0.8545319659170703,
-        "origin": "PBI",
-        "origin_city": "West Palm Beach/Palm Beach, FL",
-        "passengers": 1184107.0,
-        "rpm": 645338315.0,
-        "scope": "domestic",
-        "seat_load_factor": 0.8545319659170703
-      },
-      {
-        "air_time_minutes": 989793.0,
-        "asm": 1276648758.0,
-        "available_seats": 1349523.0,
-        "departures_performed": 7202.0,
-        "destination": "ATL",
-        "destination_city": "Atlanta, GA",
-        "load_factor": 0.8742007361119447,
+        "load_factor": 0.8752036945455188,
         "origin": "BOS",
         "origin_city": "Boston, MA",
-        "passengers": 1179754.0,
-        "rpm": 1116047284.0,
+        "passengers": 1187486.0,
+        "rpm": 1123361756.0,
         "scope": "domestic",
-        "seat_load_factor": 0.8742007361119447
+        "seat_load_factor": 0.8752036945455188
       },
       {
-        "air_time_minutes": 1344035.0,
-        "asm": 2346849920.0,
-        "available_seats": 1343360.0,
-        "departures_performed": 6702.0,
-        "destination": "ATL",
-        "destination_city": "Atlanta, GA",
-        "load_factor": 0.8621173773225346,
-        "origin": "LAS",
-        "origin_city": "Las Vegas, NV",
-        "passengers": 1158134.0,
-        "rpm": 2023260098.0,
-        "scope": "domestic",
-        "seat_load_factor": 0.8621173773225346
-      },
-      {
-        "air_time_minutes": 1570982.0,
-        "asm": 2357978310.0,
-        "available_seats": 1349730.0,
-        "departures_performed": 6729.0,
-        "destination": "LAS",
-        "destination_city": "Las Vegas, NV",
-        "load_factor": 0.8577552547546546,
-        "origin": "ATL",
-        "origin_city": "Atlanta, GA",
-        "passengers": 1157738.0,
-        "rpm": 2022568286.0,
-        "scope": "domestic",
-        "seat_load_factor": 0.8577552547546546
-      },
-      {
-        "air_time_minutes": 606633.0,
-        "asm": 759796490.0,
-        "available_seats": 1394122.0,
-        "departures_performed": 7330.0,
-        "destination": "PBI",
-        "destination_city": "West Palm Beach/Palm Beach, FL",
-        "load_factor": 0.8280107479833185,
-        "origin": "ATL",
-        "origin_city": "Atlanta, GA",
-        "passengers": 1154348.0,
-        "rpm": 629119660.0,
-        "scope": "domestic",
-        "seat_load_factor": 0.8280107479833185
-      },
-      {
-        "air_time_minutes": 430559.0,
-        "asm": 465997948.0,
-        "available_seats": 1308983.0,
+        "air_time_minutes": 601746.0,
+        "asm": 755123660.0,
+        "available_seats": 1385548.0,
         "departures_performed": 7319.0,
         "destination": "ATL",
         "destination_city": "Atlanta, GA",
-        "load_factor": 0.8696117520242814,
+        "load_factor": 0.8551410705367118,
+        "origin": "PBI",
+        "origin_city": "West Palm Beach/Palm Beach, FL",
+        "passengers": 1184839.0,
+        "rpm": 645737255.0,
+        "scope": "domestic",
+        "seat_load_factor": 0.8551410705367118
+      },
+      {
+        "air_time_minutes": 1345889.0,
+        "asm": 2345102920.0,
+        "available_seats": 1342360.0,
+        "departures_performed": 6701.0,
+        "destination": "ATL",
+        "destination_city": "Atlanta, GA",
+        "load_factor": 0.8645214398522006,
+        "origin": "LAS",
+        "origin_city": "Las Vegas, NV",
+        "passengers": 1160499.0,
+        "rpm": 2027391753.0,
+        "scope": "domestic",
+        "seat_load_factor": 0.8645214398522006
+      },
+      {
+        "air_time_minutes": 1570292.0,
+        "asm": 2357691802.0,
+        "available_seats": 1349566.0,
+        "departures_performed": 6734.0,
+        "destination": "LAS",
+        "destination_city": "Las Vegas, NV",
+        "load_factor": 0.8581581041608932,
+        "origin": "ATL",
+        "origin_city": "Atlanta, GA",
+        "passengers": 1158141.0,
+        "rpm": 2023272327.0,
+        "scope": "domestic",
+        "seat_load_factor": 0.8581581041608932
+      },
+      {
+        "air_time_minutes": 606338.0,
+        "asm": 759303265.0,
+        "available_seats": 1393217.0,
+        "departures_performed": 7325.0,
+        "destination": "PBI",
+        "destination_city": "West Palm Beach/Palm Beach, FL",
+        "load_factor": 0.8287402464942647,
+        "origin": "ATL",
+        "origin_city": "Atlanta, GA",
+        "passengers": 1154615.0,
+        "rpm": 629265175.0,
+        "scope": "domestic",
+        "seat_load_factor": 0.8287402464942647
+      },
+      {
+        "air_time_minutes": 432586.0,
+        "asm": 468133236.0,
+        "available_seats": 1314981.0,
+        "departures_performed": 7360.0,
+        "destination": "ATL",
+        "destination_city": "Atlanta, GA",
+        "load_factor": 0.8715213375706569,
         "origin": "RDU",
         "origin_city": "Raleigh/Durham, NC",
-        "passengers": 1138307.0,
-        "rpm": 405237292.0,
+        "passengers": 1146034.0,
+        "rpm": 407988104.0,
         "scope": "domestic",
-        "seat_load_factor": 0.8696117520242814
+        "seat_load_factor": 0.8715213375706569
       },
       {
-        "air_time_minutes": 562047.0,
-        "asm": 761865588.0,
-        "available_seats": 1282602.0,
-        "departures_performed": 6491.0,
+        "air_time_minutes": 565641.0,
+        "asm": 764669862.0,
+        "available_seats": 1287323.0,
+        "departures_performed": 6526.0,
         "destination": "MIA",
         "destination_city": "Miami, FL",
-        "load_factor": 0.8755857233966577,
+        "load_factor": 0.8750601053504055,
         "origin": "ATL",
         "origin_city": "Atlanta, GA",
-        "passengers": 1123028.0,
-        "rpm": 667078632.0,
+        "passengers": 1126485.0,
+        "rpm": 669132090.0,
         "scope": "domestic",
-        "seat_load_factor": 0.8755857233966577
+        "seat_load_factor": 0.8750601053504055
       },
       {
-        "air_time_minutes": 571773.0,
-        "asm": 770689458.0,
-        "available_seats": 1297457.0,
-        "departures_performed": 6569.0,
-        "destination": "ATL",
-        "destination_city": "Atlanta, GA",
-        "load_factor": 0.8617202728105825,
-        "origin": "MIA",
-        "origin_city": "Miami, FL",
-        "passengers": 1118045.0,
-        "rpm": 664118730.0,
-        "scope": "domestic",
-        "seat_load_factor": 0.8617202728105825
-      },
-      {
-        "air_time_minutes": 421395.0,
-        "asm": 469154956.0,
-        "available_seats": 1317851.0,
-        "departures_performed": 7349.0,
+        "air_time_minutes": 424107.0,
+        "asm": 471134672.0,
+        "available_seats": 1323412.0,
+        "departures_performed": 7389.0,
         "destination": "RDU",
         "destination_city": "Raleigh/Durham, NC",
-        "load_factor": 0.8472437324098097,
+        "load_factor": 0.8493855277117027,
         "origin": "ATL",
         "origin_city": "Atlanta, GA",
-        "passengers": 1116541.0,
-        "rpm": 397488596.0,
+        "passengers": 1124087.0,
+        "rpm": 400174972.0,
         "scope": "domestic",
-        "seat_load_factor": 0.8472437324098097
+        "seat_load_factor": 0.8493855277117027
       },
       {
-        "air_time_minutes": 834244.0,
-        "asm": 1123691370.0,
-        "available_seats": 1238910.0,
-        "departures_performed": 6364.0,
-        "destination": "MSP",
-        "destination_city": "Minneapolis, MN",
-        "load_factor": 0.8559742031301709,
-        "origin": "ATL",
-        "origin_city": "Atlanta, GA",
-        "passengers": 1060475.0,
-        "rpm": 961850825.0,
-        "scope": "domestic",
-        "seat_load_factor": 0.8559742031301709
-      },
-      {
-        "air_time_minutes": 588899.0,
-        "asm": 678887170.0,
-        "available_seats": 1241110.0,
-        "departures_performed": 7429.0,
-        "destination": "DCA",
-        "destination_city": "Washington, DC",
-        "load_factor": 0.8343257245530211,
-        "origin": "ATL",
-        "origin_city": "Atlanta, GA",
-        "passengers": 1035490.0,
-        "rpm": 566413030.0,
-        "scope": "domestic",
-        "seat_load_factor": 0.8343257245530211
-      },
-      {
-        "air_time_minutes": 745880.0,
-        "asm": 1119991717.0,
-        "available_seats": 1234831.0,
-        "departures_performed": 6345.0,
+        "air_time_minutes": 575364.0,
+        "asm": 773450964.0,
+        "available_seats": 1302106.0,
+        "departures_performed": 6605.0,
         "destination": "ATL",
         "destination_city": "Atlanta, GA",
-        "load_factor": 0.8370894478677648,
-        "origin": "MSP",
-        "origin_city": "Minneapolis, MN",
-        "passengers": 1033664.0,
-        "rpm": 937533248.0,
+        "load_factor": 0.859820936237142,
+        "origin": "MIA",
+        "origin_city": "Miami, FL",
+        "passengers": 1119578.0,
+        "rpm": 665029332.0,
         "scope": "domestic",
-        "seat_load_factor": 0.8370894478677648
+        "seat_load_factor": 0.859820936237142
       },
       {
-        "air_time_minutes": 1288959.0,
-        "asm": 1817959890.0,
-        "available_seats": 1143371.0,
-        "departures_performed": 5897.0,
-        "destination": "SLC",
-        "destination_city": "Salt Lake City, UT",
-        "load_factor": 0.8930434653319002,
+        "air_time_minutes": 835097.0,
+        "asm": 1122918606.0,
+        "available_seats": 1238058.0,
+        "departures_performed": 6369.0,
+        "destination": "MSP",
+        "destination_city": "Minneapolis, MN",
+        "load_factor": 0.8569719673876345,
         "origin": "ATL",
         "origin_city": "Atlanta, GA",
-        "passengers": 1021080.0,
-        "rpm": 1623517200.0,
+        "passengers": 1060981.0,
+        "rpm": 962309767.0,
         "scope": "domestic",
-        "seat_load_factor": 0.8930434653319002
+        "seat_load_factor": 0.8569719673876345
       },
       {
-        "air_time_minutes": 498408.0,
-        "asm": 659584640.0,
-        "available_seats": 749528.0,
+        "air_time_minutes": 591423.0,
+        "asm": 677938125.0,
+        "available_seats": 1239375.0,
+        "departures_performed": 7454.0,
+        "destination": "DCA",
+        "destination_city": "Washington, DC",
+        "load_factor": 0.8356131114473021,
+        "origin": "ATL",
+        "origin_city": "Atlanta, GA",
+        "passengers": 1035638.0,
+        "rpm": 566493986.0,
+        "scope": "domestic",
+        "seat_load_factor": 0.8356131114473021
+      },
+      {
+        "air_time_minutes": 746140.0,
+        "asm": 1119823922.0,
+        "available_seats": 1234646.0,
+        "departures_performed": 6350.0,
+        "destination": "ATL",
+        "destination_city": "Atlanta, GA",
+        "load_factor": 0.836305305326385,
+        "origin": "MSP",
+        "origin_city": "Minneapolis, MN",
+        "passengers": 1032541.0,
+        "rpm": 936514687.0,
+        "scope": "domestic",
+        "seat_load_factor": 0.836305305326385
+      },
+      {
+        "air_time_minutes": 1289718.0,
+        "asm": 1819290720.0,
+        "available_seats": 1144208.0,
+        "departures_performed": 5907.0,
+        "destination": "SLC",
+        "destination_city": "Salt Lake City, UT",
+        "load_factor": 0.8934101142449624,
+        "origin": "ATL",
+        "origin_city": "Atlanta, GA",
+        "passengers": 1022247.0,
+        "rpm": 1625372730.0,
+        "scope": "domestic",
+        "seat_load_factor": 0.8934101142449624
+      },
+      {
+        "air_time_minutes": 498817.0,
+        "asm": 658615760.0,
+        "available_seats": 748427.0,
         "departures_performed": 4016.0,
         "destination": "ATL",
         "destination_city": "Atlanta, GA",
-        "load_factor": 0.8919920269823142,
+        "load_factor": 0.892739038009051,
         "origin": "CUN",
         "origin_city": "Cancun, Mexico",
-        "passengers": 668573.0,
-        "rpm": 588344240.0,
+        "passengers": 668150.0,
+        "rpm": 587972000.0,
         "scope": "international",
-        "seat_load_factor": 0.8919920269823142
+        "seat_load_factor": 0.892739038009051
       },
       {
-        "air_time_minutes": 512352.0,
-        "asm": 659817840.0,
-        "available_seats": 749793.0,
-        "departures_performed": 4017.0,
+        "air_time_minutes": 512831.0,
+        "asm": 659315360.0,
+        "available_seats": 749222.0,
+        "departures_performed": 4020.0,
         "destination": "CUN",
         "destination_city": "Cancun, Mexico",
-        "load_factor": 0.8801082432084588,
+        "load_factor": 0.881914839660341,
         "origin": "ATL",
         "origin_city": "Atlanta, GA",
-        "passengers": 659899.0,
-        "rpm": 580711120.0,
+        "passengers": 660750.0,
+        "rpm": 581460000.0,
         "scope": "international",
-        "seat_load_factor": 0.8801082432084588
+        "seat_load_factor": 0.881914839660341
       },
       {
-        "air_time_minutes": 877825.0,
-        "asm": 2311160660.0,
-        "available_seats": 586589.0,
-        "departures_performed": 2060.0,
+        "air_time_minutes": 881166.0,
+        "asm": 2314683020.0,
+        "available_seats": 587483.0,
+        "departures_performed": 2065.0,
         "destination": "AMS",
         "destination_city": "Amsterdam, Netherlands",
-        "load_factor": 0.8850455770565081,
+        "load_factor": 0.8858247813128209,
         "origin": "DTW",
         "origin_city": "Detroit, MI",
-        "passengers": 519158.0,
-        "rpm": 2045482520.0,
+        "passengers": 520407.0,
+        "rpm": 2050403580.0,
         "scope": "international",
-        "seat_load_factor": 0.8850455770565081
+        "seat_load_factor": 0.8858247813128209
       },
       {
-        "air_time_minutes": 994312.0,
-        "asm": 2314107780.0,
-        "available_seats": 587337.0,
-        "departures_performed": 2060.0,
+        "air_time_minutes": 996467.0,
+        "asm": 2317460720.0,
+        "available_seats": 588188.0,
+        "departures_performed": 2065.0,
         "destination": "DTW",
         "destination_city": "Detroit, MI",
-        "load_factor": 0.8478147979779922,
+        "load_factor": 0.8456785925588417,
         "origin": "AMS",
         "origin_city": "Amsterdam, Netherlands",
-        "passengers": 497953.0,
-        "rpm": 1961934820.0,
+        "passengers": 497418.0,
+        "rpm": 1959826920.0,
         "scope": "international",
-        "seat_load_factor": 0.8478147979779922
+        "seat_load_factor": 0.8456785925588417
       },
       {
-        "air_time_minutes": 862635.0,
-        "asm": 2318437998.0,
-        "available_seats": 526798.0,
-        "departures_performed": 1837.0,
+        "air_time_minutes": 871472.0,
+        "asm": 2338863039.0,
+        "available_seats": 531439.0,
+        "departures_performed": 1854.0,
         "destination": "AMS",
         "destination_city": "Amsterdam, Netherlands",
-        "load_factor": 0.9144226060083751,
+        "load_factor": 0.914981775895258,
         "origin": "ATL",
         "origin_city": "Atlanta, GA",
-        "passengers": 481716.0,
-        "rpm": 2120032116.0,
+        "passengers": 486257.0,
+        "rpm": 2140017057.0,
         "scope": "international",
-        "seat_load_factor": 0.9144226060083751
+        "seat_load_factor": 0.914981775895258
       },
       {
-        "air_time_minutes": 633813.0,
-        "asm": 742660030.0,
-        "available_seats": 558391.0,
-        "departures_performed": 3393.0,
+        "air_time_minutes": 633393.0,
+        "asm": 746403980.0,
+        "available_seats": 561206.0,
+        "departures_performed": 3396.0,
         "destination": "MEX",
         "destination_city": "Mexico City, Mexico",
-        "load_factor": 0.8623831687831645,
+        "load_factor": 0.8627402415512307,
         "origin": "ATL",
         "origin_city": "Atlanta, GA",
-        "passengers": 481547.0,
-        "rpm": 640457510.0,
+        "passengers": 484175.0,
+        "rpm": 643952750.0,
         "scope": "international",
-        "seat_load_factor": 0.8623831687831645
+        "seat_load_factor": 0.8627402415512307
       },
       {
-        "air_time_minutes": 841779.0,
-        "asm": 2185216976.0,
-        "available_seats": 524536.0,
-        "departures_performed": 1851.0,
+        "air_time_minutes": 1000412.0,
+        "asm": 2346626403.0,
+        "available_seats": 533203.0,
+        "departures_performed": 1862.0,
+        "destination": "ATL",
+        "destination_city": "Atlanta, GA",
+        "load_factor": 0.8907676813521305,
+        "origin": "AMS",
+        "origin_city": "Amsterdam, Netherlands",
+        "passengers": 474960.0,
+        "rpm": 2090298960.0,
+        "scope": "international",
+        "seat_load_factor": 0.8907676813521305
+      },
+      {
+        "air_time_minutes": 842985.0,
+        "asm": 2186579258.0,
+        "available_seats": 524863.0,
+        "departures_performed": 1853.0,
         "destination": "AMS",
         "destination_city": "Amsterdam, Netherlands",
-        "load_factor": 0.8989850077020453,
+        "load_factor": 0.9012180321340998,
         "origin": "MSP",
         "origin_city": "Minneapolis, MN",
-        "passengers": 471550.0,
-        "rpm": 1964477300.0,
+        "passengers": 473016.0,
+        "rpm": 1970584656.0,
         "scope": "international",
-        "seat_load_factor": 0.8989850077020453
+        "seat_load_factor": 0.9012180321340998
       },
       {
-        "air_time_minutes": 992124.0,
-        "asm": 2326236570.0,
-        "available_seats": 528570.0,
-        "departures_performed": 1845.0,
+        "air_time_minutes": 558239.0,
+        "asm": 744544640.0,
+        "available_seats": 559808.0,
+        "departures_performed": 3388.0,
         "destination": "ATL",
         "destination_city": "Atlanta, GA",
-        "load_factor": 0.8906388936186314,
-        "origin": "AMS",
-        "origin_city": "Amsterdam, Netherlands",
-        "passengers": 470765.0,
-        "rpm": 2071836765.0,
-        "scope": "international",
-        "seat_load_factor": 0.8906388936186314
-      },
-      {
-        "air_time_minutes": 932043.0,
-        "asm": 2179051296.0,
-        "available_seats": 523056.0,
-        "departures_performed": 1846.0,
-        "destination": "MSP",
-        "destination_city": "Minneapolis, MN",
-        "load_factor": 0.8888799669633844,
-        "origin": "AMS",
-        "origin_city": "Amsterdam, Netherlands",
-        "passengers": 464934.0,
-        "rpm": 1936915044.0,
-        "scope": "international",
-        "seat_load_factor": 0.8888799669633844
-      },
-      {
-        "air_time_minutes": 557346.0,
-        "asm": 740754140.0,
-        "available_seats": 556958.0,
-        "departures_performed": 3384.0,
-        "destination": "ATL",
-        "destination_city": "Atlanta, GA",
-        "load_factor": 0.8334237051985967,
+        "load_factor": 0.8322853549788499,
         "origin": "MEX",
         "origin_city": "Mexico City, Mexico",
-        "passengers": 464182.0,
-        "rpm": 617362060.0,
+        "passengers": 465920.0,
+        "rpm": 619673600.0,
         "scope": "international",
-        "seat_load_factor": 0.8334237051985967
+        "seat_load_factor": 0.8322853549788499
       },
       {
-        "air_time_minutes": 998912.0,
-        "asm": 2214442781.0,
-        "available_seats": 525871.0,
-        "departures_performed": 2163.0,
+        "air_time_minutes": 932881.0,
+        "asm": 2181530066.0,
+        "available_seats": 523651.0,
+        "departures_performed": 1849.0,
+        "destination": "MSP",
+        "destination_city": "Minneapolis, MN",
+        "load_factor": 0.8856757649655973,
+        "origin": "AMS",
+        "origin_city": "Amsterdam, Netherlands",
+        "passengers": 463785.0,
+        "rpm": 1932128310.0,
+        "scope": "international",
+        "seat_load_factor": 0.8856757649655973
+      },
+      {
+        "air_time_minutes": 1000963.0,
+        "asm": 2217702095.0,
+        "available_seats": 526645.0,
+        "departures_performed": 2165.0,
         "destination": "LHR",
         "destination_city": "London, United Kingdom",
-        "load_factor": 0.8737485048614584,
+        "load_factor": 0.8761974385022169,
         "origin": "ATL",
         "origin_city": "Atlanta, GA",
-        "passengers": 459479.0,
-        "rpm": 1934866069.0,
+        "passengers": 461445.0,
+        "rpm": 1943144895.0,
         "scope": "international",
-        "seat_load_factor": 0.8737485048614584
+        "seat_load_factor": 0.8761974385022169
       },
       {
-        "air_time_minutes": 824919.0,
-        "asm": 2077037445.0,
-        "available_seats": 472591.0,
-        "departures_performed": 1757.0,
+        "air_time_minutes": 820547.0,
+        "asm": 2064784185.0,
+        "available_seats": 469803.0,
+        "departures_performed": 1746.0,
         "destination": "CDG",
         "destination_city": "Paris, France",
-        "load_factor": 0.9088112130785394,
+        "load_factor": 0.9102985719546278,
         "origin": "ATL",
         "origin_city": "Atlanta, GA",
-        "passengers": 429496.0,
-        "rpm": 1887634920.0,
+        "passengers": 427661.0,
+        "rpm": 1879570095.0,
         "scope": "international",
-        "seat_load_factor": 0.9088112130785394
+        "seat_load_factor": 0.9102985719546278
       },
       {
-        "air_time_minutes": 1124237.0,
-        "asm": 2207882043.0,
-        "available_seats": 524313.0,
-        "departures_performed": 2150.0,
+        "air_time_minutes": 1124290.0,
+        "asm": 2211735108.0,
+        "available_seats": 525228.0,
+        "departures_performed": 2153.0,
         "destination": "ATL",
         "destination_city": "Atlanta, GA",
-        "load_factor": 0.7981758987475038,
+        "load_factor": 0.7981333820740707,
         "origin": "LHR",
         "origin_city": "London, United Kingdom",
-        "passengers": 418494.0,
-        "rpm": 1762278234.0,
+        "passengers": 419202.0,
+        "rpm": 1765259622.0,
         "scope": "international",
-        "seat_load_factor": 0.7981758987475038
+        "seat_load_factor": 0.7981333820740707
       },
       {
-        "air_time_minutes": 702276.0,
-        "asm": 1639326840.0,
-        "available_seats": 450984.0,
-        "departures_performed": 1782.0,
+        "air_time_minutes": 700829.0,
+        "asm": 1625688320.0,
+        "available_seats": 447232.0,
+        "departures_performed": 1776.0,
         "destination": "CDG",
         "destination_city": "Paris, France",
-        "load_factor": 0.9083914285207457,
+        "load_factor": 0.9165421973382942,
         "origin": "JFK",
         "origin_city": "New York, NY",
-        "passengers": 409670.0,
-        "rpm": 1489150450.0,
+        "passengers": 409907.0,
+        "rpm": 1490011945.0,
         "scope": "international",
-        "seat_load_factor": 0.9083914285207457
+        "seat_load_factor": 0.9165421973382942
       },
       {
-        "air_time_minutes": 309185.0,
-        "asm": 361378390.0,
-        "available_seats": 489010.0,
-        "departures_performed": 2959.0,
+        "air_time_minutes": 310740.0,
+        "asm": 362440333.0,
+        "available_seats": 490447.0,
+        "departures_performed": 2966.0,
         "destination": "YYZ",
         "destination_city": "Toronto, Canada",
-        "load_factor": 0.8355452853724873,
+        "load_factor": 0.8346284104092797,
         "origin": "ATL",
         "origin_city": "Atlanta, GA",
-        "passengers": 408590.0,
-        "rpm": 301948010.0,
+        "passengers": 409341.0,
+        "rpm": 302502999.0,
         "scope": "international",
-        "seat_load_factor": 0.8355452853724873
+        "seat_load_factor": 0.8346284104092797
       },
       {
-        "air_time_minutes": 947503.0,
-        "asm": 2058741060.0,
-        "available_seats": 468428.0,
-        "departures_performed": 1743.0,
+        "air_time_minutes": 308663.0,
+        "asm": 361696899.0,
+        "available_seats": 489441.0,
+        "departures_performed": 2956.0,
         "destination": "ATL",
         "destination_city": "Atlanta, GA",
-        "load_factor": 0.8578287378209671,
-        "origin": "CDG",
-        "origin_city": "Paris, France",
-        "passengers": 401831.0,
-        "rpm": 1766047245.0,
-        "scope": "international",
-        "seat_load_factor": 0.8578287378209671
-      },
-      {
-        "air_time_minutes": 308104.0,
-        "asm": 360618698.0,
-        "available_seats": 487982.0,
-        "departures_performed": 2949.0,
-        "destination": "ATL",
-        "destination_city": "Atlanta, GA",
-        "load_factor": 0.8139972376030263,
+        "load_factor": 0.8128088983146079,
         "origin": "YYZ",
         "origin_city": "Toronto, Canada",
-        "passengers": 397216.0,
-        "rpm": 293542624.0,
+        "passengers": 397822.0,
+        "rpm": 293990458.0,
         "scope": "international",
-        "seat_load_factor": 0.8139972376030263
+        "seat_load_factor": 0.8128088983146079
       },
       {
-        "air_time_minutes": 818037.0,
-        "asm": 1637756520.0,
-        "available_seats": 450552.0,
-        "departures_performed": 1781.0,
-        "destination": "JFK",
-        "destination_city": "New York, NY",
-        "load_factor": 0.869599957385607,
+        "air_time_minutes": 938108.0,
+        "asm": 2041714830.0,
+        "available_seats": 464554.0,
+        "departures_performed": 1728.0,
+        "destination": "ATL",
+        "destination_city": "Atlanta, GA",
+        "load_factor": 0.855457062042303,
         "origin": "CDG",
         "origin_city": "Paris, France",
-        "passengers": 391800.0,
-        "rpm": 1424193000.0,
+        "passengers": 397406.0,
+        "rpm": 1746599370.0,
         "scope": "international",
-        "seat_load_factor": 0.869599957385607
+        "seat_load_factor": 0.855457062042303
       },
       {
-        "air_time_minutes": 426341.0,
-        "asm": 648741337.0,
-        "available_seats": 418813.0,
-        "departures_performed": 2168.0,
+        "air_time_minutes": 814698.0,
+        "asm": 1625986390.0,
+        "available_seats": 447314.0,
+        "departures_performed": 1777.0,
+        "destination": "JFK",
+        "destination_city": "New York, NY",
+        "load_factor": 0.8662237265097895,
+        "origin": "CDG",
+        "origin_city": "Paris, France",
+        "passengers": 387474.0,
+        "rpm": 1408467990.0,
+        "scope": "international",
+        "seat_load_factor": 0.8662237265097895
+      },
+      {
+        "air_time_minutes": 426183.0,
+        "asm": 648388165.0,
+        "available_seats": 418585.0,
+        "departures_performed": 2167.0,
         "destination": "SDQ",
         "destination_city": "Santo Domingo, Dominican Republic",
-        "load_factor": 0.8958771575858439,
+        "load_factor": 0.8965371429936572,
         "origin": "JFK",
         "origin_city": "New York, NY",
-        "passengers": 375205.0,
-        "rpm": 581192545.0,
+        "passengers": 375277.0,
+        "rpm": 581304073.0,
         "scope": "international",
-        "seat_load_factor": 0.8958771575858439
+        "seat_load_factor": 0.8965371429936572
       },
       {
-        "air_time_minutes": 443396.0,
-        "asm": 647864603.0,
-        "available_seats": 418247.0,
-        "departures_performed": 2165.0,
+        "air_time_minutes": 443034.0,
+        "asm": 647212474.0,
+        "available_seats": 417826.0,
+        "departures_performed": 2163.0,
         "destination": "JFK",
         "destination_city": "New York, NY",
-        "load_factor": 0.8967404428483647,
+        "load_factor": 0.8949371269380076,
         "origin": "SDQ",
         "origin_city": "Santo Domingo, Dominican Republic",
-        "passengers": 375059.0,
-        "rpm": 580966391.0,
+        "passengers": 373928.0,
+        "rpm": 579214472.0,
         "scope": "international",
-        "seat_load_factor": 0.8967404428483647
+        "seat_load_factor": 0.8949371269380076
       },
       {
-        "air_time_minutes": 695046.0,
-        "asm": 1768482420.0,
-        "available_seats": 413390.0,
-        "departures_performed": 1508.0,
-        "destination": "FCO",
-        "destination_city": "Rome, Italy",
-        "load_factor": 0.894216115532548,
-        "origin": "JFK",
-        "origin_city": "New York, NY",
-        "passengers": 369660.0,
-        "rpm": 1581405480.0,
-        "scope": "international",
-        "seat_load_factor": 0.894216115532548
-      },
-      {
-        "air_time_minutes": 424684.0,
-        "asm": 614564650.0,
-        "available_seats": 416654.0,
-        "departures_performed": 2165.0,
+        "air_time_minutes": 424134.0,
+        "asm": 614066100.0,
+        "available_seats": 416316.0,
+        "departures_performed": 2161.0,
         "destination": "JFK",
         "destination_city": "New York, NY",
-        "load_factor": 0.8861957403505066,
+        "load_factor": 0.8839175049721846,
         "origin": "STI",
         "origin_city": "Santiago, Dominican Republic",
-        "passengers": 369237.0,
-        "rpm": 544624575.0,
+        "passengers": 367989.0,
+        "rpm": 542783775.0,
         "scope": "international",
-        "seat_load_factor": 0.8861957403505066
+        "seat_load_factor": 0.8839175049721846
       },
       {
-        "air_time_minutes": 374690.0,
-        "asm": 577583612.0,
-        "available_seats": 402217.0,
-        "departures_performed": 2136.0,
-        "destination": "PUJ",
-        "destination_city": "Punta Cana, Dominican Republic",
-        "load_factor": 0.9074852629302094,
-        "origin": "ATL",
-        "origin_city": "Atlanta, GA",
-        "passengers": 365006.0,
-        "rpm": 524148616.0,
-        "scope": "international",
-        "seat_load_factor": 0.9074852629302094
-      },
-      {
-        "air_time_minutes": 414294.0,
-        "asm": 572649516.0,
-        "available_seats": 398781.0,
-        "departures_performed": 2118.0,
-        "destination": "ATL",
-        "destination_city": "Atlanta, GA",
-        "load_factor": 0.909729901875967,
-        "origin": "PUJ",
-        "origin_city": "Punta Cana, Dominican Republic",
-        "passengers": 362783.0,
-        "rpm": 520956388.0,
-        "scope": "international",
-        "seat_load_factor": 0.909729901875967
-      },
-      {
-        "air_time_minutes": 412867.0,
-        "asm": 614868500.0,
-        "available_seats": 416860.0,
-        "departures_performed": 2166.0,
-        "destination": "STI",
-        "destination_city": "Santiago, Dominican Republic",
-        "load_factor": 0.8688672455980425,
+        "air_time_minutes": 682746.0,
+        "asm": 1746527724.0,
+        "available_seats": 408258.0,
+        "departures_performed": 1479.0,
+        "destination": "FCO",
+        "destination_city": "Rome, Italy",
+        "load_factor": 0.8945519744867216,
         "origin": "JFK",
         "origin_city": "New York, NY",
-        "passengers": 362196.0,
-        "rpm": 534239100.0,
+        "passengers": 365208.0,
+        "rpm": 1562359824.0,
         "scope": "international",
-        "seat_load_factor": 0.8688672455980425
+        "seat_load_factor": 0.8945519744867216
       },
       {
-        "air_time_minutes": 802909.0,
-        "asm": 1759280442.0,
-        "available_seats": 411239.0,
-        "departures_performed": 1500.0,
-        "destination": "JFK",
-        "destination_city": "New York, NY",
-        "load_factor": 0.8655331814346402,
-        "origin": "FCO",
-        "origin_city": "Rome, Italy",
-        "passengers": 355941.0,
-        "rpm": 1522715598.0,
+        "air_time_minutes": 374197.0,
+        "asm": 577010648.0,
+        "available_seats": 401818.0,
+        "departures_performed": 2132.0,
+        "destination": "PUJ",
+        "destination_city": "Punta Cana, Dominican Republic",
+        "load_factor": 0.9085581034199564,
+        "origin": "ATL",
+        "origin_city": "Atlanta, GA",
+        "passengers": 365075.0,
+        "rpm": 524247700.0,
         "scope": "international",
-        "seat_load_factor": 0.8655331814346402
+        "seat_load_factor": 0.9085581034199564
       },
       {
-        "air_time_minutes": 1120599.0,
-        "asm": 2905498529.0,
-        "available_seats": 406193.0,
-        "departures_performed": 1441.0,
+        "air_time_minutes": 412639.0,
+        "asm": 614934875.0,
+        "available_seats": 416905.0,
+        "departures_performed": 2164.0,
+        "destination": "STI",
+        "destination_city": "Santiago, Dominican Republic",
+        "load_factor": 0.8692076132452238,
+        "origin": "JFK",
+        "origin_city": "New York, NY",
+        "passengers": 362377.0,
+        "rpm": 534506075.0,
+        "scope": "international",
+        "seat_load_factor": 0.8692076132452238
+      },
+      {
+        "air_time_minutes": 412971.0,
+        "asm": 571230748.0,
+        "available_seats": 397793.0,
+        "departures_performed": 2111.0,
         "destination": "ATL",
         "destination_city": "Atlanta, GA",
-        "load_factor": 0.8752735768464744,
+        "load_factor": 0.9099556804669765,
+        "origin": "PUJ",
+        "origin_city": "Punta Cana, Dominican Republic",
+        "passengers": 361974.0,
+        "rpm": 519794664.0,
+        "scope": "international",
+        "seat_load_factor": 0.9099556804669765
+      },
+      {
+        "air_time_minutes": 1122067.0,
+        "asm": 2895198209.0,
+        "available_seats": 404753.0,
+        "departures_performed": 1442.0,
+        "destination": "ATL",
+        "destination_city": "Atlanta, GA",
+        "load_factor": 0.8746050060160147,
         "origin": "ICN",
         "origin_city": "Seoul, South Korea",
-        "passengers": 355530.0,
-        "rpm": 2543106090.0,
+        "passengers": 353999.0,
+        "rpm": 2532154847.0,
         "scope": "international",
-        "seat_load_factor": 0.8752735768464744
+        "seat_load_factor": 0.8746050060160147
       },
       {
-        "air_time_minutes": 322441.0,
-        "asm": 438005859.0,
-        "available_seats": 392127.0,
-        "departures_performed": 2155.0,
+        "air_time_minutes": 322654.0,
+        "asm": 437698684.0,
+        "available_seats": 391852.0,
+        "departures_performed": 2158.0,
         "destination": "ATL",
         "destination_city": "Atlanta, GA",
-        "load_factor": 0.895459889270568,
+        "load_factor": 0.8971193205598031,
         "origin": "MBJ",
         "origin_city": "Montego Bay, Jamaica",
-        "passengers": 351134.0,
-        "rpm": 392216678.0,
+        "passengers": 351538.0,
+        "rpm": 392667946.0,
         "scope": "international",
-        "seat_load_factor": 0.895459889270568
+        "seat_load_factor": 0.8971193205598031
       },
       {
-        "air_time_minutes": 305896.0,
-        "asm": 439431151.0,
-        "available_seats": 393403.0,
-        "departures_performed": 2162.0,
+        "air_time_minutes": 787195.0,
+        "asm": 1738301130.0,
+        "available_seats": 406335.0,
+        "departures_performed": 1472.0,
+        "destination": "JFK",
+        "destination_city": "New York, NY",
+        "load_factor": 0.8602581613693135,
+        "origin": "FCO",
+        "origin_city": "Rome, Italy",
+        "passengers": 349553.0,
+        "rpm": 1495387734.0,
+        "scope": "international",
+        "seat_load_factor": 0.8602581613693135
+      },
+      {
+        "air_time_minutes": 306475.0,
+        "asm": 439292643.0,
+        "available_seats": 393279.0,
+        "departures_performed": 2166.0,
         "destination": "MBJ",
         "destination_city": "Montego Bay, Jamaica",
-        "load_factor": 0.8835850260419976,
+        "load_factor": 0.8859181395396144,
         "origin": "ATL",
         "origin_city": "Atlanta, GA",
-        "passengers": 347605.0,
-        "rpm": 388274785.0,
+        "passengers": 348413.0,
+        "rpm": 389177321.0,
         "scope": "international",
-        "seat_load_factor": 0.8835850260419976
+        "seat_load_factor": 0.8859181395396144
       },
       {
-        "air_time_minutes": 1295050.0,
-        "asm": 2913831774.0,
-        "available_seats": 407358.0,
-        "departures_performed": 1439.0,
+        "air_time_minutes": 1297324.0,
+        "asm": 2908109374.0,
+        "available_seats": 406558.0,
+        "departures_performed": 1442.0,
         "destination": "ICN",
         "destination_city": "Seoul, South Korea",
-        "load_factor": 0.8504583192179852,
+        "load_factor": 0.8507937366870164,
         "origin": "ATL",
         "origin_city": "Atlanta, GA",
-        "passengers": 346441.0,
-        "rpm": 2478092473.0,
+        "passengers": 345897.0,
+        "rpm": 2474201241.0,
         "scope": "international",
-        "seat_load_factor": 0.8504583192179852
+        "seat_load_factor": 0.8507937366870164
       }
     ]
   }
